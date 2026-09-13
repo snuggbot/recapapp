@@ -1,0 +1,970 @@
+{
+  "title": "Buddha's Roleplay Adventures",
+  "summary": "Buddha navigates complex interactions in NoPixel, featuring heists, gang conflicts, and character developments. Key moments include betrayals and alliances that shape the narrative.",
+  "timestampsApproximate": true,
+  "sources": [
+    "transcription-pending"
+  ],
+  "sourceKey": "https://kick.com/buddha/videos/01a09150-21d8-7c95-80b3-eed2ef787922",
+  "profile": "nopixel",
+  "redditResearch": {
+    "status": "ok",
+    "fetchedAt": "2026-09-12T23:47:37.787Z",
+    "subreddits": [
+      "GTARP",
+      "LivestreamFail",
+      "xqcow"
+    ],
+    "queries": [
+      "NoPixel V",
+      "Buddha",
+      "Lang Buddha",
+      "Marty Banks",
+      "Tony Corleone",
+      "buddha",
+      "x",
+      "xqc"
+    ],
+    "posts": []
+  },
+  "days": {
+    "3": {
+      "dayNumber": 3,
+      "title": "Buddha's Heist and Gang Conflicts",
+      "sourceKey": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c",
+      "streamDate": "2026-09-08",
+      "summary": "Buddha engages in heists and navigates gang tensions, revealing character dynamics and alliances.",
+      "updated": "2026-09-12T23:45:23.427Z",
+      "isLive": false,
+      "timestampsApproximate": true,
+      "sources": [
+        "transcription-pending"
+      ],
+      "eventsCount": 9,
+      "events": [
+        {
+          "id": "buddha-evt-001",
+          "timestamp": "00:02:00",
+          "seconds": 120,
+          "endSeconds": 180,
+          "endTimestamp": "00:03:00",
+          "endMode": "model",
+          "isMajor": true,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "participants": [
+            "Lang Buddha"
+          ],
+          "image": "/images/frames/buddha_evt_000120_000200.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=120",
+          "durationSeconds": 60,
+          "imageCaption": "Stream snapshot @ 00:02:00"
+        },
+        {
+          "id": "buddha-evt-002",
+          "timestamp": "00:07:30",
+          "seconds": 450,
+          "endSeconds": 510,
+          "endTimestamp": "00:08:30",
+          "endMode": "model",
+          "isMajor": true,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "participants": [
+            "Lang Buddha"
+          ],
+          "image": "/images/frames/buddha_evt_000450_000730.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=450",
+          "durationSeconds": 60,
+          "imageCaption": "Stream snapshot @ 00:07:30"
+        },
+        {
+          "id": "buddha-evt-003",
+          "timestamp": "00:13:20",
+          "seconds": 800,
+          "endSeconds": 860,
+          "endTimestamp": "00:14:20",
+          "endMode": "model",
+          "isMajor": true,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "participants": [
+            "Lang Buddha"
+          ],
+          "image": "/images/frames/buddha_evt_000800_001320.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=800",
+          "durationSeconds": 60,
+          "imageCaption": "Stream snapshot @ 00:13:20"
+        },
+        {
+          "id": "buddha-evt-004",
+          "timestamp": "00:22:20",
+          "seconds": 1340,
+          "endSeconds": 1400,
+          "endTimestamp": "00:23:20",
+          "endMode": "model",
+          "isMajor": true,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "participants": [
+            "Lang Buddha"
+          ],
+          "image": "/images/frames/buddha_evt_001340_002220.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=1340",
+          "durationSeconds": 60,
+          "imageCaption": "Stream snapshot @ 00:22:20"
+        },
+        {
+          "id": "buddha-evt-005",
+          "timestamp": "00:35:00",
+          "seconds": 2100,
+          "endSeconds": 2160,
+          "endTimestamp": "00:36:00",
+          "endMode": "model",
+          "isMajor": false,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "participants": [
+            "Lang Buddha"
+          ],
+          "image": "/images/frames/buddha_evt_002100_003500.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=2100",
+          "durationSeconds": 60,
+          "imageCaption": "Stream snapshot @ 00:35:00"
+        },
+        {
+          "id": "buddha-evt-006",
+          "timestamp": "00:48:20",
+          "seconds": 2900,
+          "endSeconds": 2950,
+          "endTimestamp": "00:49:10",
+          "endMode": "model",
+          "isMajor": false,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "participants": [
+            "Lang Buddha"
+          ],
+          "image": "/images/frames/buddha_evt_002900_004820.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=2900",
+          "durationSeconds": 50,
+          "imageCaption": "Stream snapshot @ 00:48:20"
+        },
+        {
+          "id": "buddha-evt-007",
+          "timestamp": "01:00:00",
+          "seconds": 3600,
+          "endSeconds": 3660,
+          "endTimestamp": "01:01:00",
+          "endMode": "model",
+          "isMajor": true,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "participants": [
+            "Lang Buddha"
+          ],
+          "image": "/images/frames/buddha_evt_003600_010000.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=3600",
+          "durationSeconds": 60,
+          "imageCaption": "Stream snapshot @ 01:00:00"
+        },
+        {
+          "id": "buddha-evt-008",
+          "timestamp": "01:15:00",
+          "seconds": 4500,
+          "endSeconds": 4560,
+          "endTimestamp": "01:16:00",
+          "endMode": "model",
+          "isMajor": false,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "social",
+          "tags": [
+            "social"
+          ],
+          "image": "/images/frames/buddha_evt_004500_011500.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=4500",
+          "durationSeconds": 60,
+          "imageCaption": "Stream snapshot @ 01:15:00"
+        },
+        {
+          "id": "buddha-evt-009",
+          "timestamp": "13:03:20",
+          "seconds": 47000,
+          "endSeconds": 47180,
+          "endTimestamp": "13:06:20",
+          "endMode": "model",
+          "isMajor": false,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "chat",
+          "tags": [
+            "chat"
+          ],
+          "participants": [
+            "Lang Buddha"
+          ],
+          "image": "/images/frames/buddha_evt_047000_130320.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=47000",
+          "durationSeconds": 180,
+          "imageCaption": "Stream snapshot @ 13:03:20"
+        }
+      ]
+    },
+    "4": {
+      "dayNumber": 4,
+      "title": "Heists and Alliances",
+      "sourceKey": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288",
+      "streamDate": "2026-09-09",
+      "summary": "Buddha engages in heists, faces police chases, and navigates gang conflicts, showcasing character relationships and major story developments.",
+      "updated": "2026-09-12T23:46:19.345Z",
+      "isLive": false,
+      "timestampsApproximate": true,
+      "sources": [
+        "transcription-pending"
+      ],
+      "eventsCount": 9,
+      "events": [
+        {
+          "id": "buddha-evt-001",
+          "timestamp": "00:20:34",
+          "seconds": 1234,
+          "endSeconds": 1250,
+          "endTimestamp": "00:20:50",
+          "endMode": "model",
+          "isMajor": true,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "participants": [
+            "Lang Buddha"
+          ],
+          "image": "/images/frames/buddha_evt_001234_002034.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288?t=1234",
+          "durationSeconds": 16,
+          "imageCaption": "Stream snapshot @ 00:20:34"
+        },
+        {
+          "id": "buddha-evt-002",
+          "timestamp": "00:24:10",
+          "seconds": 1450,
+          "endSeconds": 1505,
+          "endTimestamp": "00:25:05",
+          "endMode": "model",
+          "isMajor": true,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone"
+          ],
+          "image": "/images/frames/buddha_evt_001450_002410.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288?t=1450",
+          "durationSeconds": 55,
+          "imageCaption": "Stream snapshot @ 00:24:10"
+        },
+        {
+          "id": "buddha-evt-003",
+          "timestamp": "00:40:50",
+          "seconds": 2450,
+          "endSeconds": 2480,
+          "endTimestamp": "00:41:20",
+          "endMode": "model",
+          "isMajor": true,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "participants": [
+            "Lang Buddha",
+            "Marty Banks"
+          ],
+          "image": "/images/frames/buddha_evt_002450_004050.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288?t=2450",
+          "durationSeconds": 30,
+          "imageCaption": "Stream snapshot @ 00:40:50"
+        },
+        {
+          "id": "buddha-evt-004",
+          "timestamp": "01:00:00",
+          "seconds": 3600,
+          "endSeconds": 3625,
+          "endTimestamp": "01:00:25",
+          "endMode": "model",
+          "isMajor": false,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone"
+          ],
+          "image": "/images/frames/buddha_evt_003600_010000.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288?t=3600",
+          "durationSeconds": 25,
+          "imageCaption": "Stream snapshot @ 01:00:00"
+        },
+        {
+          "id": "buddha-evt-005",
+          "timestamp": "01:20:00",
+          "seconds": 4800,
+          "endSeconds": 4820,
+          "endTimestamp": "01:20:20",
+          "endMode": "model",
+          "isMajor": true,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "participants": [
+            "Lang Buddha",
+            "Marty Banks"
+          ],
+          "image": "/images/frames/buddha_evt_004800_012000.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288?t=4800",
+          "durationSeconds": 20,
+          "imageCaption": "Stream snapshot @ 01:20:00"
+        },
+        {
+          "id": "buddha-evt-006",
+          "timestamp": "01:38:20",
+          "seconds": 5900,
+          "endSeconds": 5925,
+          "endTimestamp": "01:38:45",
+          "endMode": "model",
+          "isMajor": false,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "participants": [
+            "Lang Buddha",
+            "Marty Banks"
+          ],
+          "image": "/images/frames/buddha_evt_005900_013820.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288?t=5900",
+          "durationSeconds": 25,
+          "imageCaption": "Stream snapshot @ 01:38:20"
+        },
+        {
+          "id": "buddha-evt-007",
+          "timestamp": "02:00:00",
+          "seconds": 7200,
+          "endSeconds": 7225,
+          "endTimestamp": "02:00:25",
+          "endMode": "model",
+          "isMajor": false,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "participants": [
+            "Lang Buddha"
+          ],
+          "image": "/images/frames/buddha_evt_007200_020000.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288?t=7200",
+          "durationSeconds": 25,
+          "imageCaption": "Stream snapshot @ 02:00:00"
+        },
+        {
+          "id": "buddha-evt-008",
+          "timestamp": "02:20:00",
+          "seconds": 8400,
+          "endSeconds": 8425,
+          "endTimestamp": "02:20:25",
+          "endMode": "model",
+          "isMajor": true,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone"
+          ],
+          "image": "/images/frames/buddha_evt_008400_022000.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288?t=8400",
+          "durationSeconds": 25,
+          "imageCaption": "Stream snapshot @ 02:20:00"
+        },
+        {
+          "id": "buddha-evt-009",
+          "timestamp": "02:25:00",
+          "seconds": 8700,
+          "endSeconds": 8730,
+          "endTimestamp": "02:25:30",
+          "endMode": "model",
+          "isMajor": false,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "chat",
+          "tags": [
+            "chat"
+          ],
+          "participants": [
+            "Lang Buddha"
+          ],
+          "image": "/images/frames/buddha_evt_008700_022500.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288?t=8700",
+          "durationSeconds": 30,
+          "imageCaption": "Stream snapshot @ 02:25:00"
+        }
+      ]
+    },
+    "5": {
+      "dayNumber": 5,
+      "title": "Buddha's Day in NoPixel",
+      "sourceKey": "https://kick.com/buddha/videos/01a08c48-a818-721e-b075-55bb78d88732",
+      "streamDate": "2026-09-10",
+      "summary": "Buddha engages in various criminal activities and personal conflicts throughout the day.",
+      "updated": "2026-09-12T23:46:55.561Z",
+      "isLive": false,
+      "timestampsApproximate": true,
+      "sources": [
+        "transcription-pending"
+      ],
+      "eventsCount": 9,
+      "events": [
+        {
+          "id": "buddha-evt-001",
+          "timestamp": "00:20:34",
+          "seconds": 1234,
+          "endSeconds": 1260,
+          "endTimestamp": "00:21:00",
+          "endMode": "model",
+          "isMajor": true,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "participants": [
+            "Lang Buddha"
+          ],
+          "image": "/images/frames/buddha_evt_001234_002034.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a08c48-a818-721e-b075-55bb78d88732?t=1234",
+          "durationSeconds": 26,
+          "imageCaption": "Stream snapshot @ 00:20:34"
+        },
+        {
+          "id": "buddha-evt-002",
+          "timestamp": "00:40:56",
+          "seconds": 2456,
+          "endSeconds": 2480,
+          "endTimestamp": "00:41:20",
+          "endMode": "model",
+          "isMajor": true,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "participants": [
+            "Lang Buddha"
+          ],
+          "image": "/images/frames/buddha_evt_002456_004056.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a08c48-a818-721e-b075-55bb78d88732?t=2456",
+          "durationSeconds": 24,
+          "imageCaption": "Stream snapshot @ 00:40:56"
+        },
+        {
+          "id": "buddha-evt-003",
+          "timestamp": "01:03:09",
+          "seconds": 3789,
+          "endSeconds": 3810,
+          "endTimestamp": "01:03:30",
+          "endMode": "model",
+          "isMajor": true,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "participants": [
+            "Lang Buddha"
+          ],
+          "image": "/images/frames/buddha_evt_003789_010309.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a08c48-a818-721e-b075-55bb78d88732?t=3789",
+          "durationSeconds": 21,
+          "imageCaption": "Stream snapshot @ 01:03:09"
+        },
+        {
+          "id": "buddha-evt-004",
+          "timestamp": "01:16:07",
+          "seconds": 4567,
+          "endSeconds": 4590,
+          "endTimestamp": "01:16:30",
+          "endMode": "model",
+          "isMajor": true,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone"
+          ],
+          "image": "/images/frames/buddha_evt_004567_011607.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a08c48-a818-721e-b075-55bb78d88732?t=4567",
+          "durationSeconds": 23,
+          "imageCaption": "Stream snapshot @ 01:16:07"
+        },
+        {
+          "id": "buddha-evt-005",
+          "timestamp": "01:34:38",
+          "seconds": 5678,
+          "endSeconds": 5700,
+          "endTimestamp": "01:35:00",
+          "endMode": "model",
+          "isMajor": true,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "participants": [
+            "Lang Buddha"
+          ],
+          "image": "/images/frames/buddha_evt_005678_013438.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a08c48-a818-721e-b075-55bb78d88732?t=5678",
+          "durationSeconds": 22,
+          "imageCaption": "Stream snapshot @ 01:34:38"
+        },
+        {
+          "id": "buddha-evt-006",
+          "timestamp": "01:53:09",
+          "seconds": 6789,
+          "endSeconds": 6810,
+          "endTimestamp": "01:53:30",
+          "endMode": "model",
+          "isMajor": false,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "participants": [
+            "Lang Buddha"
+          ],
+          "image": "/images/frames/buddha_evt_006789_015309.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a08c48-a818-721e-b075-55bb78d88732?t=6789",
+          "durationSeconds": 21,
+          "imageCaption": "Stream snapshot @ 01:53:09"
+        },
+        {
+          "id": "buddha-evt-007",
+          "timestamp": "02:11:30",
+          "seconds": 7890,
+          "endSeconds": 7920,
+          "endTimestamp": "02:12:00",
+          "endMode": "model",
+          "isMajor": false,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "participants": [
+            "Lang Buddha",
+            "Cement"
+          ],
+          "image": "/images/frames/buddha_evt_007890_021130.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a08c48-a818-721e-b075-55bb78d88732?t=7890",
+          "durationSeconds": 30,
+          "imageCaption": "Stream snapshot @ 02:11:30"
+        },
+        {
+          "id": "buddha-evt-008",
+          "timestamp": "02:28:21",
+          "seconds": 8901,
+          "endSeconds": 8920,
+          "endTimestamp": "02:28:40",
+          "endMode": "model",
+          "isMajor": false,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "participants": [
+            "Lang Buddha"
+          ],
+          "image": "/images/frames/buddha_evt_008901_022821.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a08c48-a818-721e-b075-55bb78d88732?t=8901",
+          "durationSeconds": 19,
+          "imageCaption": "Stream snapshot @ 02:28:21"
+        },
+        {
+          "id": "buddha-evt-009",
+          "timestamp": "03:25:45",
+          "seconds": 12345,
+          "endSeconds": 12360,
+          "endTimestamp": "03:26:00",
+          "endMode": "model",
+          "isMajor": false,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "chat",
+          "tags": [
+            "chat"
+          ],
+          "participants": [
+            "Lang Buddha"
+          ],
+          "image": "/images/frames/buddha_evt_012345_032545.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a08c48-a818-721e-b075-55bb78d88732?t=12345",
+          "durationSeconds": 15,
+          "imageCaption": "Stream snapshot @ 03:25:45"
+        }
+      ]
+    },
+    "6": {
+      "dayNumber": 6,
+      "title": "Buddha's Day in NoPixel",
+      "sourceKey": "https://kick.com/buddha/videos/01a09150-21d8-7c95-80b3-eed2ef787922",
+      "streamDate": "2026-09-11",
+      "summary": "A day filled with heists, gang conflicts, and intense character interactions.",
+      "updated": "2026-09-12T23:47:45.729Z",
+      "isLive": false,
+      "timestampsApproximate": true,
+      "sources": [
+        "transcription-pending"
+      ],
+      "eventsCount": 9,
+      "events": [
+        {
+          "id": "buddha-evt-001",
+          "timestamp": "00:20:34",
+          "seconds": 1234,
+          "endSeconds": 1250,
+          "endTimestamp": "00:20:50",
+          "endMode": "model",
+          "isMajor": false,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "participants": [
+            "Lang Buddha"
+          ],
+          "image": "/images/frames/buddha_evt_001234_002034.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a09150-21d8-7c95-80b3-eed2ef787922?t=1234",
+          "durationSeconds": 16,
+          "imageCaption": "Stream snapshot @ 00:20:34"
+        },
+        {
+          "id": "buddha-evt-002",
+          "timestamp": "00:39:05",
+          "seconds": 2345,
+          "endSeconds": 2370,
+          "endTimestamp": "00:39:30",
+          "endMode": "model",
+          "isMajor": true,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "participants": [
+            "Lang Buddha",
+            "Marty Banks"
+          ],
+          "image": "/images/frames/buddha_evt_002345_003905.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a09150-21d8-7c95-80b3-eed2ef787922?t=2345",
+          "durationSeconds": 25,
+          "imageCaption": "Stream snapshot @ 00:39:05"
+        },
+        {
+          "id": "buddha-evt-003",
+          "timestamp": "00:57:36",
+          "seconds": 3456,
+          "endSeconds": 3480,
+          "endTimestamp": "00:58:00",
+          "endMode": "model",
+          "isMajor": true,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone"
+          ],
+          "image": "/images/frames/buddha_evt_003456_005736.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a09150-21d8-7c95-80b3-eed2ef787922?t=3456",
+          "durationSeconds": 24,
+          "imageCaption": "Stream snapshot @ 00:57:36"
+        },
+        {
+          "id": "buddha-evt-004",
+          "timestamp": "01:16:07",
+          "seconds": 4567,
+          "endSeconds": 4590,
+          "endTimestamp": "01:16:30",
+          "endMode": "model",
+          "isMajor": true,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "participants": [
+            "Lang Buddha",
+            "Marty Banks"
+          ],
+          "image": "/images/frames/buddha_evt_004567_011607.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a09150-21d8-7c95-80b3-eed2ef787922?t=4567",
+          "durationSeconds": 23,
+          "imageCaption": "Stream snapshot @ 01:16:07"
+        },
+        {
+          "id": "buddha-evt-005",
+          "timestamp": "01:34:38",
+          "seconds": 5678,
+          "endSeconds": 5700,
+          "endTimestamp": "01:35:00",
+          "endMode": "model",
+          "isMajor": false,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "participants": [
+            "Lang Buddha",
+            "Speedy"
+          ],
+          "image": "/images/frames/buddha_evt_005678_013438.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a09150-21d8-7c95-80b3-eed2ef787922?t=5678",
+          "durationSeconds": 22,
+          "imageCaption": "Stream snapshot @ 01:34:38"
+        },
+        {
+          "id": "buddha-evt-006",
+          "timestamp": "01:53:09",
+          "seconds": 6789,
+          "endSeconds": 6810,
+          "endTimestamp": "01:53:30",
+          "endMode": "model",
+          "isMajor": false,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "participants": [
+            "Lang Buddha"
+          ],
+          "image": "/images/frames/buddha_evt_006789_015309.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a09150-21d8-7c95-80b3-eed2ef787922?t=6789",
+          "durationSeconds": 21,
+          "imageCaption": "Stream snapshot @ 01:53:09"
+        },
+        {
+          "id": "buddha-evt-007",
+          "timestamp": "02:11:30",
+          "seconds": 7890,
+          "endSeconds": 7915,
+          "endTimestamp": "02:11:55",
+          "endMode": "model",
+          "isMajor": true,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone"
+          ],
+          "image": "/images/frames/buddha_evt_007890_021130.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a09150-21d8-7c95-80b3-eed2ef787922?t=7890",
+          "durationSeconds": 25,
+          "imageCaption": "Stream snapshot @ 02:11:30"
+        },
+        {
+          "id": "buddha-evt-008",
+          "timestamp": "02:28:21",
+          "seconds": 8901,
+          "endSeconds": 8925,
+          "endTimestamp": "02:28:45",
+          "endMode": "model",
+          "isMajor": false,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "chat",
+          "tags": [
+            "chat"
+          ],
+          "participants": [
+            "Lang Buddha"
+          ],
+          "image": "/images/frames/buddha_evt_008901_022821.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a09150-21d8-7c95-80b3-eed2ef787922?t=8901",
+          "durationSeconds": 24,
+          "imageCaption": "Stream snapshot @ 02:28:21"
+        },
+        {
+          "id": "buddha-evt-009",
+          "timestamp": "02:46:40",
+          "seconds": 10000,
+          "endSeconds": 10020,
+          "endTimestamp": "02:47:00",
+          "endMode": "model",
+          "isMajor": false,
+          "title": "Unverified timestamp",
+          "description": "Caption pending VOD transcription.",
+          "evidence": "",
+          "confidence": "low",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "participants": [
+            "Lang Buddha"
+          ],
+          "image": "/images/frames/buddha_evt_010000_024640.jpg",
+          "kickUrl": "https://kick.com/buddha/videos/01a09150-21d8-7c95-80b3-eed2ef787922?t=10000",
+          "durationSeconds": 20,
+          "imageCaption": "Stream snapshot @ 02:46:40"
+        }
+      ]
+    }
+  }
+}

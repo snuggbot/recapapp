@@ -1,0 +1,2917 @@
+{
+  "meta": {
+    "title": "NoPixel V Launch | Day 1 Recap Sep 8th | xQc's POV With Timestamps",
+    "subreddit": "r/xqcow",
+    "author": "HurricaneRein",
+    "authorBioNote": "Live free timestamp recaps author (also covered NoPixel IV). Supported by the community voluntarily.",
+    "date": "September 8, 2026",
+    "score": 225,
+    "totalComments": 21,
+    "characterName": "Jean Paul (X)",
+    "characterLore": "Jean Paul (X) is a well-known criminal and constant menace in the city. Even though he prefers working alone, he’s been part of several groups over the years. His most recent one was The Company, which he eventually betrayed — stealing a large amount of their assets before teaming up with his best friend Marty Banks near the end of NoPixel 4.0. Jean Paul also has a brother named Pierre Paul (police officer, played by xQc), a sister called Jolie Paul (played by Pokimane), and in-game girlfriend Ginger Ale (played by Aikobliss).",
+    "stats": {
+      "timeLoggedIn": "11.10 hours",
+      "timesJailed": 0,
+      "startingCash": "$5",
+      "burgerShotPaycheck": "$1,300",
+      "cashBalancePeak": "$1,600",
+      "guberRating": "4.22 / 5.00",
+      "guberRidesCompleted": 5,
+      "guberEarnings": "$1,827",
+      "goldNuggetsFound": 15,
+      "octaneCurrentPrice": "$52.00",
+      "octaneLowestPrice": "$46.00",
+      "activeCompany": "Stalling (Co-founded with Marty Banks)",
+      "healthStatus": "Infected / Unknown Sickness Indicator",
+      "hospitalVisits": 2
+    },
+    "links": {
+      "redditPost": "https://www.reddit.com/r/xqcow/comments/1wajfpn/nopixel_v_launch_day_1_recap_sep_8th_xqcs_pov/",
+      "twitchVod": "https://www.twitch.tv/videos/2868715967",
+      "kickVod": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc",
+      "kickStreamUrl": "https://stream.kick.com/3c81249a5ce0/ivs/v1/196233775518/DsuAwCgUc9Bh/2026/9/8/14/59/8wZGxx2ttqbw/media/hls/master.m3u8",
+      "loreTrailer": "https://www.youtube.com/watch?v=SnzM1R8uKzs",
+      "officialTrailer": "https://www.youtube.com/watch?v=K_LoFXzDoi4",
+      "wikiJeanPierre": "https://nopixel.fandom.com/wiki/Jean-Pierre_Baptiste/2.0_and_Prior",
+      "wikiNormAndy": "https://nopixel.fandom.com/wiki/Norm_Andy/3.0",
+      "wikiJeanPaul": "https://nopixel.fandom.com/wiki/Jean_Paul/4.0",
+      "wikiPierrePaul": "https://nopixel.fandom.com/wiki/Pierre_Paul/3.0"
+    }
+  },
+  "events": [
+    {
+      "id": "d1-evt-001",
+      "timestamp": "01:01:55",
+      "seconds": 3715,
+      "isMajor": false,
+      "title": "Logs in for the first time and starts his character cre",
+      "description": "x Logs in for the first time and starts his character creation",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_001_01_01_55.jpg",
+      "imageCaption": "Stream snapshot @ 01:01:55",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=01h01m55s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=3713"
+    },
+    {
+      "id": "d1-evt-002",
+      "timestamp": "02:20:00",
+      "seconds": 8400,
+      "isMajor": false,
+      "title": "Chooses a bank account",
+      "description": "x chooses a bank account",
+      "category": "crypto",
+      "tags": [
+        "crypto"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_002_02_20_00.jpg",
+      "imageCaption": "Stream snapshot @ 02:20:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=02h20m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=8398"
+    },
+    {
+      "id": "d1-evt-003",
+      "timestamp": "02:20:40",
+      "seconds": 8440,
+      "isMajor": false,
+      "title": "Loads into the city",
+      "description": "x loads into the city",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_003_02_20_40.jpg",
+      "imageCaption": "Stream snapshot @ 02:20:40",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=02h20m40s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=8438"
+    },
+    {
+      "id": "d1-evt-004",
+      "timestamp": "02:29:45",
+      "seconds": 8985,
+      "isMajor": false,
+      "title": "Buys a couple of bandages and splints",
+      "description": "x buys a couple of bandages and splints",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_004_02_29_45.jpg",
+      "imageCaption": "Stream snapshot @ 02:29:45",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=02h29m45s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=8983"
+    },
+    {
+      "id": "d1-evt-005",
+      "timestamp": "02:31:20",
+      "seconds": 9080,
+      "isMajor": true,
+      "title": "Creates a socials account in game (calls himself justx)",
+      "description": "x creates a socials account in game (calls himself JustX)",
+      "category": "lore",
+      "tags": [
+        "lore"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_005_02_31_20.jpg",
+      "imageCaption": "Stream snapshot @ 02:31:20",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=02h31m20s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=9078"
+    },
+    {
+      "id": "d1-evt-006",
+      "timestamp": "02:35:30",
+      "seconds": 9330,
+      "isMajor": false,
+      "title": "Tweets for the first time",
+      "description": "tweets for the first time",
+      "category": "lore",
+      "tags": [
+        "lore"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_006_02_35_30.jpg",
+      "imageCaption": "Stream snapshot @ 02:35:30",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=02h35m30s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=9328"
+    },
+    {
+      "id": "d1-evt-007",
+      "timestamp": "02:36:20",
+      "seconds": 9380,
+      "isMajor": false,
+      "title": "Banters with mista lang on socials",
+      "description": "x banters with Mista Lang on socials",
+      "category": "lore",
+      "tags": [
+        "lore"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Mista Lang"
+      ],
+      "image": "/images/frames/d1_evt_007_02_36_20.jpg",
+      "imageCaption": "Stream snapshot @ 02:36:20",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=02h36m20s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=9378"
+    },
+    {
+      "id": "d1-evt-008",
+      "timestamp": "02:38:15",
+      "seconds": 9495,
+      "isMajor": false,
+      "title": "Hotwires his first vehicle",
+      "description": "x hotwires his first vehicle, a motorcycle",
+      "category": "mechanic",
+      "tags": [
+        "mechanic"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_008_02_38_15.jpg",
+      "imageCaption": "Stream snapshot @ 02:38:15",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=02h38m15s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=9493"
+    },
+    {
+      "id": "d1-evt-009",
+      "timestamp": "02:45:20",
+      "seconds": 9920,
+      "isMajor": false,
+      "title": "Arrives at burger shot (first visit) where he encounter",
+      "description": "x arrives at burger shot (first visit) where he encounters Chatterbox",
+      "category": "job",
+      "tags": [
+        "job",
+        "social"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Chatterbox"
+      ],
+      "image": "/images/frames/d1_evt_009_02_45_20.jpg",
+      "imageCaption": "Stream snapshot @ 02:45:20",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=02h45m20s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=9918"
+    },
+    {
+      "id": "d1-evt-010",
+      "timestamp": "02:47:40",
+      "seconds": 10060,
+      "isMajor": true,
+      "title": "Clocks in at burger shot (first time)",
+      "description": "x clocks in at burger shot (first time)",
+      "category": "job",
+      "tags": [
+        "job"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_010_02_47_40.jpg",
+      "imageCaption": "Stream snapshot @ 02:47:40",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=02h47m40s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=10058"
+    },
+    {
+      "id": "d1-evt-011",
+      "timestamp": "02:51:10",
+      "seconds": 10270,
+      "isMajor": false,
+      "title": "Leaves burger shot after charging someone extra for the",
+      "description": "x leaves burger shot after charging someone extra for their meal and not preparing it, chatterbox then tweets about x being a scammer calling x 'banana boy'",
+      "category": "lore",
+      "tags": [
+        "lore",
+        "job"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_011_02_51_10.jpg",
+      "imageCaption": "Stream snapshot @ 02:51:10",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=02h51m10s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=10268"
+    },
+    {
+      "id": "d1-evt-012",
+      "timestamp": "02:52:50",
+      "seconds": 10370,
+      "isMajor": false,
+      "title": "Goes back to burger shot (trying to figure out how to p",
+      "description": "x goes back to burger shot (trying to figure out how to prepare the meals)",
+      "category": "job",
+      "tags": [
+        "job"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_012_02_52_50.jpg",
+      "imageCaption": "Stream snapshot @ 02:52:50",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=02h52m50s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=10368"
+    },
+    {
+      "id": "d1-evt-013",
+      "timestamp": "02:54:25",
+      "seconds": 10465,
+      "isMajor": false,
+      "title": "Is confused",
+      "description": "x is confused, he leaves burger shot again",
+      "category": "job",
+      "tags": [
+        "job"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_013_02_54_25.jpg",
+      "imageCaption": "Stream snapshot @ 02:54:25",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=02h54m25s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=10463"
+    },
+    {
+      "id": "d1-evt-014",
+      "timestamp": "02:56:00",
+      "seconds": 10560,
+      "isMajor": false,
+      "title": "Buys some ingredients at the mart opposite to burger sh",
+      "description": "x buys some ingredients at the mart opposite to burger shot",
+      "category": "job",
+      "tags": [
+        "job"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_014_02_56_00.jpg",
+      "imageCaption": "Stream snapshot @ 02:56:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=02h56m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=10558"
+    },
+    {
+      "id": "d1-evt-015",
+      "timestamp": "03:02:25",
+      "seconds": 10945,
+      "isMajor": false,
+      "title": "Leaves the mart with the ingredients without paying for",
+      "description": "x leaves the mart with the ingredients without paying for any",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_015_03_02_25.jpg",
+      "imageCaption": "Stream snapshot @ 03:02:25",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=03h02m25s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=10943"
+    },
+    {
+      "id": "d1-evt-016",
+      "timestamp": "03:03:00",
+      "seconds": 10980,
+      "isMajor": false,
+      "title": "Returns to burger shot and changes into uniform to serv",
+      "description": "x returns to burger shot and changes into uniform to serve people along with Ken-Sama",
+      "category": "job",
+      "tags": [
+        "job"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Ken-Sama"
+      ],
+      "image": "/images/frames/d1_evt_016_03_03_00.jpg",
+      "imageCaption": "Stream snapshot @ 03:03:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=03h03m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=10978"
+    },
+    {
+      "id": "d1-evt-017",
+      "timestamp": "03:12:30",
+      "seconds": 11550,
+      "isMajor": false,
+      "title": "Serves his first meal correctly",
+      "description": "x serves his first meal correctly",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_017_03_12_30.jpg",
+      "imageCaption": "Stream snapshot @ 03:12:30",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=03h12m30s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=11548"
+    },
+    {
+      "id": "d1-evt-018",
+      "timestamp": "03:15:45",
+      "seconds": 11745,
+      "isMajor": true,
+      "title": "Encounters mista lang for the first time while he's wor",
+      "description": "x encounters Mista Lang for the first time while he's working at burger shot",
+      "category": "job",
+      "tags": [
+        "job",
+        "social"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Mista Lang"
+      ],
+      "image": "/images/frames/d1_evt_018_03_15_45.jpg",
+      "imageCaption": "Stream snapshot @ 03:15:45",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=03h15m45s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=11743"
+    },
+    {
+      "id": "d1-evt-019",
+      "timestamp": "03:23:30",
+      "seconds": 12210,
+      "isMajor": false,
+      "title": "A third employee (idk what her name is) joins x and ken",
+      "description": "a third employee (idk what her name is) joins x and ken-sama to work at burger shot since there are many clients in line",
+      "category": "job",
+      "tags": [
+        "job"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_019_03_23_30.jpg",
+      "imageCaption": "Stream snapshot @ 03:23:30",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=03h23m30s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=12208"
+    },
+    {
+      "id": "d1-evt-020",
+      "timestamp": "03:32:00",
+      "seconds": 12720,
+      "isMajor": false,
+      "title": "Encounters speedy at burger shot",
+      "description": "x encounters Speedy at burger shot, Speedy joins them as a fourth employee",
+      "category": "job",
+      "tags": [
+        "job",
+        "social"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Speedy"
+      ],
+      "image": "/images/frames/d1_evt_020_03_32_00.jpg",
+      "imageCaption": "Stream snapshot @ 03:32:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=03h32m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=12718"
+    },
+    {
+      "id": "d1-evt-021",
+      "timestamp": "03:45:10",
+      "seconds": 13510,
+      "isMajor": true,
+      "title": "Encounters marty (first time) while working at burger s",
+      "description": "x encounters Marty (first time) while working at burger shot, Marty then joins them as a fifth employee at burger shot",
+      "category": "job",
+      "tags": [
+        "job",
+        "social"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Marty Banks"
+      ],
+      "image": "/images/frames/d1_evt_021_03_45_10.jpg",
+      "imageCaption": "Stream snapshot @ 03:45:10",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=03h45m10s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=13508"
+    },
+    {
+      "id": "d1-evt-022",
+      "timestamp": "03:53:50",
+      "seconds": 14030,
+      "isMajor": false,
+      "title": "A police officer places an order of 50 combos",
+      "description": "a police officer places an order of 50 combos",
+      "category": "chase",
+      "tags": [
+        "chase"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_022_03_53_50.jpg",
+      "imageCaption": "Stream snapshot @ 03:53:50",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=03h53m50s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=14028"
+    },
+    {
+      "id": "d1-evt-023",
+      "timestamp": "04:00:00",
+      "seconds": 14400,
+      "isMajor": false,
+      "title": "Continues to work at burger shot preparing the 50 combo",
+      "description": "x continues to work at burger shot preparing the 50 combos with the rest of the employees",
+      "category": "job",
+      "tags": [
+        "job"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_023_04_00_00.jpg",
+      "imageCaption": "Stream snapshot @ 04:00:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=04h00m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=14398"
+    },
+    {
+      "id": "d1-evt-024",
+      "timestamp": "04:10:30",
+      "seconds": 15030,
+      "isMajor": false,
+      "title": "The burger shot team is having trouble serving the 50 c",
+      "description": "the burger shot team is having trouble serving the 50 combos order since they can't fill more than 5 combos at a time in one bag, x is trying to figure out a way to refund the initial 50 combos order",
+      "category": "job",
+      "tags": [
+        "job"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_024_04_10_30.jpg",
+      "imageCaption": "Stream snapshot @ 04:10:30",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=04h10m30s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=15028"
+    },
+    {
+      "id": "d1-evt-025",
+      "timestamp": "04:27:50",
+      "seconds": 16070,
+      "isMajor": true,
+      "title": "The 50 combos order gets too overwhelming for x and mar",
+      "description": "the 50 combos order gets too overwhelming for x and Marty so they decided to clock out and leave",
+      "category": "job",
+      "tags": [
+        "job"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Marty Banks"
+      ],
+      "image": "/images/frames/d1_evt_025_04_27_50.jpg",
+      "imageCaption": "Stream snapshot @ 04:27:50",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=04h27m50s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=16068"
+    },
+    {
+      "id": "d1-evt-026",
+      "timestamp": "04:29:20",
+      "seconds": 16160,
+      "isMajor": false,
+      "title": "Drives off with marty",
+      "description": "x drives off with Marty",
+      "category": "mechanic",
+      "tags": [
+        "mechanic"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Marty Banks"
+      ],
+      "image": "/images/frames/d1_evt_026_04_29_20.jpg",
+      "imageCaption": "Stream snapshot @ 04:29:20",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=04h29m20s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=16158"
+    },
+    {
+      "id": "d1-evt-027",
+      "timestamp": "04:30:00",
+      "seconds": 16200,
+      "isMajor": false,
+      "title": "Installs apps within the phone including a trading app",
+      "description": "x installs apps within the phone including a trading app, x looks at the banking app and it says that he has 5$ only",
+      "category": "social",
+      "tags": [
+        "social"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_027_04_30_00.jpg",
+      "imageCaption": "Stream snapshot @ 04:30:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=04h30m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=16198"
+    },
+    {
+      "id": "d1-evt-028",
+      "timestamp": "04:31:40",
+      "seconds": 16300,
+      "isMajor": true,
+      "title": "Cashes out his paycheck from working at burger shot",
+      "description": "x cashes out his paycheck from working at burger shot, he gets around 1.3k$, his current balance is 1.6k",
+      "category": "job",
+      "tags": [
+        "job"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_028_04_31_40.jpg",
+      "imageCaption": "Stream snapshot @ 04:31:40",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=04h31m40s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=16298"
+    },
+    {
+      "id": "d1-evt-029",
+      "timestamp": "04:32:50",
+      "seconds": 16370,
+      "isMajor": true,
+      "title": "And marty are looking to buy coins using the trading ap",
+      "description": "x and Marty are looking to buy coins using the trading app on their phones, x buys 500$ worth of Octane",
+      "category": "crypto",
+      "tags": [
+        "crypto"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Marty Banks"
+      ],
+      "image": "/images/frames/d1_evt_029_04_32_50.jpg",
+      "imageCaption": "Stream snapshot @ 04:32:50",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=04h32m50s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=16368"
+    },
+    {
+      "id": "d1-evt-030",
+      "timestamp": "04:35:30",
+      "seconds": 16530,
+      "isMajor": true,
+      "title": "Informs marty about stealing ingredients from the conve",
+      "description": "x informs Marty about stealing ingredients from the convenience store earlier, they're planning to do it again",
+      "category": "crime",
+      "tags": [
+        "crime",
+        "job"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Marty Banks"
+      ],
+      "image": "/images/frames/d1_evt_030_04_35_30.jpg",
+      "imageCaption": "Stream snapshot @ 04:35:30",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=04h35m30s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=16528"
+    },
+    {
+      "id": "d1-evt-031",
+      "timestamp": "04:38:00",
+      "seconds": 16680,
+      "isMajor": true,
+      "title": "And marty are buy masks preparing for the convenience s",
+      "description": "x and Marty are buy masks preparing for the convenience store heist",
+      "category": "crime",
+      "tags": [
+        "crime",
+        "job"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Marty Banks"
+      ],
+      "image": "/images/frames/d1_evt_031_04_38_00.jpg",
+      "imageCaption": "Stream snapshot @ 04:38:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=04h38m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=16678"
+    },
+    {
+      "id": "d1-evt-032",
+      "timestamp": "04:39:40",
+      "seconds": 16780,
+      "isMajor": true,
+      "title": "Tweets about buying octane trying to pump up the price",
+      "description": "x tweets about buying Octane trying to pump up the price",
+      "category": "crypto",
+      "tags": [
+        "crypto",
+        "lore",
+        "job"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_032_04_39_40.jpg",
+      "imageCaption": "Stream snapshot @ 04:39:40",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=04h39m40s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=16778"
+    },
+    {
+      "id": "d1-evt-033",
+      "timestamp": "04:41:20",
+      "seconds": 16880,
+      "isMajor": false,
+      "title": "They get a bike as a backup escape vehicle if needed",
+      "description": "They get a bike as a backup escape vehicle if needed",
+      "category": "mechanic",
+      "tags": [
+        "mechanic"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_033_04_41_20.jpg",
+      "imageCaption": "Stream snapshot @ 04:41:20",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=04h41m20s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=16878"
+    },
+    {
+      "id": "d1-evt-034",
+      "timestamp": "04:45:50",
+      "seconds": 17150,
+      "isMajor": true,
+      "title": "They visit the pawn shop looking to do some work",
+      "description": "They visit the pawn shop looking to do some work, there are pawn orders that can be fulfilled for good payouts",
+      "category": "job",
+      "tags": [
+        "job"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_034_04_45_50.jpg",
+      "imageCaption": "Stream snapshot @ 04:45:50",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=04h45m50s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=17148"
+    },
+    {
+      "id": "d1-evt-035",
+      "timestamp": "04:49:20",
+      "seconds": 17360,
+      "isMajor": true,
+      "title": "Creates a business (calls it 'stalling') using the busi",
+      "description": "x creates a business (calls it 'Stalling') using the business app on his phone, he then invites Marty to join his business, they eventually accept solo pawn orders since group orders aren't available",
+      "category": "social",
+      "tags": [
+        "social"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Marty Banks"
+      ],
+      "image": "/images/frames/d1_evt_035_04_49_20.jpg",
+      "imageCaption": "Stream snapshot @ 04:49:20",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=04h49m20s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=17358"
+    },
+    {
+      "id": "d1-evt-036",
+      "timestamp": "04:52:10",
+      "seconds": 17530,
+      "isMajor": false,
+      "title": "Marty punches a local",
+      "description": "Marty punches a local, the local drops a rolex watch, they then attack a few more locals and get a wallet, a phone and 5$",
+      "category": "crypto",
+      "tags": [
+        "crypto"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Marty Banks"
+      ],
+      "image": "/images/frames/d1_evt_036_04_52_10.jpg",
+      "imageCaption": "Stream snapshot @ 04:52:10",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=04h52m10s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=17528"
+    },
+    {
+      "id": "d1-evt-037",
+      "timestamp": "04:54:35",
+      "seconds": 17675,
+      "isMajor": false,
+      "title": "They arrive at vinewood and attack a few more civilians",
+      "description": "they arrive at Vinewood and attack a few more civilians",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_037_04_54_35.jpg",
+      "imageCaption": "Stream snapshot @ 04:54:35",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=04h54m35s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=17673"
+    },
+    {
+      "id": "d1-evt-038",
+      "timestamp": "04:56:25",
+      "seconds": 17785,
+      "isMajor": false,
+      "title": "A police officer sees marty punching a local",
+      "description": "A police officer sees Marty punching a local, x hides",
+      "category": "chase",
+      "tags": [
+        "chase"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Marty Banks"
+      ],
+      "image": "/images/frames/d1_evt_038_04_56_25.jpg",
+      "imageCaption": "Stream snapshot @ 04:56:25",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=04h56m25s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=17783"
+    },
+    {
+      "id": "d1-evt-039",
+      "timestamp": "04:59:50",
+      "seconds": 17990,
+      "isMajor": false,
+      "title": "Calls marty",
+      "description": "x calls Marty, Marty is giving his statement to the police saying he thinks he's good to go",
+      "category": "chase",
+      "tags": [
+        "chase"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Marty Banks"
+      ],
+      "image": "/images/frames/d1_evt_039_04_59_50.jpg",
+      "imageCaption": "Stream snapshot @ 04:59:50",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=04h59m50s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=17988"
+    },
+    {
+      "id": "d1-evt-040",
+      "timestamp": "05:02:30",
+      "seconds": 18150,
+      "isMajor": false,
+      "title": "Marty calls x saying the coast is clear",
+      "description": "Marty calls x saying the coast is clear, the police let him go",
+      "category": "chase",
+      "tags": [
+        "chase"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Marty Banks"
+      ],
+      "image": "/images/frames/d1_evt_040_05_02_30.jpg",
+      "imageCaption": "Stream snapshot @ 05:02:30",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=05h02m30s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=18148"
+    },
+    {
+      "id": "d1-evt-041",
+      "timestamp": "05:03:10",
+      "seconds": 18190,
+      "isMajor": false,
+      "title": "Is wearing a heart rate monitor (irl)",
+      "description": "x is wearing a heart rate monitor (IRL)",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_041_05_03_10.jpg",
+      "imageCaption": "Stream snapshot @ 05:03:10",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=05h03m10s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=18188"
+    },
+    {
+      "id": "d1-evt-042",
+      "timestamp": "05:05:00",
+      "seconds": 18300,
+      "isMajor": false,
+      "title": "Rejoins marty",
+      "description": "x rejoins Marty, they continue to rob locals",
+      "category": "crime",
+      "tags": [
+        "crime"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Marty Banks"
+      ],
+      "image": "/images/frames/d1_evt_042_05_05_00.jpg",
+      "imageCaption": "Stream snapshot @ 05:05:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=05h05m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=18298"
+    },
+    {
+      "id": "d1-evt-043",
+      "timestamp": "05:18:20",
+      "seconds": 19100,
+      "isMajor": false,
+      "title": "They continue robbing locals hoping to steal phones whi",
+      "description": "they continue robbing locals hoping to steal phones which they can return to complete the pawn orders",
+      "category": "crime",
+      "tags": [
+        "crime"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_043_05_18_20.jpg",
+      "imageCaption": "Stream snapshot @ 05:18:20",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=05h18m20s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=19098"
+    },
+    {
+      "id": "d1-evt-044",
+      "timestamp": "05:22:00",
+      "seconds": 19320,
+      "isMajor": false,
+      "title": "They arrive at a cash exchange but it's useless for the",
+      "description": "they arrive at a cash exchange but it's useless for the moment",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_044_05_22_00.jpg",
+      "imageCaption": "Stream snapshot @ 05:22:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=05h22m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=19318"
+    },
+    {
+      "id": "d1-evt-045",
+      "timestamp": "05:23:35",
+      "seconds": 19415,
+      "isMajor": false,
+      "title": "They arrive at the mega mall",
+      "description": "they arrive at the mega mall, there are a lot of tools to buy, x buys a pickaxe",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_045_05_23_35.jpg",
+      "imageCaption": "Stream snapshot @ 05:23:35",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=05h23m35s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=19413"
+    },
+    {
+      "id": "d1-evt-046",
+      "timestamp": "05:27:50",
+      "seconds": 19670,
+      "isMajor": false,
+      "title": "They get pulled over by the police for running a red li",
+      "description": "They get pulled over by the police for running a red light, they talk their way out of it",
+      "category": "chase",
+      "tags": [
+        "chase",
+        "social"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_046_05_27_50.jpg",
+      "imageCaption": "Stream snapshot @ 05:27:50",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=05h27m50s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=19668"
+    },
+    {
+      "id": "d1-evt-047",
+      "timestamp": "05:34:00",
+      "seconds": 20040,
+      "isMajor": true,
+      "title": "Attacked the pharmacist while trying hit the cash regis",
+      "description": "x attacked the pharmacist while trying hit the cash register, the pharmacist pulls up a shotgun and kills x, Marty carries x to the car and drives him to the hospital",
+      "category": "medical",
+      "tags": [
+        "medical",
+        "mechanic"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Marty Banks"
+      ],
+      "image": "/images/frames/d1_evt_047_05_34_00.jpg",
+      "imageCaption": "Stream snapshot @ 05:34:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=05h34m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=20038"
+    },
+    {
+      "id": "d1-evt-048",
+      "timestamp": "05:37:20",
+      "seconds": 20240,
+      "isMajor": true,
+      "title": "They arrive at the hospital",
+      "description": "they arrive at the hospital, x gets healed, a blood sample is taken from him",
+      "category": "medical",
+      "tags": [
+        "medical"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_048_05_37_20.jpg",
+      "imageCaption": "Stream snapshot @ 05:37:20",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=05h37m20s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=20238"
+    },
+    {
+      "id": "d1-evt-049",
+      "timestamp": "05:46:00",
+      "seconds": 20760,
+      "isMajor": true,
+      "title": "Looks at the available events on his phone and selects ",
+      "description": "x looks at the available events on his phone and selects an event called 'metal detecting'",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_049_05_46_00.jpg",
+      "imageCaption": "Stream snapshot @ 05:46:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=05h46m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=20758"
+    },
+    {
+      "id": "d1-evt-050",
+      "timestamp": "05:46:40",
+      "seconds": 20800,
+      "isMajor": false,
+      "title": "Octane is now at 60$",
+      "description": "Octane is now at 60$, x buys 300$ more worth of Octane",
+      "category": "crypto",
+      "tags": [
+        "crypto"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_050_05_46_40.jpg",
+      "imageCaption": "Stream snapshot @ 05:46:40",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=05h46m40s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=20798"
+    },
+    {
+      "id": "d1-evt-051",
+      "timestamp": "05:48:05",
+      "seconds": 20885,
+      "isMajor": true,
+      "title": "And marty buy a metal detector and a trowel and they st",
+      "description": "x and Marty buy a metal detector and a trowel and they start metal detecting at the beach",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Marty Banks"
+      ],
+      "image": "/images/frames/d1_evt_051_05_48_05.jpg",
+      "imageCaption": "Stream snapshot @ 05:48:05",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=05h48m05s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=20883"
+    },
+    {
+      "id": "d1-evt-052",
+      "timestamp": "05:51:55",
+      "seconds": 21115,
+      "isMajor": true,
+      "title": "Gets a strong signal using the metal detector",
+      "description": "x gets a strong signal using the metal detector, he then uses the trowel to dig and finds a tiny aluminum bag",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_052_05_51_55.jpg",
+      "imageCaption": "Stream snapshot @ 05:51:55",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=05h51m55s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=21113"
+    },
+    {
+      "id": "d1-evt-053",
+      "timestamp": "05:54:00",
+      "seconds": 21240,
+      "isMajor": false,
+      "title": "Finds more aluminum",
+      "description": "x finds more aluminum",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_053_05_54_00.jpg",
+      "imageCaption": "Stream snapshot @ 05:54:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=05h54m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=21238"
+    },
+    {
+      "id": "d1-evt-054",
+      "timestamp": "05:54:40",
+      "seconds": 21280,
+      "isMajor": false,
+      "title": "Tweets about octane shares/coin trying to pump up the p",
+      "description": "x tweets about Octane shares/coin trying to pump up the price",
+      "category": "crypto",
+      "tags": [
+        "crypto",
+        "lore"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_054_05_54_40.jpg",
+      "imageCaption": "Stream snapshot @ 05:54:40",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=05h54m40s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=21278"
+    },
+    {
+      "id": "d1-evt-055",
+      "timestamp": "05:56:00",
+      "seconds": 21360,
+      "isMajor": false,
+      "title": "Continues metal detecting",
+      "description": "x continues metal detecting, he finds a wooden plank",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_055_05_56_00.jpg",
+      "imageCaption": "Stream snapshot @ 05:56:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=05h56m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=21358"
+    },
+    {
+      "id": "d1-evt-056",
+      "timestamp": "05:58:00",
+      "seconds": 21480,
+      "isMajor": false,
+      "title": "Gets around 1",
+      "description": "x gets around 1.3k likes on his tweet about Octane",
+      "category": "crypto",
+      "tags": [
+        "crypto",
+        "lore"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_056_05_58_00.jpg",
+      "imageCaption": "Stream snapshot @ 05:58:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=05h58m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=21478"
+    },
+    {
+      "id": "d1-evt-057",
+      "timestamp": "05:59:00",
+      "seconds": 21540,
+      "isMajor": false,
+      "title": "Runs into bogg (for the first time)",
+      "description": "x runs into Bogg (for the first time)",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Bogg"
+      ],
+      "image": "/images/frames/d1_evt_057_05_59_00.jpg",
+      "imageCaption": "Stream snapshot @ 05:59:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=05h59m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=21538"
+    },
+    {
+      "id": "d1-evt-058",
+      "timestamp": "06:06:40",
+      "seconds": 22000,
+      "isMajor": false,
+      "title": "And marty hotwire a truck since their rental car is too",
+      "description": "x and Marty hotwire a truck since their rental car is too damaged",
+      "category": "mechanic",
+      "tags": [
+        "mechanic"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Marty Banks"
+      ],
+      "image": "/images/frames/d1_evt_058_06_06_40.jpg",
+      "imageCaption": "Stream snapshot @ 06:06:40",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=06h06m40s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=21998"
+    },
+    {
+      "id": "d1-evt-059",
+      "timestamp": "06:10:00",
+      "seconds": 22200,
+      "isMajor": false,
+      "title": "They drive all the way up to the mines to see if they c",
+      "description": "they drive all the way up to the mines to see if they can use their pickaxe but the mines are closed off",
+      "category": "mechanic",
+      "tags": [
+        "mechanic"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_059_06_10_00.jpg",
+      "imageCaption": "Stream snapshot @ 06:10:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=06h10m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=22198"
+    },
+    {
+      "id": "d1-evt-060",
+      "timestamp": "06:13:45",
+      "seconds": 22425,
+      "isMajor": true,
+      "title": "They decide to look at the hunting store",
+      "description": "they decide to look at the hunting store, x sells his Octane so that they can buy a couple of hunting equipment (tranq rifle, ammo and a knife)",
+      "category": "crime",
+      "tags": [
+        "crime",
+        "crypto",
+        "job"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_060_06_13_45.jpg",
+      "imageCaption": "Stream snapshot @ 06:13:45",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=06h13m45s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=22423"
+    },
+    {
+      "id": "d1-evt-061",
+      "timestamp": "06:20:20",
+      "seconds": 22820,
+      "isMajor": true,
+      "title": "They visit the butcher",
+      "description": "They visit the butcher, he gives out hunting tips, they can also get a hunting license",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_061_06_20_20.jpg",
+      "imageCaption": "Stream snapshot @ 06:20:20",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=06h20m20s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=22818"
+    },
+    {
+      "id": "d1-evt-062",
+      "timestamp": "06:26:00",
+      "seconds": 23160,
+      "isMajor": true,
+      "title": "They hunt and skin a couple of coyotes",
+      "description": "They hunt and skin a couple of coyotes, they get animal fat, meat chunks and coyote pelts",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_062_06_26_00.jpg",
+      "imageCaption": "Stream snapshot @ 06:26:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=06h26m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=23158"
+    },
+    {
+      "id": "d1-evt-063",
+      "timestamp": "06:31:00",
+      "seconds": 23460,
+      "isMajor": true,
+      "title": "X's character seem to have some sort of a disease (ther",
+      "description": "x's character seem to have some sort of a disease (there's an indicator near his health bar)",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_063_06_31_00.jpg",
+      "imageCaption": "Stream snapshot @ 06:31:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=06h31m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=23458"
+    },
+    {
+      "id": "d1-evt-064",
+      "timestamp": "06:32:40",
+      "seconds": 23560,
+      "isMajor": false,
+      "title": "Steals all the donuts from a convenience store",
+      "description": "x steals all the donuts from a convenience store",
+      "category": "crime",
+      "tags": [
+        "crime",
+        "job"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_064_06_32_40.jpg",
+      "imageCaption": "Stream snapshot @ 06:32:40",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=06h32m40s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=23558"
+    },
+    {
+      "id": "d1-evt-065",
+      "timestamp": "06:34:00",
+      "seconds": 23640,
+      "isMajor": false,
+      "title": "They continue hunting more coyotes",
+      "description": "they continue hunting more coyotes",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_065_06_34_00.jpg",
+      "imageCaption": "Stream snapshot @ 06:34:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=06h34m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=23638"
+    },
+    {
+      "id": "d1-evt-066",
+      "timestamp": "06:36:25",
+      "seconds": 23785,
+      "isMajor": false,
+      "title": "They get a legendary coyote pelt",
+      "description": "they get a legendary coyote pelt",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_066_06_36_25.jpg",
+      "imageCaption": "Stream snapshot @ 06:36:25",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=06h36m25s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=23783"
+    },
+    {
+      "id": "d1-evt-067",
+      "timestamp": "06:38:30",
+      "seconds": 23910,
+      "isMajor": false,
+      "title": "They return to the butcher but he won't buy the pelts s",
+      "description": "they return to the butcher but he won't buy the pelts since they're illegal",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_067_06_38_30.jpg",
+      "imageCaption": "Stream snapshot @ 06:38:30",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=06h38m30s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=23908"
+    },
+    {
+      "id": "d1-evt-068",
+      "timestamp": "06:52:00",
+      "seconds": 24720,
+      "isMajor": false,
+      "title": "Attempts to tranquilize a security guard but it doesn't",
+      "description": "x attempts to tranquilize a security guard but it doesn't work, the security guard starts shooting at x eventually killing him",
+      "category": "job",
+      "tags": [
+        "job"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_068_06_52_00.jpg",
+      "imageCaption": "Stream snapshot @ 06:52:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=06h52m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=24718"
+    },
+    {
+      "id": "d1-evt-069",
+      "timestamp": "06:54:00",
+      "seconds": 24840,
+      "isMajor": false,
+      "title": "Marty gets a new car and drives x to the hospital",
+      "description": "Marty gets a new car and drives x to the hospital",
+      "category": "medical",
+      "tags": [
+        "medical",
+        "mechanic"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Marty Banks"
+      ],
+      "image": "/images/frames/d1_evt_069_06_54_00.jpg",
+      "imageCaption": "Stream snapshot @ 06:54:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=06h54m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=24838"
+    },
+    {
+      "id": "d1-evt-070",
+      "timestamp": "06:58:20",
+      "seconds": 25100,
+      "isMajor": true,
+      "title": "They arrive at the hospital (second time today)",
+      "description": "they arrive at the hospital (second time today), EMS are still trying to learn more about the disease",
+      "category": "medical",
+      "tags": [
+        "medical"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_070_06_58_20.jpg",
+      "imageCaption": "Stream snapshot @ 06:58:20",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=06h58m20s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=25098"
+    },
+    {
+      "id": "d1-evt-071",
+      "timestamp": "07:09:00",
+      "seconds": 25740,
+      "isMajor": false,
+      "title": "Encounters kyle",
+      "description": "x encounters Kyle, a funny encounter",
+      "category": "social",
+      "tags": [
+        "social"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Kyle"
+      ],
+      "image": "/images/frames/d1_evt_071_07_09_00.jpg",
+      "imageCaption": "Stream snapshot @ 07:09:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=07h09m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=25738"
+    },
+    {
+      "id": "d1-evt-072",
+      "timestamp": "07:10:50",
+      "seconds": 25850,
+      "isMajor": true,
+      "title": "And marty try to sell their loot at the pawn shop",
+      "description": "x and Marty try to sell their loot at the pawn shop",
+      "category": "job",
+      "tags": [
+        "job"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Marty Banks"
+      ],
+      "image": "/images/frames/d1_evt_072_07_10_50.jpg",
+      "imageCaption": "Stream snapshot @ 07:10:50",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=07h10m50s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=25848"
+    },
+    {
+      "id": "d1-evt-073",
+      "timestamp": "07:12:40",
+      "seconds": 25960,
+      "isMajor": false,
+      "title": "They encounter lang and tony at the pawn shop",
+      "description": "they encounter Lang and Tony at the pawn shop, x tells them about his disease",
+      "category": "job",
+      "tags": [
+        "job",
+        "social"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Mista Lang",
+        "Tony"
+      ],
+      "image": "/images/frames/d1_evt_073_07_12_40.jpg",
+      "imageCaption": "Stream snapshot @ 07:12:40",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=07h12m40s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=25958"
+    },
+    {
+      "id": "d1-evt-074",
+      "timestamp": "07:15:40",
+      "seconds": 26140,
+      "isMajor": true,
+      "title": "Accepts a delivery order at the pawn shop but then tsun",
+      "description": "x accepts a delivery order at the pawn shop but then tsunami hits (server reset), seems like the way the pawn shop contracts work is first you get the contract, you fulfill it and then you deliver it",
+      "category": "job",
+      "tags": [
+        "job"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_074_07_15_40.jpg",
+      "imageCaption": "Stream snapshot @ 07:15:40",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=07h15m40s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=26138"
+    },
+    {
+      "id": "d1-evt-075",
+      "timestamp": "07:24:30",
+      "seconds": 26670,
+      "isMajor": false,
+      "title": "Server is back up",
+      "description": "server is back up, x is completing the delivery but it seems to be scuffed after tsunami",
+      "category": "job",
+      "tags": [
+        "job"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_075_07_24_30.jpg",
+      "imageCaption": "Stream snapshot @ 07:24:30",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=07h24m30s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=26668"
+    },
+    {
+      "id": "d1-evt-076",
+      "timestamp": "07:30:30",
+      "seconds": 27030,
+      "isMajor": false,
+      "title": "X",
+      "description": "x, Marty, Tony and Lang drive off together",
+      "category": "mechanic",
+      "tags": [
+        "mechanic"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Marty Banks",
+        "Mista Lang",
+        "Tony"
+      ],
+      "image": "/images/frames/d1_evt_076_07_30_30.jpg",
+      "imageCaption": "Stream snapshot @ 07:30:30",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=07h30m30s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=27028"
+    },
+    {
+      "id": "d1-evt-077",
+      "timestamp": "07:32:20",
+      "seconds": 27140,
+      "isMajor": true,
+      "title": "Arrives at the delivery location but he's unable to put",
+      "description": "x arrives at the delivery location but he's unable to put the box in the back of the truck initially but then he's able to",
+      "category": "job",
+      "tags": [
+        "job"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_077_07_32_20.jpg",
+      "imageCaption": "Stream snapshot @ 07:32:20",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=07h32m20s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=27138"
+    },
+    {
+      "id": "d1-evt-078",
+      "timestamp": "07:36:15",
+      "seconds": 27375,
+      "isMajor": true,
+      "title": "Arrives at the pawn shop and collects his payment after",
+      "description": "x arrives at the pawn shop and collects his payment after delivery (350$),",
+      "category": "job",
+      "tags": [
+        "job"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_078_07_36_15.jpg",
+      "imageCaption": "Stream snapshot @ 07:36:15",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=07h36m15s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=27373"
+    },
+    {
+      "id": "d1-evt-079",
+      "timestamp": "07:39:30",
+      "seconds": 27570,
+      "isMajor": false,
+      "title": "Buys 350$ worth of octane (after the the price has pumm",
+      "description": "x buys 350$ worth of Octane (after the the price has pummeled down to 46$), Lang and Tony buy some as well",
+      "category": "medical",
+      "tags": [
+        "medical",
+        "crypto"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Mista Lang",
+        "Tony"
+      ],
+      "image": "/images/frames/d1_evt_079_07_39_30.jpg",
+      "imageCaption": "Stream snapshot @ 07:39:30",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=07h39m30s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=27568"
+    },
+    {
+      "id": "d1-evt-080",
+      "timestamp": "07:42:30",
+      "seconds": 27750,
+      "isMajor": false,
+      "title": "Tony and lang say that guber (taxi service) pays really",
+      "description": "Tony and Lang say that Guber (taxi service) pays really well",
+      "category": "social",
+      "tags": [
+        "social"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Mista Lang",
+        "Tony"
+      ],
+      "image": "/images/frames/d1_evt_080_07_42_30.jpg",
+      "imageCaption": "Stream snapshot @ 07:42:30",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=07h42m30s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=27748"
+    },
+    {
+      "id": "d1-evt-081",
+      "timestamp": "07:45:40",
+      "seconds": 27940,
+      "isMajor": true,
+      "title": "Accepts his first guber ride for 143$",
+      "description": "x accepts his first Guber ride for 143$, he then picks up the customer, he has to drive within the speed limit, he drops the customer off at their destination and drives back to pick up Marty",
+      "category": "mechanic",
+      "tags": [
+        "mechanic"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Marty Banks"
+      ],
+      "image": "/images/frames/d1_evt_081_07_45_40.jpg",
+      "imageCaption": "Stream snapshot @ 07:45:40",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=07h45m40s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=27938"
+    },
+    {
+      "id": "d1-evt-082",
+      "timestamp": "07:56:00",
+      "seconds": 28560,
+      "isMajor": false,
+      "title": "Completes another guber ride for 364$ his current profi",
+      "description": "x completes another Guber ride for 364$ his current profile rating is 4.5 out of 5",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_082_07_56_00.jpg",
+      "imageCaption": "Stream snapshot @ 07:56:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=07h56m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=28558"
+    },
+    {
+      "id": "d1-evt-083",
+      "timestamp": "08:00:00",
+      "seconds": 28800,
+      "isMajor": false,
+      "title": "Accepts another guber ride for 615$ but he gets 431$ fo",
+      "description": "x accepts another Guber ride for 615$ but he gets 431$ for it for poor driving",
+      "category": "mechanic",
+      "tags": [
+        "mechanic"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_084_08_00_00.jpg",
+      "imageCaption": "Stream snapshot @ 08:00:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=08h00m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=28798"
+    },
+    {
+      "id": "d1-evt-084",
+      "timestamp": "08:00:00",
+      "seconds": 28800,
+      "isMajor": false,
+      "title": "Completes another guber ride for 645$",
+      "description": "x completes another Guber ride for 645$",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_084_08_00_00.jpg",
+      "imageCaption": "Stream snapshot @ 08:00:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=08h00m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=28798"
+    },
+    {
+      "id": "d1-evt-085",
+      "timestamp": "08:16:30",
+      "seconds": 29790,
+      "isMajor": false,
+      "title": "Looks at his guber rating and it's currently at 3",
+      "description": "x looks at his Guber rating and it's currently at 3.75 stars",
+      "category": "chase",
+      "tags": [
+        "chase"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_085_08_16_30.jpg",
+      "imageCaption": "Stream snapshot @ 08:16:30",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=08h16m30s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=29788"
+    },
+    {
+      "id": "d1-evt-086",
+      "timestamp": "08:17:30",
+      "seconds": 29850,
+      "isMajor": false,
+      "title": "Rents a 4 seater car for 200$",
+      "description": "x rents a 4 seater car for 200$",
+      "category": "mechanic",
+      "tags": [
+        "mechanic"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_086_08_17_30.jpg",
+      "imageCaption": "Stream snapshot @ 08:17:30",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=08h17m30s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=29848"
+    },
+    {
+      "id": "d1-evt-087",
+      "timestamp": "08:22:15",
+      "seconds": 30135,
+      "isMajor": false,
+      "title": "Completes another guber ride for 244$",
+      "description": "x completes another Guber ride for 244$",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_087_08_22_15.jpg",
+      "imageCaption": "Stream snapshot @ 08:22:15",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=08h22m15s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=30133"
+    },
+    {
+      "id": "d1-evt-088",
+      "timestamp": "09:03:50",
+      "seconds": 32630,
+      "isMajor": false,
+      "title": "Joins up with marty after doing a bunch of guber rides ",
+      "description": "x joins up with Marty after doing a bunch of Guber rides (current rating is 4.22 stars)",
+      "category": "chase",
+      "tags": [
+        "chase"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Marty Banks"
+      ],
+      "image": "/images/frames/d1_evt_088_09_03_50.jpg",
+      "imageCaption": "Stream snapshot @ 09:03:50",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=09h03m50s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=32628"
+    },
+    {
+      "id": "d1-evt-089",
+      "timestamp": "09:06:15",
+      "seconds": 32775,
+      "isMajor": true,
+      "title": "They buy a backbag",
+      "description": "They buy a backbag, a gold panning bowl and a screwdriver",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_089_09_06_15.jpg",
+      "imageCaption": "Stream snapshot @ 09:06:15",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=09h06m15s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=32773"
+    },
+    {
+      "id": "d1-evt-090",
+      "timestamp": "09:21:25",
+      "seconds": 33685,
+      "isMajor": true,
+      "title": "Uses the gold panning bowl (first time) but finds nothi",
+      "description": "x uses the gold panning bowl (first time) but finds nothing",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_090_09_21_25.jpg",
+      "imageCaption": "Stream snapshot @ 09:21:25",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=09h21m25s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=33683"
+    },
+    {
+      "id": "d1-evt-091",
+      "timestamp": "09:27:20",
+      "seconds": 34040,
+      "isMajor": true,
+      "title": "Finds 6 gold nuggets while panning for gold",
+      "description": "x finds 6 gold nuggets while panning for gold",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_091_09_27_20.jpg",
+      "imageCaption": "Stream snapshot @ 09:27:20",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=09h27m20s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=34038"
+    },
+    {
+      "id": "d1-evt-092",
+      "timestamp": "09:29:40",
+      "seconds": 34180,
+      "isMajor": false,
+      "title": "Finds 9 more gold nuggets",
+      "description": "x finds 9 more gold nuggets",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_092_09_29_40.jpg",
+      "imageCaption": "Stream snapshot @ 09:29:40",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=09h29m40s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=34178"
+    },
+    {
+      "id": "d1-evt-093",
+      "timestamp": "09:48:40",
+      "seconds": 35320,
+      "isMajor": true,
+      "title": "And marty buy a crowbar",
+      "description": "x and Marty buy a crowbar",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Marty Banks"
+      ],
+      "image": "/images/frames/d1_evt_093_09_48_40.jpg",
+      "imageCaption": "Stream snapshot @ 09:48:40",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=09h48m40s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=35318"
+    },
+    {
+      "id": "d1-evt-094",
+      "timestamp": "09:55:00",
+      "seconds": 35700,
+      "isMajor": true,
+      "title": "A new feature where you can put a call on speaker so th",
+      "description": "a new feature where you can put a call on speaker so that others can hear the caller too",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_094_09_55_00.jpg",
+      "imageCaption": "Stream snapshot @ 09:55:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=09h55m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=35698"
+    },
+    {
+      "id": "d1-evt-095",
+      "timestamp": "10:00:40",
+      "seconds": 36040,
+      "isMajor": false,
+      "title": "And marty get pulled over",
+      "description": "x and Marty get pulled over, x baits the cops and then drives off",
+      "category": "chase",
+      "tags": [
+        "chase",
+        "mechanic"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Marty Banks"
+      ],
+      "image": "/images/frames/d1_evt_095_10_00_40.jpg",
+      "imageCaption": "Stream snapshot @ 10:00:40",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=10h00m40s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=36038"
+    },
+    {
+      "id": "d1-evt-096",
+      "timestamp": "10:04:00",
+      "seconds": 36240,
+      "isMajor": false,
+      "title": "They arrive at a clothing store and change clothes",
+      "description": "they arrive at a clothing store and change clothes",
+      "category": "job",
+      "tags": [
+        "job"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_096_10_04_00.jpg",
+      "imageCaption": "Stream snapshot @ 10:04:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=10h04m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=36238"
+    },
+    {
+      "id": "d1-evt-097",
+      "timestamp": "10:15:30",
+      "seconds": 36930,
+      "isMajor": false,
+      "title": "They do some more hunting",
+      "description": "they do some more hunting",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_097_10_15_30.jpg",
+      "imageCaption": "Stream snapshot @ 10:15:30",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=10h15m30s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=36928"
+    },
+    {
+      "id": "d1-evt-098",
+      "timestamp": "10:24:00",
+      "seconds": 37440,
+      "isMajor": true,
+      "title": "X",
+      "description": "x, Marty, Tony and Lang meet up at the ranch with a stranger (Mr. Cement?) who's offering future opportunities for them as a team, he gives them a challenge, he wants to be escorted around the city with cops following them, the challenge is to loose the cops safely",
+      "category": "chase",
+      "tags": [
+        "chase",
+        "lore"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Marty Banks",
+        "Mista Lang",
+        "Tony",
+        "Cement"
+      ],
+      "image": "/images/frames/d1_evt_098_10_24_00.jpg",
+      "imageCaption": "Stream snapshot @ 10:24:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=10h24m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=37438"
+    },
+    {
+      "id": "d1-evt-099",
+      "timestamp": "10:37:30",
+      "seconds": 38250,
+      "isMajor": true,
+      "title": "The four of them are cooking an escape plan",
+      "description": "The four of them are cooking an escape plan",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_099_10_37_30.jpg",
+      "imageCaption": "Stream snapshot @ 10:37:30",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=10h37m30s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=38248"
+    },
+    {
+      "id": "d1-evt-100",
+      "timestamp": "10:53:40",
+      "seconds": 39220,
+      "isMajor": true,
+      "title": "They meet up with mr",
+      "description": "They meet up with Mr. Cement again to start the police chase challenge, however; they're unable to fit Mr. Cement into the back of the car",
+      "category": "chase",
+      "tags": [
+        "chase",
+        "lore",
+        "mechanic"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Cement"
+      ],
+      "image": "/images/frames/d1_evt_100_10_53_40.jpg",
+      "imageCaption": "Stream snapshot @ 10:53:40",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=10h53m40s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=39218"
+    },
+    {
+      "id": "d1-evt-101",
+      "timestamp": "11:05:40",
+      "seconds": 39940,
+      "isMajor": true,
+      "title": "Finds a 12 seater tourists' bus",
+      "description": "x finds a 12 seater tourists' bus",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_101_11_05_40.jpg",
+      "imageCaption": "Stream snapshot @ 11:05:40",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=11h05m40s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=39938"
+    },
+    {
+      "id": "d1-evt-102",
+      "timestamp": "11:11:30",
+      "seconds": 40290,
+      "isMajor": true,
+      "title": "They re-discuss the escape plan",
+      "description": "They re-discuss the escape plan",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_102_11_11_30.jpg",
+      "imageCaption": "Stream snapshot @ 11:11:30",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=11h11m30s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=40288"
+    },
+    {
+      "id": "d1-evt-103",
+      "timestamp": "11:37:20",
+      "seconds": 41840,
+      "isMajor": true,
+      "title": "The police chase begins",
+      "description": "The police chase begins, Mr Cement pretends to be a hostage",
+      "category": "chase",
+      "tags": [
+        "chase"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Cement"
+      ],
+      "image": "/images/frames/d1_evt_103_11_37_20.jpg",
+      "imageCaption": "Stream snapshot @ 11:37:20",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=11h37m20s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=41838"
+    },
+    {
+      "id": "d1-evt-104",
+      "timestamp": "11:41:00",
+      "seconds": 42060,
+      "isMajor": true,
+      "title": "They switch vehicles leaving mr cement behind",
+      "description": "They switch vehicles leaving Mr Cement behind",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Cement"
+      ],
+      "image": "/images/frames/d1_evt_104_11_41_00.jpg",
+      "imageCaption": "Stream snapshot @ 11:41:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=11h41m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=42058"
+    },
+    {
+      "id": "d1-evt-105",
+      "timestamp": "11:49:55",
+      "seconds": 42595,
+      "isMajor": true,
+      "title": "And marty escapes the cops",
+      "description": "x and Marty escapes the cops",
+      "category": "chase",
+      "tags": [
+        "chase"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Marty Banks"
+      ],
+      "image": "/images/frames/d1_evt_105_11_49_55.jpg",
+      "imageCaption": "Stream snapshot @ 11:49:55",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=11h49m55s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=42593"
+    },
+    {
+      "id": "d1-evt-106",
+      "timestamp": "11:54:20",
+      "seconds": 42860,
+      "isMajor": false,
+      "title": "Finds and steals a cop bike",
+      "description": "x finds and steals a cop bike",
+      "category": "chase",
+      "tags": [
+        "chase",
+        "crime",
+        "mechanic"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_106_11_54_20.jpg",
+      "imageCaption": "Stream snapshot @ 11:54:20",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=11h54m20s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=42858"
+    },
+    {
+      "id": "d1-evt-107",
+      "timestamp": "12:00:00",
+      "seconds": 43200,
+      "isMajor": false,
+      "title": "Does some parkour",
+      "description": "x does some parkour",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_107_12_00_00.jpg",
+      "imageCaption": "Stream snapshot @ 12:00:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=12h00m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=43198"
+    },
+    {
+      "id": "d1-evt-108",
+      "timestamp": "12:01:40",
+      "seconds": 43300,
+      "isMajor": false,
+      "title": "Parks the cop bike on the roof of a building and then t",
+      "description": "x parks the cop bike on the roof of a building and then tweets about it saying 'you can't park there'",
+      "category": "chase",
+      "tags": [
+        "chase",
+        "lore",
+        "mechanic"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_108_12_01_40.jpg",
+      "imageCaption": "Stream snapshot @ 12:01:40",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=12h01m40s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=43298"
+    },
+    {
+      "id": "d1-evt-109",
+      "timestamp": "12:03:00",
+      "seconds": 43380,
+      "isMajor": true,
+      "title": "And marty rendezvous with lang and tony after losing th",
+      "description": "x and Marty rendezvous with Lang and Tony after losing the cops",
+      "category": "chase",
+      "tags": [
+        "chase"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Marty Banks",
+        "Mista Lang",
+        "Tony"
+      ],
+      "image": "/images/frames/d1_evt_109_12_03_00.jpg",
+      "imageCaption": "Stream snapshot @ 12:03:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=12h03m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=43378"
+    },
+    {
+      "id": "d1-evt-110",
+      "timestamp": "12:12:00",
+      "seconds": 43920,
+      "isMajor": false,
+      "title": "They change fit",
+      "description": "they change fit",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_110_12_12_00.jpg",
+      "imageCaption": "Stream snapshot @ 12:12:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=12h12m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=43918"
+    },
+    {
+      "id": "d1-evt-111",
+      "timestamp": "12:23:15",
+      "seconds": 44595,
+      "isMajor": true,
+      "title": "Lang and tony escort x and marty to their hangout spot",
+      "description": "Lang and Tony escort x and Marty to their hangout spot",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Marty Banks",
+        "Mista Lang",
+        "Tony"
+      ],
+      "image": "/images/frames/d1_evt_111_12_23_15.jpg",
+      "imageCaption": "Stream snapshot @ 12:23:15",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=12h23m15s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=44593"
+    },
+    {
+      "id": "d1-evt-112",
+      "timestamp": "12:25:00",
+      "seconds": 44700,
+      "isMajor": false,
+      "title": "Tries out the arcade machine at the hideout",
+      "description": "x tries out the arcade machine at the hideout",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_112_12_25_00.jpg",
+      "imageCaption": "Stream snapshot @ 12:25:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=12h25m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=44698"
+    },
+    {
+      "id": "d1-evt-113",
+      "timestamp": "12:30:50",
+      "seconds": 45050,
+      "isMajor": true,
+      "title": "The four of them meet up again with mr",
+      "description": "The four of them meet up again with Mr. Cement, he says that was impressed that everyone escaped the cops, he wants to introduce the group to a friend of his called 'M1' at a later time (probably tomorrow) and that he has special opportunities coming up for them",
+      "category": "chase",
+      "tags": [
+        "chase",
+        "lore",
+        "social"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Cement"
+      ],
+      "image": "/images/frames/d1_evt_113_12_30_50.jpg",
+      "imageCaption": "Stream snapshot @ 12:30:50",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=12h30m50s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=45048"
+    },
+    {
+      "id": "d1-evt-114",
+      "timestamp": "12:38:40",
+      "seconds": 45520,
+      "isMajor": true,
+      "title": "Messages marty during the meeting with mr cement",
+      "description": "x messages Marty during the meeting with Mr Cement, they don't seem to be interested in what he has to offer",
+      "category": "social",
+      "tags": [
+        "social"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Marty Banks",
+        "Cement"
+      ],
+      "image": "/images/frames/d1_evt_114_12_38_40.jpg",
+      "imageCaption": "Stream snapshot @ 12:38:40",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=12h38m40s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=45518"
+    },
+    {
+      "id": "d1-evt-115",
+      "timestamp": "12:38:00",
+      "seconds": 45480,
+      "isMajor": true,
+      "title": "Mr",
+      "description": "Mr. Cement suggests that the group should be called the 'C-Men' and that they should kiss the ring but everyone disagrees, they will come up with their own group name, they then part ways saying they will stay in touch with him",
+      "category": "social",
+      "tags": [
+        "social"
+      ],
+      "characters": [
+        "Jean Paul (X)",
+        "Cement"
+      ],
+      "image": "/images/frames/d1_evt_115_12_38_00.jpg",
+      "imageCaption": "Stream snapshot @ 12:38:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=12h38m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=45478"
+    },
+    {
+      "id": "d1-evt-116",
+      "timestamp": "12:56:50",
+      "seconds": 46610,
+      "isMajor": false,
+      "title": "Uses the safe at the pawn shop to store items (other pl",
+      "description": "x uses the safe at the pawn shop to store items (other players can't see what you store in it) but then a few minutes later he finds out that he shouldn't store things in there so he takes them out of the safe",
+      "category": "job",
+      "tags": [
+        "job"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_116_12_56_50.jpg",
+      "imageCaption": "Stream snapshot @ 12:56:50",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=12h56m50s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=46608"
+    },
+    {
+      "id": "d1-evt-117",
+      "timestamp": "13:25:00",
+      "seconds": 48300,
+      "isMajor": false,
+      "title": "Goes to his apartment ending day 1!",
+      "description": "x goes to his apartment ending day 1!",
+      "category": "general",
+      "tags": [
+        "general"
+      ],
+      "characters": [
+        "Jean Paul (X)"
+      ],
+      "image": "/images/frames/d1_evt_117_13_25_00.jpg",
+      "imageCaption": "Stream snapshot @ 13:25:00",
+      "twitchUrl": "https://www.twitch.tv/videos/2868715967?t=13h25m00s",
+      "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=48298"
+    }
+  ],
+  "characters": [
+    {
+      "id": "jean-paul",
+      "name": "Jean Paul (X)",
+      "actor": "xQc",
+      "role": "Criminal Mastermind / Solo Agent",
+      "faction": "Stalling (Founder)",
+      "avatarColor": "from-amber-500 to-yellow-400",
+      "status": "Active / Infected with Unknown Pathogen",
+      "description": "The notorious Los Santos degenerate legend is back for NoPixel V. Started with $5 in his bank, clocked in at Burger Shot, caused kitchen chaos over a 50-combo order, started the business 'Stalling' with Marty, got blasted by an armed pharmacist, went metal detecting and coyote hunting, and led police on a wild goose chase in a 12-seater tour bus for Mr. Cement.",
+      "keyMoments": [
+        "Hotwires first motorcycle within minutes of entering the city",
+        "Creates business 'Stalling' with Marty Banks",
+        "Gets shot dead by pharmacist during cash register robbery",
+        "Buys Octane coin and hypes it on socials",
+        "Escapes cops in a 12-seater tour bus with Mr. Cement pretending to be hostage"
+      ],
+      "stats": {
+        "jailings": 0,
+        "guberScore": "4.22★",
+        "gold": 15,
+        "deaths": 2
+      }
+    },
+    {
+      "id": "marty-banks",
+      "name": "Marty Banks",
+      "actor": "Omie",
+      "role": "Partner-in-Crime / Ride-or-Die",
+      "faction": "Stalling (Co-Founder)",
+      "avatarColor": "from-cyan-500 to-blue-600",
+      "status": "Active / Unjailed",
+      "description": "Jean Paul's longtime best friend and partner. Joined X at Burger Shot, helped mug locals for watches and phones to fulfill pawn orders, gave police smooth alibis when caught, and carried X to Pillbox Hospital after gunshot trauma.",
+      "keyMoments": [
+        "Joins Burger Shot as fifth employee to help tackle 50-combo rush",
+        "Punches local in Vinewood for Rolex watch & phone",
+        "Smooth-talks police officer after being spotted assaulting locals",
+        "Carries down-bad X to hospital after pharmacist shootout",
+        "Rejects Mr. Cement's proposition to call their crew 'The C-Men'"
+      ],
+      "stats": {
+        "jailings": 0,
+        "contractsFulfilled": 3,
+        "loyalty": "100%"
+      }
+    },
+    {
+      "id": "mista-lang",
+      "name": "Mista Lang Buddha",
+      "actor": "Buddha",
+      "role": "Underworld Kingpin & Business Mogul",
+      "faction": "Independent / Associate",
+      "avatarColor": "from-red-600 to-rose-700",
+      "status": "Active / Scheming",
+      "description": "The veteran Los Santos patriarch. Bantered with X immediately upon joining the city, worked alongside X at Burger Shot, met up at the pawn shop, bought into the Octane crypto dip, and introduced the squad to the enigmatic Mr. Cement.",
+      "keyMoments": [
+        "Witty banter with X on JustX socials",
+        "Encounters X in uniform flipping burgers at Burger Shot",
+        "Recommends Guber taxi service as a high-paying legitimate hustle",
+        "Buys Octane crypto dip at $46 alongside Tony",
+        "Introduces X and Marty to Mr. Cement at the Ranch"
+      ],
+      "stats": {
+        "clout": "Maximum",
+        "businessAcuity": "10/10"
+      }
+    },
+    {
+      "id": "tony-corleone",
+      "name": "Tony Corleone",
+      "actor": "AnthonyZ",
+      "role": "Master Getaway Driver",
+      "faction": "Independent / Associate",
+      "avatarColor": "from-indigo-500 to-purple-600",
+      "status": "Active",
+      "description": "Legendary getaway driver and longtime street operator. Shared insider knowledge about Guber taxi payouts, assisted in planning the high-stakes escape challenge, and escorted X and Marty to their new secluded hideout.",
+      "keyMoments": [
+        "Convinces X to try Guber driving for quick launch capital",
+        "Participates in the Ranch meeting planning session",
+        "Executes vehicle switch during high-speed police chase",
+        "Leads X and Marty to the secret hideout with retro arcade machine"
+      ],
+      "stats": {
+        "drivingSkill": "S-Tier",
+        "chillFactor": "100%"
+      }
+    },
+    {
+      "id": "mr-cement",
+      "name": "Mr. Cement",
+      "actor": "Mystery Contact",
+      "role": "Mysterious Syndicate Broker",
+      "faction": "The Cement Syndicate",
+      "avatarColor": "from-slate-600 to-zinc-800",
+      "status": "Observing Crew Progress",
+      "description": "An ominous new figure who met the crew at the secluded Ranch. Challenged them to escort him while deliberately drawing police aggro and losing them. Was impressed by the escape and offered introductions to a broker named 'M1', though his gang name suggestion 'The C-Men' was swiftly rejected.",
+      "keyMoments": [
+        "Summons X, Marty, Lang, and Tony to the remote Ranch",
+        "Issues the police pursuit survival challenge",
+        "Acts as pretend hostage during the pursuit",
+        "Proposes the group call themselves 'The C-Men' and kiss the ring",
+        "Promises upcoming high-tier opportunities with 'M1'"
+      ],
+      "stats": {
+        "mystery": "100%",
+        "influence": "High"
+      }
+    },
+    {
+      "id": "chatterbox",
+      "name": "Chatterbox",
+      "actor": "Chatterbox",
+      "role": "Chaos Clown / Nemesis",
+      "faction": "The Clowns",
+      "avatarColor": "from-emerald-500 to-teal-700",
+      "status": "Out in the City",
+      "description": "Encountered by X during his very first visit to Burger Shot. Got charged extra by X for a meal that X had no idea how to prepare. Took to socials to expose X as a scammer, branding him 'banana boy'.",
+      "keyMoments": [
+        "Orders food from rookie Burger Shot employee X",
+        "Gets scammed after X pockets the cash and flees",
+        "Tweets public alert calling X 'banana boy' and a scammer"
+      ],
+      "stats": {
+        "clownery": "100%",
+        "beefWithX": "Ignited"
+      }
+    }
+  ],
+  "mechanics": [
+    {
+      "id": "burger-shot",
+      "title": "Burger Shot Employment & Ticket Mechanics",
+      "category": "Employment",
+      "icon": "Utensils",
+      "difficulty": "Easy to Moderate",
+      "day1Earnings": "$1,300 Paycheck (Initial balance was $5)",
+      "summary": "NoPixel V features an interactive kitchen simulation at Burger Shot. Employees clock in, purchase or prepare ingredients, cook patties, and package combos into takeout bags. Bag capacity is capped at 5 combos per bag, leading to chaos when a police officer ordered 50 combos simultaneously!",
+      "tips": [
+        "Clock in using the employee terminal to start earning hourly wages",
+        "Ingredients can be purchased at the mart opposite the restaurant",
+        "Limit of 5 combos per takeout bag — larger orders require multiple bags",
+        "Paychecks must be cashed out at the banking terminal"
+      ]
+    },
+    {
+      "id": "metal-detecting",
+      "title": "Beach Metal Detecting & Excavation",
+      "category": "Exploration",
+      "icon": "Search",
+      "difficulty": "Relaxed / Solo Friendly",
+      "day1Earnings": "Aluminum Scraps, Wooden Planks, Tech Components",
+      "summary": "Players can sign up for the 'metal detecting' event via their phone, purchase a metal detector and hand trowel, and comb the sandy beaches of Los Santos for buried treasures and crafting salvage.",
+      "tips": [
+        "Equip metal detector and listen for audio ping pitch frequency",
+        "Strong signals require a hand trowel to excavate",
+        "Loot includes scrap aluminum, wood, and rare materials for crafting"
+      ]
+    },
+    {
+      "id": "gold-panning",
+      "title": "River Gold Panning Mechanics",
+      "category": "Resource Gathering",
+      "icon": "Coins",
+      "difficulty": "Patience Required",
+      "day1Earnings": "15 Gold Nuggets (6 on first yield + 9 on second)",
+      "summary": "Armed with a gold panning bowl from the hardware store, players wade into freshwater streams and rivers to sift through sediment for raw gold nuggets.",
+      "tips": [
+        "Purchase a Gold Panning Bowl and Backpack from the Mega Mall",
+        "Stand in running water and initiate the panning mini-game",
+        "Patience is key: initial attempts may yield nothing before hitting a vein",
+        "Gold nuggets can be sold at pawn shops or held for bullion smelting"
+      ]
+    },
+    {
+      "id": "coyote-hunting",
+      "title": "Wilderness Hunting & Butchering",
+      "category": "Survival & Crime",
+      "icon": "Crosshair",
+      "difficulty": "High Risk / Medical Hazard",
+      "day1Earnings": "Coyote Pelts, Legendary Coyote Pelt, Animal Fat, Raw Meat",
+      "summary": "Hunting in the northern mountains requires a tranq rifle or firearm, ammunition, and a skinning knife. Yields pelts and meat chunks. Illegal game cannot be sold to city butchers! Caution: Skinning wild coyotes triggered a mysterious illness indicator on Jean Paul's health HUD.",
+      "tips": [
+        "Visit the Hunting Store for tranq rifle, tranquilizer darts, and skinning knives",
+        "Butcher NPC provides tracking tips and hunting license registration",
+        "Illegal pelts cannot be sold to legitimate city butchers",
+        "HEALTH WARNING: Close contact with wildlife can transmit unknown pathogens requiring Pillbox Hospital treatment"
+      ]
+    },
+    {
+      "id": "pawn-contracts",
+      "title": "Pawn Shop Contract System & Logistics",
+      "category": "Underworld Economy",
+      "icon": "Briefcase",
+      "difficulty": "Moderate / Chase Risk",
+      "day1Earnings": "$350 per delivery + stolen local loot (Rolex, phones, cash)",
+      "summary": "Pawn shops now offer interactive contract boards. Players accept solo or syndicate orders requiring specific stolen goods (watches, phones, electronics). Once collected, items are packed into delivery trucks and transported across the county.",
+      "tips": [
+        "Check the pawn contract terminal for active item requests",
+        "Items can be obtained by mugging NPC locals or looting crime scenes",
+        "Deliveries require loading cargo into vehicle trunks and driving to drop-off spots",
+        "Tsunami / server resets can scuff ongoing contracts — cash out promptly"
+      ]
+    },
+    {
+      "id": "guber-rides",
+      "title": "Guber Taxi Service & Driver Ratings",
+      "category": "Transportation Hustle",
+      "icon": "Car",
+      "difficulty": "Skill & Traffic Law Compliance",
+      "day1Earnings": "$1,827 Total ($143, $364, $431, $645, $244) | 4.22★ Rating",
+      "summary": "The Guber app allows players to accept passenger fares across the city. Fares scale with distance, but passenger ratings and payouts plummet if you speed, collide with vehicles, or drive recklessly!",
+      "tips": [
+        "Accept ride requests via the Guber phone app",
+        "Respect speed limits and traffic lights to maintain 5.0-star rating",
+        "Reckless driving results in severe fare deductions (e.g. $184 penalty on $615 ride)",
+        "Rent a reliable 4-seater vehicle to unlock higher tier customer orders"
+      ]
+    }
+  ],
+  "twatterPosts": [
+    {
+      "id": "tw-1",
+      "author": "Jean Paul",
+      "handle": "@JustX",
+      "avatar": "⚡",
+      "timestamp": "02:35:30",
+      "content": "IM IN THE CITY. WATCH OUT. #NoPixelV",
+      "likes": 842,
+      "retweets": 124,
+      "replies": [
+        {
+          "author": "Mista Lang",
+          "handle": "@TheBuddha",
+          "text": "Already causing trouble I see... keep your head down banana boy."
+        }
+      ]
+    },
+    {
+      "id": "tw-2",
+      "author": "Chatterbox",
+      "handle": "@ChatterboxClown",
+      "avatar": "🤡",
+      "timestamp": "02:51:10",
+      "content": "WARNING TO ALL CITIZENS: @JustX IS A FRAUD! Took my money at Burger Shot, charged extra, and gave me NO BURGERS! Scammer banana boy!",
+      "likes": 412,
+      "retweets": 89,
+      "replies": [
+        {
+          "author": "Jean Paul",
+          "handle": "@JustX",
+          "text": "KITCHEN WAS EXPERIENCING TECHNICAL SCUFF MATE TALK TO MANAGEMENT"
+        }
+      ]
+    },
+    {
+      "id": "tw-3",
+      "author": "Jean Paul",
+      "handle": "@JustX",
+      "avatar": "⚡",
+      "timestamp": "04:39:40",
+      "content": "JUST APE IN TO $OCTANE COIN RIGHT NOW! 🚀🚀🚀 NEXT GENERATION LOS SANTOS CRYPTO. TO THE MOON! BUY BUY BUY! #Octane",
+      "likes": 1340,
+      "retweets": 512,
+      "replies": [
+        {
+          "author": "Marty Banks",
+          "handle": "@MartyB",
+          "text": "Bag secured. We are pumping this to Andromeda."
+        },
+        {
+          "author": "Mista Lang",
+          "handle": "@TheBuddha",
+          "text": "This sounds like another Jean Paul Ponzi scheme..."
+        }
+      ]
+    },
+    {
+      "id": "tw-4",
+      "author": "Jean Paul",
+      "handle": "@JustX",
+      "avatar": "⚡",
+      "timestamp": "12:01:40",
+      "content": "Mate you can't park there. [Photo: Cop motorcycle parked on skyscraper rooftop]",
+      "likes": 2490,
+      "retweets": 780,
+      "replies": [
+        {
+          "author": "Officer PP",
+          "handle": "@PierrePaul",
+          "text": "10-90 in progress... who authorized this vehicle relocation?"
+        }
+      ]
+    }
+  ],
+  "octaneChart": [
+    {
+      "time": "02:00",
+      "price": 50.0,
+      "event": "Market Opens"
+    },
+    {
+      "time": "04:30",
+      "price": 52.0,
+      "event": "X discovers trading app"
+    },
+    {
+      "time": "04:32",
+      "price": 55.0,
+      "event": "X buys $500 worth"
+    },
+    {
+      "time": "04:40",
+      "price": 64.0,
+      "event": "X tweets pump to 1.3k likes"
+    },
+    {
+      "time": "05:00",
+      "price": 68.5,
+      "event": "Peak pump frenzy"
+    },
+    {
+      "time": "05:46",
+      "price": 60.0,
+      "event": "X buys $300 more at $60"
+    },
+    {
+      "time": "06:13",
+      "price": 58.0,
+      "event": "X panic sells bag for hunting gear"
+    },
+    {
+      "time": "07:00",
+      "price": 49.0,
+      "event": "Post-pump selloff"
+    },
+    {
+      "time": "07:39",
+      "price": 46.0,
+      "event": "Bottom dip: X, Lang & Tony buy in"
+    },
+    {
+      "time": "09:00",
+      "price": 49.5,
+      "event": "Consolidation"
+    },
+    {
+      "time": "11:00",
+      "price": 51.0,
+      "event": "Recovery"
+    },
+    {
+      "time": "13:25",
+      "price": 52.5,
+      "event": "Day 1 Close"
+    }
+  ],
+  "guberRides": [
+    {
+      "id": "ride-1",
+      "timestamp": "07:45:40",
+      "passenger": "Downtown Commuter",
+      "pickup": "Legion Square",
+      "dropoff": "Rockford Hills",
+      "fare": 143,
+      "penalty": 0,
+      "netPayout": 143,
+      "rating": 5.0,
+      "review": "Followed speed limit, smooth music, great driver!"
+    },
+    {
+      "id": "ride-2",
+      "timestamp": "07:56:00",
+      "passenger": "Hotel Guest",
+      "pickup": "Vinewood Plaza",
+      "dropoff": "LSIA Terminal 2",
+      "fare": 364,
+      "penalty": 0,
+      "netPayout": 364,
+      "rating": 4.5,
+      "review": "Quick arrival, slightly aggressive cornering."
+    },
+    {
+      "id": "ride-3",
+      "timestamp": "08:00:00",
+      "passenger": "Frantic Tourist",
+      "pickup": "Del Perro Pier",
+      "dropoff": "Sandy Shores Airfield",
+      "fare": 615,
+      "penalty": 184,
+      "netPayout": 431,
+      "rating": 2.0,
+      "review": "Drove 140mph through oncoming traffic, jumped a hill, terrified my wife."
+    },
+    {
+      "id": "ride-4",
+      "timestamp": "08:00:00",
+      "passenger": "Nightclub Promoter",
+      "pickup": "West Vinewood",
+      "dropoff": "Mirror Park",
+      "fare": 645,
+      "penalty": 0,
+      "netPayout": 645,
+      "rating": 4.5,
+      "review": "Got me to the venue before doors opened. 10/10."
+    },
+    {
+      "id": "ride-5",
+      "timestamp": "08:22:15",
+      "passenger": "Shopper",
+      "pickup": "Davis Mall",
+      "dropoff": "Strawberry Ave",
+      "fare": 244,
+      "penalty": 0,
+      "netPayout": 244,
+      "rating": 4.8,
+      "review": "Comfortable 4-seater rental, friendly driver."
+    }
+  ],
+  "redditComments": [
+    {
+      "author": "I-am_not-a_Robot",
+      "score": 21,
+      "time": "2026-09-08T09:26:29.370000+0000",
+      "avatar": "https://styles.redditmedia.com/t5_293x05/styles/profileIcon_snooae80660d-234d-464a-9ad9-cac25ced6025-headshot-f.png?width=64&height=64&frame=1&auto=webp&crop=64%3A64%2Csmart&s=c3cba85efbbab16da627069bd6acae47a375699d",
+      "text": "im ready! wooohoo"
+    },
+    {
+      "author": "chezney1337",
+      "score": 17,
+      "time": "2026-09-08T10:14:59.659000+0000",
+      "avatar": "https://styles.redditmedia.com/t5_4nm32d/styles/profileIcon_snoo-nftv2_bmZ0X2VpcDE1NToxMzdfNmFjYjhmYjgyODgwZDM5YzJiODQ0NmY4Nzc4YTE0ZDM0ZWU2Y2ZiN18xMDA4MDQz_rare_290b2bf0-227a-485d-8bdc-ba540d4c8367-headshot.png?width=64&height=64&frame=1&auto=webp&crop=64%3A64%2Csmart&s=4bb1131449d05d7b23f97e7dd9ae8bacbe8f33fb",
+      "text": "Not all heroes wear capes"
+    },
+    {
+      "author": "Fubiku",
+      "score": 8,
+      "time": "2026-09-08T09:50:55.395000+0000",
+      "avatar": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_6.png",
+      "text": "cool!"
+    },
+    {
+      "author": "Ramaloke",
+      "score": 6,
+      "time": "2026-09-08T10:37:30.201000+0000",
+      "avatar": "https://preview.redd.it/snoovatar/avatars/nftv2_bmZ0X2VpcDE1NToxMzdfYjljMDQyYzMyNzViYzQ5Nzk5Njg4ZWVhMWEyOWIxNDA1ZDAyOTQ2Yl8xNjAwODQ_rare_879b1ebc-2a6d-44f6-be9a-f8d2b445c3f0-headshot.png?width=64&height=64&crop=smart&auto=webp&s=68d5a6b6de39c1c2e15e3c17cb09000c0e917f79",
+      "text": "Does anyone know the time this starts at, est please?"
+    },
+    {
+      "author": "wtkbm",
+      "score": 2,
+      "time": "2026-09-08T11:16:12.339000+0000",
+      "avatar": "https://preview.redd.it/snoovatar/avatars/3811ec06-ee21-430a-9aa2-acd0be2a6e84-headshot.png?width=64&height=64&crop=smart&auto=webp&s=dc3c5e08bb4338b29f1a616b90bdbdcc5851a317",
+      "text": "the absolute biggest IF in the world hahah i don’t remember the last time he was on that early"
+    },
+    {
+      "author": "ihaveapc17",
+      "score": 2,
+      "time": "2026-09-08T12:37:09.158000+0000",
+      "avatar": "https://styles.redditmedia.com/t5_6w05qy/styles/profileIcon_snooa00f1242-430d-4c39-b78a-c8508e7ed59b-headshot.png?width=64&height=64&frame=1&auto=webp&crop=64%3A64%2Csmart&s=5e0e0875e5b9b888984a9145adfdbf1e6ab135e1",
+      "text": "11am est?"
+    },
+    {
+      "author": "Deep-tech-house",
+      "score": 5,
+      "time": "2026-09-08T13:23:12.450000+0000",
+      "avatar": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_0.png",
+      "text": "No shot he’s roleplaying again let’s gooo"
+    },
+    {
+      "author": "Spookymcslave",
+      "score": 4,
+      "time": "2026-09-08T15:31:55.819000+0000",
+      "avatar": "https://styles.redditmedia.com/t5_egig3/styles/profileIcon_snoo-nftv2_bmZ0X2VpcDE1NToxMzdfNDY2YTMzMDg4N2JkZjYyZDUzZjk2OGVhODI0NzkzMTUwZjA3NzYyZV81MDc3NjY_rare_65217340-3e92-4f46-8a95-1d400e5127ac-headshot.png?width=64&height=64&frame=1&auto=webp&crop=64%3A64%2Csmart&s=2161c4f5bd21493787fbaed0914257a7928e1ec1",
+      "text": "this is awesome, thanks!"
+    },
+    {
+      "author": "LDB_1",
+      "score": 3,
+      "time": "2026-09-08T15:39:12.233000+0000",
+      "avatar": "https://styles.redditmedia.com/t5_2449oy/styles/profileIcon_snoocb7c00c7-500c-42e1-92ae-56a601e25739-headshot.png?width=64&height=64&frame=1&auto=webp&crop=64%3A64%2Csmart&s=d0829a7b930a93351ef0b370e43ab8059b571b1e",
+      "text": "OMG i Forgot about Officer PP haha"
+    },
+    {
+      "author": "geminibloop",
+      "score": 3,
+      "time": "2026-09-08T15:59:12.110000+0000",
+      "avatar": "https://styles.redditmedia.com/t5_ywoyp/styles/profileIcon_snoo2d645572-f66c-4cf9-9ec9-16d0279ea5fa-headshot.png?width=64&height=64&frame=1&auto=webp&crop=64%3A64%2Csmart&s=87a14e7e813f1fc3e93edb220fd60d72057aab84",
+      "text": "WE ARE SO BACK POGGGGG"
+    },
+    {
+      "author": "jsnjssjj",
+      "score": 3,
+      "time": "2026-09-08T17:27:24.776000+0000",
+      "avatar": "https://styles.redditmedia.com/t5_2mpvlj/styles/profileIcon_snooa4ddc406-a359-4856-ad49-dc979fefb9cc-headshot.png?width=64&height=64&frame=1&auto=webp&crop=64%3A64%2Csmart&s=bb4ecd51042c8db406e6845f9a2cfc7e4abcb0a8",
+      "text": "FeelsStrongMan update guy"
+    },
+    {
+      "author": "AlisterKubo",
+      "score": 3,
+      "time": "2026-09-08T20:11:47.826000+0000",
+      "avatar": "https://styles.redditmedia.com/t5_2nbg7y/styles/profileIcon_zqlbctwsc4ih1.jpeg?width=64&height=64&frame=1&auto=webp&crop=64%3A64%2Csmart&s=c0d27ae239f5ba9f1f56101e819a73471e8b55dd",
+      "text": "Holy live updates you the goat"
+    },
+    {
+      "author": "Manetros",
+      "score": 3,
+      "time": "2026-09-09T01:43:06.572000+0000",
+      "avatar": "https://styles.redditmedia.com/t5_af1ax/styles/profileIcon_snoocfe535e4-b578-42b2-84d2-0ae16c73979a-headshot.png?width=64&height=64&frame=1&auto=webp&crop=64%3A64%2Csmart&s=410d07b4219eb8da3120a8386c9a0aac3312b60b",
+      "text": "you're here again, thanks for your efforts"
+    },
+    {
+      "author": "payne59",
+      "score": 3,
+      "time": "2026-09-09T08:13:14.510000+0000",
+      "avatar": "https://styles.redditmedia.com/t5_7p9n0/styles/profileIcon_n6rm6j6xj3jh1.jpg?width=64&height=64&frame=1&auto=webp&crop=64%3A64%2Csmart&s=1aa60814e98d34f3942501617af4df082d3801b5",
+      "text": "I appreciate ur effort alot, beeing from EU and having a 9-5 makes it hard for me to keep up, I will def read all ur recaps if you plan on doing more! Thanks again!"
+    },
+    {
+      "author": "OpeningHumble",
+      "score": 2,
+      "time": "2026-09-08T18:44:33.984000+0000",
+      "avatar": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_1.png",
+      "text": "We're so back"
+    },
+    {
+      "author": "ModeRaienryu_",
+      "score": 2,
+      "time": "2026-09-09T13:32:10.320000+0000",
+      "avatar": "https://styles.redditmedia.com/t5_5mzrg9/styles/profileIcon_snoo5ee7851f-e223-459b-9d59-9ddb641f7795-headshot.png?width=64&height=64&frame=1&auto=webp&crop=64%3A64%2Csmart&s=c233d31149b18434cc92c878c27fca40ca093146",
+      "text": "🐐"
+    },
+    {
+      "author": "lucariolova",
+      "score": 1,
+      "time": "2026-09-09T01:39:06.553000+0000",
+      "avatar": "https://styles.redditmedia.com/t5_1r8le8/styles/profileIcon_lbync2r4klgc1.jpg?width=64&height=64&frame=1&auto=webp&crop=64%3A64%2Csmart&s=1a4c03a4a8280915ef2c8a6abac0f05f8072993d",
+      "text": "He just got invited to a crew"
+    },
+    {
+      "author": "Krazynukz",
+      "score": 1,
+      "time": "2026-09-09T15:52:04.620000+0000",
+      "avatar": "https://styles.redditmedia.com/t5_10dsp7/styles/profileIcon_snoo-nftv2_bmZ0X2VpcDE1NToxMzdfYzhkM2EzYTgzYmRlNWRhZDA2ZDQzNjY5NGUzZTIyYWMzZTY0ZDU3N180NDA4MDM5_rare_219b4bbe-ebeb-4dba-a1c8-6e4f8fde2268-headshot.png?width=64&height=64&frame=1&auto=webp&crop=64%3A64%2Csmart&s=bd3f4a81039ab5dc06bf782a05a66b0c7687fe14",
+      "text": "Cool thanks! Just curious are you actually going through and timestamping all of this or are you running a model on the transcript of the entire vod? I.e like whisper etc"
+    },
+    {
+      "author": "HurricaneRein",
+      "score": 3,
+      "time": "2026-09-08T09:24:47.252000+0000",
+      "avatar": "https://styles.redditmedia.com/t5_8dduog/styles/profileIcon_15l7ew2yph8c1.JPG?width=64&height=64&frame=1&auto=webp&crop=64%3A64%2Csmart&s=a870a70516b912712bc97e8b05990c668369c61c",
+      "text": "A few points I want to mention: For the people asking how to tip me/support me, check out my personal bio (about section), your support, big or small is highly appreciated If you spot any errors with regards to information in my post then please don't hesitate to comment/DM and I will happily edit them! English is not my native language so I apologize in advance for typo(s)/bad grammar. I'm not hired by X or anyone, this is completely voluntarily. Please don't use/repost these recaps without DMing me/reaching out to me. Finally I appreciate your kind words, support and follows!"
+    },
+    {
+      "author": "Ok-Package4024",
+      "score": 0,
+      "time": "2026-09-08T13:16:22.823000+0000",
+      "avatar": "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_6.png",
+      "text": "OOF"
+    },
+    {
+      "author": "Charming_Arm3266",
+      "score": 0,
+      "time": "2026-09-09T02:17:14.911000+0000",
+      "avatar": "https://preview.redd.it/snoovatar/avatars/702144e2-1fff-4d37-aebd-4ee99a3117f2-headshot.png?width=64&height=64&crop=smart&auto=webp&s=ded7c720c9123da81c19795919763e82a3df4743",
+      "text": "C R I N G E"
+    }
+  ]
+}

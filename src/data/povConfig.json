@@ -1,0 +1,52 @@
+{
+  "povs": [
+    {
+      "id": "buddha",
+      "name": "buddha",
+      "color": "rose",
+      "badgeColor": "bg-rose-500/10 text-rose-400 border-rose-500/30",
+      "activeBg": "bg-rose-500 text-white",
+      "glowColor": "shadow-rose-500/20",
+      "platform": "Kick",
+      "kickChannel": "https://kick.com/buddha",
+      "tagline": "Buddha's Roleplay Adventures",
+      "sourceLabel": "AI-generated recap",
+      "profile": "nopixel"
+    },
+    {
+      "id": "xqc",
+      "name": "xQc",
+      "character": "Jean Paul (X)",
+      "actor": "xQc",
+      "role": "The Gambler & Bank Buster",
+      "color": "amber",
+      "badgeColor": "bg-amber-500/10 text-amber-400 border-amber-500/30",
+      "activeBg": "bg-amber-500 text-black",
+      "glowColor": "shadow-amber-500/20",
+      "platform": "Kick, Twitch & YouTube",
+      "twitchChannel": "https://www.twitch.tv/xqc",
+      "kickChannel": "https://kick.com/xqc",
+      "youtubeChannel": "https://www.youtube.com/@xQcOW",
+      "curator": "u/HurricaneRein",
+      "curatorUrl": "https://www.reddit.com/user/HurricaneRein/",
+      "curatorSource": "Reddit r/xqcow",
+      "tagline": "High-octane crime sprees, crypto gambles, and hospital speedruns.",
+      "wikis": [
+        {
+          "label": "Jean Paul (4.0)",
+          "url": "https://nopixel.fandom.com/wiki/Jean_Paul"
+        },
+        {
+          "label": "Officer Pierre Paul",
+          "url": "https://nopixel.fandom.com/wiki/Pierre_Paul"
+        },
+        {
+          "label": "Jean-Pierre (2.0)",
+          "url": "https://nopixel.fandom.com/wiki/Jean-Pierre_Mister"
+        }
+      ],
+      "profile": "nopixel"
+    }
+  ],
+  "defaultPov": "xqc"
+}

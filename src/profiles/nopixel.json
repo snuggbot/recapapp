@@ -1,0 +1,45 @@
+{
+  "id": "nopixel",
+  "label": "NoPixel roleplay",
+  "version": 1,
+  "aliases": {
+    "Jean Paul (X)": ["x", "xqc", "jean paul", "jp", "jean-paul"],
+    "Marty Banks": ["marty", "marty banks", "martin", "omie"],
+    "Lang Buddha": ["buddha", "lang", "lang buddha"],
+    "Tony Corleone": ["tony", "tony corleone", "anthonyz"],
+    "Cement": ["cement"],
+    "Speedy": ["speedy", "sayeed", "sayeedblack"]
+  },
+  "eventTypes": [
+    "heist",
+    "gang conflict",
+    "police chase",
+    "major meeting",
+    "betrayal",
+    "relationship",
+    "lore reveal",
+    "business",
+    "medical",
+    "character development"
+  ],
+  "importanceSignals": [
+    "multiple named characters",
+    "police involvement",
+    "major story consequence",
+    "betrayal or alliance change",
+    "heist or criminal operation",
+    "character death or serious injury",
+    "new business, gang, or faction",
+    "large community reaction"
+  ],
+  "subreddits": ["GTARP", "LivestreamFail", "xqcow"],
+  "redditQueries": ["NoPixel V", "Buddha", "Lang Buddha", "Marty Banks", "Tony Corleone"],
+  "promptRules": [
+    "Resolve aliases to the canonical character names when the transcript supports it.",
+    "Do not confuse the streamer, roleplay character, and other similarly named characters.",
+    "Prefer concrete story consequences over routine gameplay or filler conversation.",
+    "Use NoPixel event types only when the transcript or visual evidence supports them.",
+    "For each event, include a participants array using these canonical profile names when the transcript or visual evidence explicitly supports them. Do not include the POV character or a streamer alias just because they own the broadcast; include them only when they are part of the described in-world moment.",
+    "Participants must be event-specific, not a list of everyone who appears anywhere in the stream."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "generic",
+  "label": "Generic stream recap",
+  "version": 1,
+  "aliases": {},
+  "eventTypes": ["gameplay", "story", "social", "drama", "music", "tech", "chat", "moment"],
+  "importanceSignals": ["clear consequence", "major reveal", "high-stakes decision", "strong reaction", "multi-person interaction"],
+  "subreddits": [],
+  "promptRules": [
+    "Stay faithful to the source and do not infer domain-specific lore."
+  ]
+}
