@@ -113,6 +113,9 @@ export default function TimelineView({
   const [focusedEvent, setFocusedEvent] = useState(null);
   const [isPlayingKick, setIsPlayingKick] = useState(false);
   const [capturingFrame, setCapturingFrame] = useState(false);
+  const [communityThreads, setCommunityThreads] = useState([]);
+  const [isSearchingCommunity, setIsSearchingCommunity] = useState(false);
+  const [communitySearched, setCommunitySearched] = useState(false);
   const [isMobile, setIsMobile] = useState(() => {
     if (typeof window === 'undefined') return false;
     return /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent) || 
@@ -223,6 +226,8 @@ export default function TimelineView({
 
   useEffect(() => {
     if (!focusedEvent) return;
+    setCommunityThreads([]);
+    setCommunitySearched(false);
     const handleKeyDown = (e) => {
       if (e.key === 'Escape') {
         setFocusedEvent(null);
@@ -262,6 +267,22 @@ export default function TimelineView({
   const kickBtnClass = isPlayingKick
     ? 'bg-[#53fc18] text-black border-[#53fc18] shadow-md'
     : 'bg-[#53fc18]/15 hover:bg-[#53fc18]/25 text-[#53fc18] border border-[#53fc18]/30';
+
+  const handleSearchCommunity = async () => {
+    if (!focusedEvent) return;
+    setIsSearchingCommunity(true);
+    setCommunitySearched(true);
+    try {
+      const q = focusedEvent.title || focusedEvent.description || '';
+      const res = await fetch(`/api/community/search?q=${encodeURIComponent(q)}`);
+      const data = await res.json();
+      setCommunityThreads(data?.results || []);
+    } catch {
+      setCommunityThreads([]);
+    } finally {
+      setIsSearchingCommunity(false);
+    }
+  };
 
   // Export the shown moments as a Clipper timestamp file (START - END | label).
   // Deduplicates exact ranges and clamps overlaps so Clipper's parser accepts it.
@@ -1060,6 +1081,68 @@ export default function TimelineView({
                   </button>
                 </div>
               )}
+
+              {/* Community Reddit Discussion Section */}
+              <div className="space-y-2 pt-1">
+                {focusedEvent.redditUrl ? (
+                  <div className="flex items-center justify-between p-2.5 rounded-lg bg-[#ff4500]/10 border border-[#ff4500]/25 text-xs text-zinc-300">
+                    <div className="flex items-center gap-2 min-w-0">
+                      <RedditIcon className="w-4 h-4 text-[#ff4500] shrink-0 fill-current" />
+                      <span className="truncate">{focusedEvent.redditTitle || 'Community Discussion Thread'}</span>
+                    </div>
+                    <a
+                      href={focusedEvent.redditUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#ff4500] hover:underline shrink-0 ml-2"
+                    >
+                      <span>Open on Reddit</span>
+                      <ExternalLink className="w-3 h-3" />
+                    </a>
+                  </div>
+                ) : (
+                  <div className="flex flex-col gap-2">
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="text-zinc-400 font-medium">Community Context:</span>
+                      <button
+                        onClick={handleSearchCommunity}
+                        disabled={isSearchingCommunity}
+                        className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-[11px] font-medium bg-zinc-900 hover:bg-zinc-800 text-zinc-300 border border-white/10 hover:border-zinc-700 transition-colors cursor-pointer disabled:opacity-50"
+                      >
+                        <RedditIcon className="w-3 h-3 text-[#ff4500] fill-current" />
+                        <span>{isSearchingCommunity ? 'Searching Reddit…' : 'Find Reddit Threads'}</span>
+                      </button>
+                    </div>
+
+                    {communitySearched && communityThreads.length > 0 && (
+                      <div className="space-y-1.5 pt-1">
+                        {communityThreads.slice(0, 3).map(thread => (
+                          <a
+                            key={thread.id || thread.permalink}
+                            href={thread.permalink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center justify-between p-2 rounded-md bg-zinc-900/80 hover:bg-zinc-800/80 border border-white/[0.08] text-xs text-zinc-200 transition-colors group"
+                          >
+                            <div className="flex items-center gap-2 min-w-0">
+                              <RedditIcon className="w-3.5 h-3.5 text-[#ff4500] shrink-0 fill-current" />
+                              <span className="truncate group-hover:text-amber-300 transition-colors">{thread.title}</span>
+                              <span className="text-[10px] text-zinc-500 shrink-0 font-mono">r/{thread.subreddit}</span>
+                            </div>
+                            <ExternalLink className="w-3 h-3 text-zinc-500 group-hover:text-zinc-300 shrink-0 ml-2" />
+                          </a>
+                        ))}
+                      </div>
+                    )}
+
+                    {communitySearched && !isSearchingCommunity && communityThreads.length === 0 && (
+                      <p className="text-[11px] text-zinc-500 italic">
+                        No indexed Reddit threads found for this moment yet. Configure a search API key in .env to expand discovery.
+                      </p>
+                    )}
+                  </div>
+                )}
+              </div>
 
               {/* Footer: Jump to VOD buttons & Switch to Feed button */}
               <div className="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-white/[0.08]">

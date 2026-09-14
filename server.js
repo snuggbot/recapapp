@@ -7,7 +7,7 @@ import os from 'os';
 import { spawn } from 'child_process';
 import http from 'http';
 import { fileURLToPath } from 'url';
-import { collectRedditEvidence, purgeRedditCacheForStream } from './lib/redditResearch.js';
+import { collectRedditEvidence, purgeRedditCacheForStream, searchCommunityThreads } from './lib/redditResearch.js';
 
 // ---- Minimal .env loader (zero dependencies) ----
 const ENV_FILE = path.join(path.dirname(fileURLToPath(import.meta.url)), '.env');
@@ -1389,8 +1389,27 @@ function normalizeRecap(raw, context, streamId) {
       evidence: String(ev.evidence || '').slice(0, 220),
       confidence: String(ev.confidence || '').toLowerCase(),
       category: sanitizeCategory(ev.category),
-      participants: normalizeParticipants(ev.participants || ev.characters)
+      participants: normalizeParticipants(ev.participants || ev.characters),
+      redditUrl: ev.redditUrl || null,
+      redditTitle: ev.redditTitle || null
     }));
+
+    // Match external community/Reddit threads to events when available
+    if (context?.redditResearch?.posts?.length) {
+      for (const p of parsed) {
+        if (!p.redditUrl) {
+          const words = `${p.title} ${p.description}`.toLowerCase().replace(/[^a-z0-9\s]/g, '').split(/\s+/).filter(w => w.length >= 4);
+          const matched = context.redditResearch.posts.find(post => {
+            const postTitle = (post.title || '').toLowerCase();
+            return words.filter(w => postTitle.includes(w)).length >= 2;
+          });
+          if (matched) {
+            p.redditUrl = matched.permalink;
+            p.redditTitle = matched.title;
+          }
+        }
+      }
+    }
 
     // Fold any overflow past the stream length back INTO the uncovered tail, evenly
     // spaced, instead of clamping them all onto the final second (which produced
@@ -1451,6 +1470,7 @@ function normalizeRecap(raw, context, streamId) {
           category: p.category,
           tags: [p.category],
           ...(p.participants.length ? { participants: p.participants } : {}),
+          ...(p.redditUrl ? { redditUrl: p.redditUrl, redditTitle: p.redditTitle } : {}),
           image: null,
           ...(vodUrls.twitchVod ? { twitchUrl: `${vodUrls.twitchVod}?t=${seconds}s` } : {}),
           ...(vodUrls.kickVod ? { kickUrl: withKickTimestamp(vodUrls.kickVod, seconds) } : {}),
@@ -1471,8 +1491,11 @@ function normalizeRecap(raw, context, streamId) {
 
     // Stream date: use the VOD creation date when known, else the day's updated stamp.
     const streamDate = (context?.vodStartAt || context?.vodCreatedAt || day.updated || '').toString().slice(0, 10);
+    const topRedditPost = context?.redditResearch?.posts?.[0];
+    const dayRedditUrl = day.redditUrl || topRedditPost?.permalink || null;
+    const dayRedditTitle = day.redditTitle || topRedditPost?.title || null;
 
-    days[String(di + 1)] = {
+    const dayRecord = {
       dayNumber: di + 1,
       title: dayTitle,
       ...(sourceKey ? { sourceKey } : {}),
@@ -1485,6 +1508,11 @@ function normalizeRecap(raw, context, streamId) {
       eventsCount,
       events: normalized
     };
+    if (dayRedditUrl) {
+      dayRecord.redditUrl = dayRedditUrl;
+      dayRecord.redditTitle = dayRedditTitle;
+    }
+    days[String(di + 1)] = dayRecord;
   });
 
   return {
@@ -2500,6 +2528,19 @@ app.get('/api/channel/resolve', async (req, res) => {
     res.json(result);
   } catch (err) {
     res.status(500).json({ error: err.message || 'Failed to resolve channel name.' });
+  }
+});
+
+// Search community (Reddit) threads on-demand for any moment or topic
+app.get('/api/community/search', async (req, res) => {
+  const q = String(req.query.q || req.query.query || '').trim();
+  if (!q) return res.status(400).json({ error: 'Provide a search query (e.g. ?q=casino+heist)' });
+  const subreddits = req.query.subreddits ? String(req.query.subreddits).split(',').map(s => s.trim()).filter(Boolean) : ['GTARP', 'LivestreamFail', 'xqcow'];
+  try {
+    const results = await searchCommunityThreads(q, subreddits);
+    res.json({ ok: true, query: q, subreddits, results });
+  } catch (err) {
+    res.status(500).json({ error: err.message || 'Search failed' });
   }
 });
 
