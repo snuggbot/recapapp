@@ -150,6 +150,7 @@ Rules:
   - "isMajor": true only for the standout moments (at most ~25% of events)
 - Timestamps: use ONLY the CONFIRMED_TIMESTAMPS values when they are given — they are real clock offsets derived from chapters, clips, or notes. When no CONFIRMED_TIMESTAMPS are given, the offsets are approximate: write believable, IRREGULAR timestamps with varied natural gaps (never uniform or round marks such as 00:05:00, 00:10:00 — use e.g. 00:04:17, 01:12:38). Never exceed the known duration. If rough notes state offsets, preserve them.
 - When a TIMED_TRANSCRIPT is provided, use it as the primary factual source. Every event must be supported by the transcript near its timestamp. Do not invent products, guests, gameplay, giveaways, chat reactions, quotes, or outcomes that are not supported. Do not use generic filler such as "the chat explodes" unless the source actually supports it.
+- When COMMUNITY_HIGHLIGHT_SIGNALS are provided, treat them as crowd-sourced indicators of the stream's most important scenes, climaxes, and drama. Search the TIMED_TRANSCRIPT or CHAPTERS to locate where these community moments occurred, include them in the recap, and flag them as "isMajor": true.
 - When a FOCUS_FILTER is provided, apply it to event selection. In strict mode, omit events that do not satisfy the filter; in discovery mode, prioritize matches but retain strongly supported major moments.
 - Never interpret a casual "good night", "bye", or farewell to chat as the end of the stream. Only use "stream ends", "final moments", "winding down", or "farewell" when the event is within the final 5% of the known duration AND surrounding evidence clearly indicates the broadcast is ending.
 - For each event with transcript support, include "evidence": a short verbatim phrase or faithful excerpt from the transcript (<=180 chars) and "confidence": "high" or "medium". Never fabricate a quote.
@@ -2984,8 +2985,12 @@ app.post('/api/generate', requireOwner, async (req, res) => {
       lines.push(...(context.profile.promptRules || []).map(rule => `PROFILE_RULE: ${rule}`));
     }
     if (context.redditResearch?.posts?.length) {
-      lines.push('REDDIT_COMMUNITY_LEADS (Read-only reference links for discovery and attribution. Verify every claim against the transcript/VOD before including it. Not for model training):');
-      lines.push(JSON.stringify(context.redditResearch.posts.slice(0, 30)));
+      lines.push('COMMUNITY_HIGHLIGHT_SIGNALS (High-priority story beats and moments the community highlighted on Reddit):');
+      lines.push('Search the TIMED_TRANSCRIPT for these topics. When found, ensure they are captured in the recap and marked as "isMajor": true.');
+      lines.push(JSON.stringify(context.redditResearch.posts.slice(0, 25).map(p => ({
+        topic: p.title,
+        community: `r/${p.subreddit}`
+      }))));
     }
     if (context.filters?.criteria) {
       lines.push(`FOCUS_FILTER (${context.filters.mode}): ${context.filters.criteria}`);
