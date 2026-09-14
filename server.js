@@ -8,6 +8,7 @@ import { spawn } from 'child_process';
 import http from 'http';
 import { fileURLToPath } from 'url';
 import { collectRedditEvidence, purgeRedditCacheForStream, searchCommunityThreads } from './lib/redditResearch.js';
+import { fetchCharacterDossier, getStreamLoreDossiers, augmentProfileWithDossiers, formatLorePromptDossier } from './lib/fandomResearch.js';
 
 // ---- Minimal .env loader (zero dependencies) ----
 const ENV_FILE = path.join(path.dirname(fileURLToPath(import.meta.url)), '.env');
@@ -2545,6 +2546,19 @@ app.get('/api/community/search', async (req, res) => {
   }
 });
 
+// Look up character dossier from NoPixel Fandom Wiki (for character hub & preview)
+app.get('/api/wiki/character', async (req, res) => {
+  const name = String(req.query.name || req.query.q || '').trim();
+  if (!name) return res.status(400).json({ error: 'Provide a character or streamer name (e.g. ?name=buddha)' });
+  try {
+    const character = await fetchCharacterDossier(name);
+    if (!character) return res.status(404).json({ error: 'Character dossier not found on NoPixel wiki' });
+    res.json({ ok: true, character });
+  } catch (err) {
+    res.status(500).json({ error: err.message || 'Wiki lookup failed' });
+  }
+});
+
 app.patch('/api/streams/:id/events/:eventId/review', requireOwner, (req, res) => {
   const pov = sanitizePov(req.params.id);
   const eventId = String(req.params.eventId || '');
@@ -2957,6 +2971,15 @@ app.post('/api/generate', requireOwner, async (req, res) => {
     const profileId = String(body.profile || existing?.profile || ((streamId === 'xqc' || streamId === 'buddha') ? 'nopixel' : 'generic'));
     context.profileId = profileId;
     context.profile = loadProfile(profileId);
+    if (profileId === 'nopixel') {
+      try {
+        const dossiers = await getStreamLoreDossiers(streamId, context.profile);
+        context.loreDossiers = dossiers;
+        context.profile = augmentProfileWithDossiers(context.profile, dossiers);
+      } catch (err) {
+        console.error('[Fandom] Error fetching dossiers:', err.message);
+      }
+    }
     context.redditResearch = await collectRedditEvidence({ profile: context.profile, context, streamId });
     const maxSyncSeconds = Number(process.env.MAX_SYNC_TRANSCRIPTION_SECONDS || 1800);
     const batchNeedsJob = batchWanted && !isBackgroundJob && !body._transcriptFile && !context.batchInfo;
@@ -2983,6 +3006,9 @@ app.post('/api/generate', requireOwner, async (req, res) => {
         lines.push(`PROFILE_ALIASES: ${JSON.stringify(context.profile.aliases)}`);
       }
       lines.push(...(context.profile.promptRules || []).map(rule => `PROFILE_RULE: ${rule}`));
+    }
+    if (context.loreDossiers?.length) {
+      lines.push(...formatLorePromptDossier(context.loreDossiers));
     }
     if (context.redditResearch?.posts?.length) {
       lines.push('COMMUNITY_HIGHLIGHT_SIGNALS (High-priority story beats and moments the community highlighted on Reddit):');
