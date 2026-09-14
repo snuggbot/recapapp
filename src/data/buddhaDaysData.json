@@ -328,8 +328,8 @@
           "endTimestamp": "00:41:20",
           "endMode": "model",
           "isMajor": true,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
+          "title": "Lang Buddha & Marty meet with Jean Paul at hideout",
+          "description": "Lang meets up with Marty and Jean Paul to discuss the operation.",
           "evidence": "",
           "confidence": "low",
           "category": "general",
@@ -343,7 +343,15 @@
           "image": "/images/frames/buddha_evt_002450_004050.jpg",
           "kickUrl": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288?t=2450",
           "durationSeconds": 30,
-          "imageCaption": "Stream snapshot @ 00:40:50"
+          "imageCaption": "Stream snapshot @ 00:40:50",
+          "crossPov": {
+            "pov": "xqc",
+            "day": "2",
+            "eventId": "d2-evt-055",
+            "streamer": "xQc",
+            "timestamp": "08:43:00",
+            "title": "Meets up with Lang and Tony at hideout"
+          }
         },
         {
           "id": "buddha-evt-004",

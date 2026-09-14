@@ -578,20 +578,117 @@ async function kickFetch(slug) {
 
 // Curated NoPixel V creators registry
 const CHANNEL_REGISTRY = [
-  { name: 'xqc', displayName: 'xQc (Jean Paul)', platforms: ['twitch', 'kick', 'youtube'] },
-  { name: 'buddha', displayName: 'Buddha (Lang Buddha)', platforms: ['twitch', 'kick', 'youtube'] },
-  { name: 'roflgator', displayName: 'Roflgator (Robert)', platforms: ['twitch', 'kick'] },
-  { name: 'anthonyz', displayName: 'AnthonyZ (Tony Corleone)', platforms: ['twitch', 'kick', 'youtube'] },
-  { name: 'omie', displayName: 'Omie (Marty Banks)', platforms: ['twitch', 'kick', 'youtube'] },
-  { name: 'summit1g', displayName: 'Summit1g (Charles Johnson)', platforms: ['twitch', 'kick', 'youtube'] },
-  { name: 'fuslie', displayName: 'Fuslie (April Fooze)', platforms: ['youtube', 'twitch'] },
-  { name: 'valkyrae', displayName: 'Valkyrae (Ray Mond)', platforms: ['youtube', 'twitch'] },
-  { name: 'chatterbox', displayName: 'Chatterbox', platforms: ['twitch', 'kick'] },
-  { name: 'kyle', displayName: 'Kyle (Kyle Pred)', platforms: ['twitch', 'kick'] },
-  { name: 'sykkuno', displayName: 'Sykkuno (Yuno Sykk)', platforms: ['youtube', 'twitch'] },
-  { name: 'blaustoise', displayName: 'Blaustoise (Mickey)', platforms: ['twitch', 'kick', 'youtube'] },
-  { name: 'sayeedblack', displayName: 'Sayeed (Speedy)', platforms: ['twitch', 'kick'] }
+  { name: 'xqc', displayName: 'xQc (Jean Paul)', character: 'Jean Paul (X)', role: 'The Gambler & Bank Buster', color: 'amber', platforms: ['twitch', 'kick', 'youtube'] },
+  { name: 'buddha', displayName: 'Buddha (Lang Buddha)', character: 'Lang Buddha', role: 'Emperor of Los Santos / Crime Boss', color: 'rose', platforms: ['twitch', 'kick', 'youtube'] },
+  { name: 'roflgator', displayName: 'Roflgator (Robert)', character: 'Robert Spumoni', role: 'Burger Shot Manager', color: 'orange', platforms: ['twitch', 'kick'] },
+  { name: 'anthonyz', displayName: 'AnthonyZ (Tony Corleone)', character: 'Tony Corleone', role: 'The Drift King / Getaway Driver', color: 'red', platforms: ['twitch', 'kick', 'youtube'] },
+  { name: 'omie', displayName: 'Omie (Marty Banks)', character: 'Marty Banks', role: 'Hacker & Crime Boss', color: 'sky', platforms: ['twitch', 'kick', 'youtube'] },
+  { name: 'summit1g', displayName: 'Summit1g (Charles Johnson)', character: 'Charles Johnson', role: 'Racer & Street Legend', color: 'indigo', platforms: ['twitch', 'kick', 'youtube'] },
+  { name: 'fuslie', displayName: 'Fuslie (April Fooze)', character: 'April Fooze', role: 'Pop Star & Socialite', color: 'pink', platforms: ['youtube', 'twitch'] },
+  { name: 'valkyrae', displayName: 'Valkyrae (Ray Mond)', character: 'Ray Mond', role: 'Criminal & Outlaw', color: 'purple', platforms: ['youtube', 'twitch'] },
+  { name: 'chatterbox', displayName: 'Chatterbox', character: 'Chatterbox', role: 'The Clown King', color: 'yellow', platforms: ['twitch', 'kick'] },
+  { name: 'kyle', displayName: 'Kyle (Kyle Pred)', character: 'Kyle Pred', role: 'Corrupt Sheriff', color: 'blue', platforms: ['twitch', 'kick'] },
+  { name: 'sykkuno', displayName: 'Sykkuno (Yuno Sykk)', character: 'Yuno Sykk', role: 'Master Hacker & Safe Buster', color: 'emerald', platforms: ['youtube', 'twitch'] },
+  { name: 'blaustoise', displayName: 'Blaustoise (Mickey)', character: 'Mickey Haverford', role: 'The Lawyer & Mayor', color: 'teal', platforms: ['twitch', 'kick', 'youtube'] },
+  { name: 'sayeedblack', displayName: 'Sayeed (Speedy)', character: 'Speedy', role: 'Vagos El Jefe / Weapons Dealer', color: 'lime', platforms: ['twitch', 'kick'] }
 ];
+
+function aggregateAllCharacters() {
+  const config = loadPovConfig();
+  const charMap = new Map();
+
+  for (const reg of CHANNEL_REGISTRY) {
+    const key = (reg.character || reg.name).toLowerCase();
+    charMap.set(key, {
+      id: key.replace(/[^a-z0-9]/g, '-'),
+      name: reg.character || reg.name,
+      streamer: reg.name,
+      displayName: reg.displayName,
+      role: reg.role || '',
+      color: reg.color || 'zinc',
+      platforms: reg.platforms || [],
+      momentCount: 0,
+      streams: [],
+      hasPOV: (config.povs || []).some(p => p.id === reg.name)
+    });
+  }
+
+  for (const pov of (config.povs || [])) {
+    const data = getDaysData(pov.id) || {};
+    for (const [, day] of Object.entries(data.days || {})) {
+      for (const ev of (day.events || [])) {
+        for (const p of (ev.participants || [])) {
+          const pKey = p.toLowerCase();
+          let matched = null;
+          for (const [k, c] of charMap.entries()) {
+            if (pKey.includes(k) || k.includes(pKey) || p.toLowerCase().includes(c.name.toLowerCase())) {
+              matched = c;
+              break;
+            }
+          }
+          if (!matched) {
+            matched = {
+              id: pKey.replace(/[^a-z0-9]/g, '-'),
+              name: p,
+              streamer: '',
+              displayName: p,
+              role: '',
+              color: 'zinc',
+              platforms: [],
+              momentCount: 0,
+              streams: [],
+              hasPOV: (config.povs || []).some(povItem => povItem.id === pKey)
+            };
+            charMap.set(pKey, matched);
+          }
+          matched.momentCount++;
+          if (!matched.streams.includes(pov.id)) {
+            matched.streams.push(pov.id);
+          }
+        }
+      }
+    }
+  }
+
+  return Array.from(charMap.values()).sort((a, b) => b.momentCount - a.momentCount);
+}
+
+function getMomentsForCharacter(charName) {
+  const config = loadPovConfig();
+  const nameLower = String(charName || '').toLowerCase().trim();
+  const results = [];
+
+  for (const pov of (config.povs || [])) {
+    const data = getDaysData(pov.id) || {};
+    for (const [dayNum, day] of Object.entries(data.days || {})) {
+      for (const ev of (day.events || [])) {
+        const parts = (ev.participants || []).map(p => p.toLowerCase());
+        const text = `${ev.title || ''} ${ev.description || ''}`.toLowerCase();
+        const matches = parts.some(p => p.includes(nameLower) || nameLower.includes(p)) || text.includes(nameLower);
+        if (matches) {
+          results.push({
+            streamId: pov.id,
+            streamName: pov.name,
+            dayNumber: dayNum,
+            streamDate: day.streamDate || '',
+            eventId: ev.id,
+            timestamp: ev.timestamp,
+            seconds: ev.seconds,
+            title: ev.title,
+            description: ev.description,
+            isMajor: Boolean(ev.isMajor),
+            category: ev.category,
+            image: ev.image,
+            participants: ev.participants || [],
+            crossPov: ev.crossPov || null
+          });
+        }
+      }
+    }
+  }
+
+  return results.sort((a, b) => a.streamId.localeCompare(b.streamId) || (Number(a.dayNumber) - Number(b.dayNumber)) || (a.seconds - b.seconds));
+}
 
 function registrySuggestions(q) {
   const query = String(q || '').toLowerCase().trim();
@@ -2556,6 +2653,24 @@ app.get('/api/wiki/character', async (req, res) => {
     res.json({ ok: true, character });
   } catch (err) {
     res.status(500).json({ error: err.message || 'Wiki lookup failed' });
+  }
+});
+
+// Character Hub: List all characters with their moment counts & dossiers
+app.get('/api/characters', (_req, res) => {
+  res.json({ characters: aggregateAllCharacters() });
+});
+
+// Character Hub: Get specific character dossier and all their timeline moments across streams
+app.get('/api/characters/:name', async (req, res) => {
+  const name = String(req.params.name || '').trim();
+  if (!name) return res.status(400).json({ error: 'Provide a character name.' });
+  try {
+    const dossier = await fetchCharacterDossier(name);
+    const moments = getMomentsForCharacter(name);
+    res.json({ ok: true, name, character: dossier, moments });
+  } catch (err) {
+    res.status(500).json({ error: err.message || 'Failed to fetch character details' });
   }
 });
 

@@ -1,4 +1,5 @@
-import { Clock, Plus, Layers, Sparkles, Play, Trash2 } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Clock, Plus, Layers, Sparkles, Play, Trash2, Users } from 'lucide-react';
 
 function shortDate(iso) {
   if (!iso) return '';
@@ -9,7 +10,17 @@ function shortDate(iso) {
   }
 }
 
-export default function HomeView({ items = [], onOpenStream, onOpenAddStream, onDeleteStream, isOwner }) {
+export default function HomeView({ items = [], onOpenStream, onOpenAddStream, onDeleteStream, isOwner, onSelectCharacter }) {
+  const [characters, setCharacters] = useState([]);
+
+  useEffect(() => {
+    fetch('/api/characters')
+      .then((r) => r.json())
+      .then((d) => {
+        if (Array.isArray(d?.characters)) setCharacters(d.characters);
+      })
+      .catch(() => {});
+  }, []);
   return (
     <div className="max-w-6xl mx-auto pb-16">
       {/* Hero header */}
@@ -127,6 +138,67 @@ export default function HomeView({ items = [], onOpenStream, onOpenAddStream, on
               </div>
             </div>
           ))}
+        </div>
+      )}
+
+      {/* NoPixel V Character Roster & Storylines */}
+      {characters.length > 0 && (
+        <div className="mt-10 pt-8 border-t border-white/[0.08]">
+          <div className="flex items-center justify-between gap-3 mb-4">
+            <div>
+              <h2 className="text-base sm:text-lg font-bold text-white tracking-tight flex items-center gap-2">
+                <Users className="w-4 h-4 text-amber-400" />
+                <span>NoPixel V Server Characters & Storylines</span>
+              </h2>
+              <p className="text-xs text-zinc-500 mt-0.5">
+                Explore canonical dossiers, in-game lore, and every indexed moment across all streamer POVs.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+            {characters.slice(0, 12).map((char) => (
+              <div
+                key={char.id || char.name}
+                onClick={() => onSelectCharacter?.(char.name)}
+                className="group p-3 rounded-xl bg-zinc-950/70 hover:bg-zinc-900/90 border border-white/[0.07] hover:border-zinc-600/80 transition-all cursor-pointer text-left flex flex-col justify-between shadow-sm"
+              >
+                <div>
+                  <div className="flex items-start justify-between gap-2 mb-2">
+                    <div className="w-8 h-8 rounded-lg bg-zinc-900 border border-white/10 flex items-center justify-center font-bold text-xs text-amber-300 group-hover:border-amber-500/40 transition-colors">
+                      {char.name.charAt(0)}
+                    </div>
+                    {char.hasPOV && (
+                      <span className="px-1.5 py-0.5 rounded text-[9px] font-bold bg-amber-500/10 text-amber-400 border border-amber-500/25">
+                        POV STREAM
+                      </span>
+                    )}
+                  </div>
+
+                  <h3 className="text-xs font-bold text-zinc-100 group-hover:text-amber-300 transition-colors line-clamp-1">
+                    {char.name}
+                  </h3>
+                  {char.role && (
+                    <p className="text-[10px] text-zinc-400 line-clamp-1 mt-0.5">
+                      {char.role}
+                    </p>
+                  )}
+                  {char.streamer && (
+                    <p className="text-[10px] text-zinc-500 mt-1">
+                      Streamer: <span className="text-zinc-300 font-medium">{char.streamer}</span>
+                    </p>
+                  )}
+                </div>
+
+                <div className="mt-3 pt-2 border-t border-white/[0.05] flex items-center justify-between text-[10px] text-zinc-500 font-mono">
+                  <span>{char.momentCount || 0} moment{char.momentCount === 1 ? '' : 's'}</span>
+                  <span className="text-amber-400/80 font-sans group-hover:underline flex items-center gap-0.5">
+                    Dossier →
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       )}
     </div>

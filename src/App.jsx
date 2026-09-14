@@ -7,6 +7,7 @@ import HomeView from './components/HomeView.jsx';
 import TimelineView from './components/TimelineView.jsx';
 import AddStreamModal from './components/AddStreamModal.jsx';
 import UnlockModal from './components/UnlockModal.jsx';
+import CharacterModal from './components/CharacterModal.jsx';
 import { RedditIcon } from './components/Icons.jsx';
 import { getOwnerKey, setOwnerKey, ownerFetch } from './lib/owner.js';
 import { ArrowUp, ArrowDown, ChevronDown, AlertTriangle, Trash2 } from 'lucide-react';
@@ -40,6 +41,7 @@ export default function App() {
   const [syncStatus, setSyncStatus] = useState('idle');
   const [transcriptionJob, setTranscriptionJob] = useState(null);
   const [transcriptionJobs, setTranscriptionJobs] = useState([]);
+  const [selectedCharacter, setSelectedCharacter] = useState(null);
 
   // Guest vs owner. Site is browse-only by default; the owner key (stored in
   // localStorage via ?key=... or the unlock dialog) reveals the editing UI.
@@ -456,6 +458,7 @@ export default function App() {
             onOpenAddStream={() => setShowAddStream(true)}
             onDeleteStream={handleDeleteStream}
             isOwner={isOwner}
+            onSelectCharacter={(charName) => setSelectedCharacter(charName)}
           />
         </main>
       ) : (
@@ -651,6 +654,7 @@ export default function App() {
           onCaptureFrame={handleCaptureFrame}
           activeDayNumber={selectedDay}
           onSwitchPov={handleSwitchPov}
+          onSelectCharacter={(charName) => setSelectedCharacter(charName)}
         />
       </main>
       )}
@@ -678,6 +682,17 @@ export default function App() {
         isOpen={showUnlock}
         onClose={() => setShowUnlock(false)}
         onUnlocked={() => setIsOwner(true)}
+      />
+
+      <CharacterModal
+        characterName={selectedCharacter}
+        isOpen={Boolean(selectedCharacter)}
+        onClose={() => setSelectedCharacter(null)}
+        onOpenMoment={(streamId, dayNumber, eventId) => {
+          setSelectedCharacter(null);
+          handleOpenStream(streamId);
+          handleSwitchPov(streamId, dayNumber, eventId);
+        }}
       />
 
       {/* Floating Scroll Navigation — stream view only */}

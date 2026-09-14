@@ -100,7 +100,8 @@ export default function TimelineView({
   onReviewEvent,
   onCaptureFrame,
   activeDayNumber,
-  onSwitchPov
+  onSwitchPov,
+  onSelectCharacter
 }) {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [isMajorOnly, setIsMajorOnly] = useState(false);
@@ -588,6 +589,20 @@ export default function TimelineView({
                         >Reject</button>
                       </div>
                     )}
+                    {event.participants?.length > 0 && (
+                      <div className="mt-1.5 flex flex-wrap items-center gap-1">
+                        {event.participants.map((p) => (
+                          <button
+                            key={p}
+                            onClick={(e) => { e.stopPropagation(); onSelectCharacter?.(p); }}
+                            className="px-1.5 py-0.2 rounded text-[9px] font-medium bg-zinc-800/90 hover:bg-amber-500/20 text-zinc-300 hover:text-amber-300 border border-white/[0.08] hover:border-amber-500/30 transition-colors cursor-pointer"
+                            title={`View ${p} character dossier & moments`}
+                          >
+                            @{p}
+                          </button>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 </div>
 
@@ -831,7 +846,20 @@ export default function TimelineView({
                     <p className="text-zinc-100 text-[11px] sm:text-xs md:text-sm leading-snug font-medium" title={event.description}>
                       {compactDescription(event.description)}
                     </p>
-
+                    {event.participants?.length > 0 && (
+                      <div className="mt-1.5 flex flex-wrap gap-1">
+                        {event.participants.map((p) => (
+                          <button
+                            key={p}
+                            onClick={(e) => { e.stopPropagation(); onSelectCharacter?.(p); }}
+                            className="px-1.5 py-0.2 rounded text-[9px] font-medium bg-zinc-800 hover:bg-amber-500/20 text-zinc-300 hover:text-amber-300 border border-white/10 hover:border-amber-500/30 transition-colors cursor-pointer"
+                            title={`View ${p} character dossier`}
+                          >
+                            @{p}
+                          </button>
+                        ))}
+                      </div>
+                    )}
                   </div>
 
                   {/* Overlay Footer: Always pinned and shrink-0 */}
@@ -1050,6 +1078,22 @@ export default function TimelineView({
               {focusedEvent.evidence && (
                 <div className="px-3 py-2 rounded-lg bg-emerald-500/[0.07] border border-emerald-500/20 text-xs text-emerald-200/90">
                   <span className="font-semibold text-emerald-300">Transcript evidence:</span> “{focusedEvent.evidence}”
+                </div>
+              )}
+
+              {focusedEvent.participants?.length > 0 && (
+                <div className="flex flex-wrap items-center gap-1.5 pt-0.5">
+                  <span className="text-[11px] text-zinc-500 font-medium">In this scene:</span>
+                  {focusedEvent.participants.map((p) => (
+                    <button
+                      key={p}
+                      onClick={() => onSelectCharacter?.(p)}
+                      className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-medium bg-zinc-800/90 hover:bg-amber-500/20 text-zinc-200 hover:text-amber-300 border border-white/10 hover:border-amber-500/30 transition-colors cursor-pointer shadow-sm"
+                      title={`View ${p} dossier and moments`}
+                    >
+                      <span>@{p}</span>
+                    </button>
+                  ))}
                 </div>
               )}
 
