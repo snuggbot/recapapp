@@ -15,8 +15,7 @@ Data API access and the required credentials are configured locally:
 REDDIT_RESEARCH_ENABLED=true
 REDDIT_CLIENT_ID=
 REDDIT_CLIENT_SECRET=
-REDDIT_USER_AGENT=StreamRecap/1.0 by your_reddit_username
-REDDIT_ALLOW_PUBLIC_SEARCH=false
+REDDIT_USER_AGENT=web:StreamRecap:v1.0.0 (by /u/your_reddit_username)
 ```
 
 The NoPixel profile is configured for the following public communities:

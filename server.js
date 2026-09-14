@@ -7,7 +7,7 @@ import os from 'os';
 import { spawn } from 'child_process';
 import http from 'http';
 import { fileURLToPath } from 'url';
-import { collectRedditEvidence } from './lib/redditResearch.js';
+import { collectRedditEvidence, purgeRedditCacheForStream } from './lib/redditResearch.js';
 
 // ---- Minimal .env loader (zero dependencies) ----
 const ENV_FILE = path.join(path.dirname(fileURLToPath(import.meta.url)), '.env');
@@ -2473,6 +2473,7 @@ app.delete('/api/streams/:id', requireOwner, (req, res) => {
   if (id !== 'xqc') {
     try { fs.rmSync(path.join(SRC_DATA_DIR, `${id}DaysData.json`), { force: true }); } catch {}
   }
+  purgeRedditCacheForStream(id);
   for (const dir of [path.join(__dirname, 'public', 'images', 'frames'), path.join(__dirname, 'dist', 'images', 'frames')]) {
     try {
       for (const file of fs.readdirSync(dir)) {
@@ -2942,8 +2943,8 @@ app.post('/api/generate', requireOwner, async (req, res) => {
       lines.push(...(context.profile.promptRules || []).map(rule => `PROFILE_RULE: ${rule}`));
     }
     if (context.redditResearch?.posts?.length) {
-      lines.push('REDDIT_RESEARCH_LEADS (unverified leads only; verify every claim against the transcript/VOD before including it):');
-      lines.push(JSON.stringify(context.redditResearch.posts.slice(0, 40)));
+      lines.push('REDDIT_COMMUNITY_LEADS (Read-only reference links for discovery and attribution. Verify every claim against the transcript/VOD before including it. Not for model training):');
+      lines.push(JSON.stringify(context.redditResearch.posts.slice(0, 30)));
     }
     if (context.filters?.criteria) {
       lines.push(`FOCUS_FILTER (${context.filters.mode}): ${context.filters.criteria}`);

@@ -5,7 +5,7 @@ import {
   AlertTriangle, ArrowUpDown, Maximize2, LayoutGrid, Square, X, ChevronDown,
   ChevronLeft, ChevronRight, ExternalLink, Eye, ArrowRightLeft, Download
 } from 'lucide-react';
-import { TwitchIcon, KickIcon, YouTubeIcon } from './Icons';
+import { TwitchIcon, KickIcon, YouTubeIcon, RedditIcon } from './Icons';
 import KickPlayer from './KickPlayer.jsx';
 
 function fmtClock(sec) {
@@ -647,6 +647,18 @@ export default function TimelineView({
                       </a>
                     )}
 
+                    {(event.redditUrl || event.communityUrl) && (
+                      <a
+                        href={event.redditUrl || event.communityUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-1.5 rounded bg-[#ff4500]/15 hover:bg-[#ff4500]/25 text-[#ff4500] border border-[#ff4500]/30 transition-colors flex items-center justify-center"
+                        title="View community discussion on Reddit"
+                      >
+                        <RedditIcon className="w-3.5 h-3.5 fill-current" />
+                      </a>
+                    )}
+
                     <button
                       onClick={() => toggleBookmark(event.id)}
                       className={`p-1.5 rounded border transition-colors cursor-pointer ${
@@ -872,6 +884,19 @@ export default function TimelineView({
                             title={`Jump to ${event.timestamp} on YouTube`}
                           >
                             <YouTubeIcon className="w-3.5 h-3.5 fill-current" />
+                          </a>
+                        )}
+
+                        {(event.redditUrl || event.communityUrl) && (
+                          <a
+                            href={event.redditUrl || event.communityUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={(e) => e.stopPropagation()}
+                            className="p-1.5 rounded-md bg-[#ff4500]/15 hover:bg-[#ff4500]/25 text-[#ff4500] border border-[#ff4500]/30 transition-colors flex items-center justify-center cursor-pointer"
+                            title="View community discussion on Reddit"
+                          >
+                            <RedditIcon className="w-3.5 h-3.5 fill-current" />
                           </a>
                         )}
                       </div>
@@ -1100,6 +1125,18 @@ export default function TimelineView({
                       title={`Jump to ${focusedEvent.timestamp} on YouTube`}
                     >
                       <YouTubeIcon className="w-3.5 h-3.5 fill-current" />
+                    </a>
+                  )}
+
+                  {(focusedEvent.redditUrl || focusedEvent.communityUrl) && (
+                    <a
+                      href={focusedEvent.redditUrl || focusedEvent.communityUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-1.5 rounded-md bg-[#ff4500]/15 hover:bg-[#ff4500]/25 text-[#ff4500] border border-[#ff4500]/30 transition-colors flex items-center justify-center cursor-pointer"
+                      title="View community discussion on Reddit"
+                    >
+                      <RedditIcon className="w-3.5 h-3.5 fill-current" />
                     </a>
                   )}
                 </div>

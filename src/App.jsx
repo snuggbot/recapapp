@@ -7,6 +7,7 @@ import HomeView from './components/HomeView.jsx';
 import TimelineView from './components/TimelineView.jsx';
 import AddStreamModal from './components/AddStreamModal.jsx';
 import UnlockModal from './components/UnlockModal.jsx';
+import { RedditIcon } from './components/Icons.jsx';
 import { getOwnerKey, setOwnerKey, ownerFetch } from './lib/owner.js';
 import { ArrowUp, ArrowDown, ChevronDown, AlertTriangle, Trash2 } from 'lucide-react';
 import { Analytics } from '@vercel/analytics/react';
@@ -469,6 +470,18 @@ export default function App() {
           ) : null}
           {days[selectedDay]?.isLive && (
             <span className="px-1.5 py-0.5 rounded bg-red-500/15 text-red-400 text-[10px] font-bold">LIVE</span>
+          )}
+          {currentDayInfo?.redditUrl && (
+            <a
+              href={currentDayInfo.redditUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-auto inline-flex items-center gap-1.5 px-2 py-1 rounded-md text-[11px] font-medium bg-[#ff4500]/10 hover:bg-[#ff4500]/20 text-[#ff4500] border border-[#ff4500]/30 transition-colors"
+              title={currentDayInfo.redditTitle || 'View discussion thread on Reddit'}
+            >
+              <RedditIcon className="w-3.5 h-3.5 fill-current" />
+              <span className="hidden sm:inline">Reddit Thread</span>
+            </a>
           )}
         </div>
 
