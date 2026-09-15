@@ -11,7 +11,7 @@ import UnlockModal from './components/UnlockModal.jsx';
 import CharacterModal from './components/CharacterModal.jsx';
 import CalendarPicker from './components/CalendarPicker.jsx';
 import { getOwnerKey, setOwnerKey, ownerFetch } from './lib/owner.js';
-import { ArrowUp, ArrowDown, ChevronDown, AlertTriangle, Trash2, X } from 'lucide-react';
+import { ArrowUp, ArrowDown, AlertTriangle, Trash2, X } from 'lucide-react';
 import { Analytics } from '@vercel/analytics/react';
 
 export default function App() {
@@ -414,14 +414,6 @@ export default function App() {
     return minutes ? `${hours}h ${minutes}m` : `${hours}h`;
   };
 
-  const getDayOptionLabel = (dayNum, dayInfo) => {
-    const count = dayInfo?.eventsCount || dayInfo?.events?.length || 0;
-    const approx = dayInfo?.timestampsApproximate ? ' ~approx' : '';
-    const status = dayInfo?.isLive ? ' • LIVE' : '';
-    const label = formatDayLabel(dayInfo, dayNum);
-    return `${label} (${count} moments${approx})${status}`;
-  };
-
   const formatDayLabel = (dayInfo, fallbackNum) => {
     const rawDate = String(dayInfo?.streamDate || '').slice(0, 10);
     if (/^\d{4}-\d{2}-\d{2}$/.test(rawDate)) {
@@ -559,78 +551,35 @@ export default function App() {
           </div>
         )}
 
-        {/* Day Switcher & Extras Toolbar */}
+        {/* Day Switcher Toolbar (Calendar-driven) */}
         <div className="flex items-center justify-between pb-2 mb-2 border-b border-white/[0.08] gap-2">
-          <div className="flex items-center gap-2 overflow-x-auto">
-            {Object.keys(days).length <= 6 ? (
-              <div className="flex items-center bg-zinc-900/90 p-1 rounded-lg border border-white/[0.08] gap-1 overflow-x-auto">
-              {Object.entries(days).map(([dayNum, dayInfo]) => {
-                const isSelected = selectedDay === dayNum;
-                const count = dayInfo.eventsCount || dayInfo.events?.length || 0;
-                return (
-                  <div key={dayNum} className="flex items-center shrink-0">
-                    <button
-                      onClick={() => setSelectedDay(dayNum)}
-                      className={`px-3 py-1.5 rounded-l-md text-xs transition-all flex items-center gap-1.5 cursor-pointer whitespace-nowrap ${
-                        isSelected
-                          ? 'bg-zinc-800 text-white font-semibold shadow-sm border border-zinc-700/60'
-                          : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/40'
-                      }`}
-                    >
-                      <span>{formatDayLabel(dayInfo, dayNum)}</span>
-                      <span className="font-mono text-[10px] tabular-nums opacity-75">({count})</span>
-                      {dayInfo.timestampsApproximate && (
-                        <span
-                          className="text-[9px] text-amber-400/80 font-semibold"
-                          title="Timestamps are approximate — paste the VOD link or chat notes for exact moment times."
-                        >
-                          ~approx
-                        </span>
-                      )}
-                    </button>
-                    {isOwner && (
-                      <button
-                        onClick={() => handleDeleteDay(dayNum, dayInfo)}
-                        className={`p-1.5 rounded-r-md border-l text-zinc-500 hover:text-rose-300 hover:bg-rose-500/10 cursor-pointer ${isSelected ? 'bg-zinc-800 border-zinc-700/60' : 'border-transparent'}`}
-                        title={`Delete ${formatDayLabel(dayInfo, dayNum)} broadcast`}
-                      >
-                        <Trash2 className="w-3 h-3" />
-                      </button>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-          ) : (
-            <div className="flex items-center gap-2">
-              <div className="relative">
-                <select
-                  value={selectedDay}
-                  onChange={(e) => setSelectedDay(e.target.value)}
-                  className="pl-3 pr-8 py-1.5 rounded-lg text-xs font-semibold bg-zinc-900 text-zinc-100 border border-white/10 hover:border-zinc-700 focus:outline-none transition-colors appearance-none cursor-pointer shadow-sm"
-                >
-                  {Object.entries(days).map(([dayNum, dayInfo]) => (
-                    <option key={dayNum} value={dayNum}>
-                      {getDayOptionLabel(dayNum, dayInfo)}
-                    </option>
-                  ))}
-                </select>
-                <ChevronDown className="w-3.5 h-3.5 text-zinc-400 absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none" />
-              </div>
-              {isOwner && currentDayInfo && (
-                <button
-                  onClick={() => handleDeleteDay(selectedDay, currentDayInfo)}
-                  className="p-1.5 rounded-lg border border-white/10 text-zinc-500 hover:text-rose-300 hover:bg-rose-500/10 cursor-pointer"
-                  title={`Delete ${formatDayLabel(currentDayInfo, selectedDay)} broadcast`}
-                >
-                  <Trash2 className="w-3.5 h-3.5" />
-                </button>
-              )}
-            </div>
-          )}
+          <div className="flex items-center gap-2 min-w-0">
+            <span className="text-xs font-bold text-zinc-100 tracking-tight truncate">
+              {formatDayLabel(currentDayInfo, selectedDay)}
+            </span>
+            <span className="text-[11px] font-mono text-zinc-500 tabular-nums shrink-0">
+              ({currentDayInfo?.eventsCount || currentDayInfo?.events?.length || 0} moments)
+            </span>
+            {currentDayInfo?.timestampsApproximate && (
+              <span
+                className="text-[9px] text-amber-400/80 font-semibold shrink-0"
+                title="Timestamps are approximate — paste the VOD link or chat notes for exact moment times."
+              >
+                ~approx
+              </span>
+            )}
+            {isOwner && currentDayInfo && (
+              <button
+                onClick={() => handleDeleteDay(selectedDay, currentDayInfo)}
+                className="p-1 rounded text-zinc-500 hover:text-rose-300 hover:bg-rose-500/10 cursor-pointer transition-colors ml-1"
+                title={`Delete ${formatDayLabel(currentDayInfo, selectedDay)} broadcast`}
+              >
+                <Trash2 className="w-3 h-3" />
+              </button>
+            )}
           </div>
 
-          {/* Calendar Picker Popover with Clickable Days */}
+          {/* Interactive Calendar with Clickable Days */}
           <div className="flex items-center gap-1.5 shrink-0">
             <CalendarPicker
               days={days}
