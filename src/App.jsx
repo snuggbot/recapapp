@@ -377,7 +377,7 @@ export default function App() {
     window.scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
   };
 
-  const activePovConfig = povConfig.povs.find(p => p.id === currentPov) || povConfig.povs[0];
+  const activePovConfig = povConfig?.povs?.find(p => p.id === currentPov) || povConfig?.povs?.[0] || { id: 'stream', name: 'Stream' };
   const isHome = activeStreamId === null;
   const currentDayInfo = days[selectedDay] || days[Object.keys(days)[0]] || days['1'];
   const activeEvents = currentDayInfo?.events || [];

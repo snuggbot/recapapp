@@ -2695,16 +2695,12 @@ app.delete('/api/streams/:id', requireOwner, (req, res) => {
   const config = loadPovConfig();
   const stream = (config.povs || []).find(p => p.id === id);
   if (!stream) return res.status(404).json({ error: 'Stream not found.' });
-  if (stream.sourceLabel !== 'AI-generated recap') {
-    return res.status(400).json({ error: 'Demo streams are protected. Only generated streams can be removed.' });
-  }
 
   const nextConfig = { ...config, povs: config.povs.filter(p => p.id !== id) };
   savePovConfig(nextConfig);
 
-  if (id !== 'xqc') {
-    try { fs.rmSync(path.join(SRC_DATA_DIR, `${id}DaysData.json`), { force: true }); } catch {}
-  }
+  const file = id === 'xqc' ? 'daysData.json' : `${id}DaysData.json`;
+  try { fs.rmSync(path.join(SRC_DATA_DIR, file), { force: true }); } catch {}
   purgeRedditCacheForStream(id);
   for (const dir of [path.join(__dirname, 'public', 'images', 'frames'), path.join(__dirname, 'dist', 'images', 'frames')]) {
     try {

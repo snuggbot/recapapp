@@ -1024,7 +1024,7 @@ export default function TimelineView({
                   <div className="flex items-center gap-1">
                     {(event.twitchUrl || activePov?.twitchChannel) && (
                       <a
-                        href={event.twitchUrl || activePov.twitchChannel}
+                        href={event.twitchUrl || activePov?.twitchChannel}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="p-1.5 rounded bg-[#9146ff] hover:bg-[#772ce8] text-white transition-colors shadow-sm flex items-center justify-center"
@@ -1326,7 +1326,7 @@ export default function TimelineView({
                       <div className="flex items-center gap-1.5">
                         {(event.twitchUrl || activePov?.twitchChannel) && (
                           <a
-                            href={event.twitchUrl || activePov.twitchChannel}
+                            href={event.twitchUrl || activePov?.twitchChannel}
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={(e) => e.stopPropagation()}
@@ -1704,7 +1704,7 @@ export default function TimelineView({
                   {/* Twitch VOD jump */}
                   {(focusedEvent.twitchUrl || activePov?.twitchChannel) && (
                     <a
-                      href={focusedEvent.twitchUrl || activePov.twitchChannel}
+                      href={focusedEvent.twitchUrl || activePov?.twitchChannel}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-1.5 rounded-md bg-[#9146ff] hover:bg-[#772ce8] text-white transition-colors shadow-sm flex items-center justify-center cursor-pointer"

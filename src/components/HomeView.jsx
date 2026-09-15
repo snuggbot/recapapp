@@ -21,6 +21,8 @@ export default function HomeView({ items = [], onOpenStream, onOpenAddStream, on
       })
       .catch(() => {});
   }, []);
+
+  const activeCharacters = characters.filter((c) => (c.momentCount || 0) > 0);
   return (
     <div className="max-w-6xl mx-auto pb-16">
       {/* Hero header */}
@@ -142,7 +144,7 @@ export default function HomeView({ items = [], onOpenStream, onOpenAddStream, on
       )}
 
       {/* NoPixel V Character Roster & Storylines */}
-      {characters.length > 0 && (
+      {activeCharacters.length > 0 && (
         <div className="mt-10 pt-8 border-t border-white/[0.08]">
           <div className="flex items-center justify-between gap-3 mb-4">
             <div>
@@ -157,7 +159,7 @@ export default function HomeView({ items = [], onOpenStream, onOpenAddStream, on
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-            {characters.slice(0, 12).map((char) => (
+            {activeCharacters.slice(0, 12).map((char) => (
               <div
                 key={char.id || char.name}
                 onClick={() => onSelectCharacter?.(char.name)}
