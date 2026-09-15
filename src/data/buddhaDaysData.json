@@ -1,978 +1,1560 @@
 {
-  "title": "Buddha's Roleplay Adventures",
-  "summary": "Buddha navigates complex interactions in NoPixel, featuring heists, gang conflicts, and character developments. Key moments include betrayals and alliances that shape the narrative.",
-  "timestampsApproximate": true,
-  "sources": [
-    "transcription-pending"
-  ],
-  "sourceKey": "https://kick.com/buddha/videos/01a09150-21d8-7c95-80b3-eed2ef787922",
-  "profile": "nopixel",
-  "redditResearch": {
-    "status": "ok",
-    "fetchedAt": "2026-09-12T23:47:37.787Z",
-    "subreddits": [
-      "GTARP",
-      "LivestreamFail",
-      "xqcow"
-    ],
-    "queries": [
-      "NoPixel V",
-      "Buddha",
-      "Lang Buddha",
-      "Marty Banks",
-      "Tony Corleone",
-      "buddha",
-      "x",
-      "xqc"
-    ],
-    "posts": []
-  },
   "days": {
-    "3": {
-      "dayNumber": 3,
-      "title": "Buddha's Heist and Gang Conflicts",
-      "sourceKey": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c",
-      "streamDate": "2026-09-08",
-      "summary": "Buddha engages in heists and navigates gang tensions, revealing character dynamics and alliances.",
-      "updated": "2026-09-12T23:45:23.427Z",
+    "1": {
+      "dayNumber": 1,
+      "title": "Day 1",
+      "pov": "buddha",
+      "streamer": "Buddha",
+      "character": "Lang Buddha (Mista Lang)",
+      "redditTitle": "NoPixel V | Day 1 Recap | Lang Buddha POV With Timestamps",
+      "redditUrl": "https://www.twitch.tv/buddha",
+      "updated": "2026-09-08T23:59:00+00:00",
       "isLive": false,
-      "timestampsApproximate": true,
-      "sources": [
-        "transcription-pending"
-      ],
-      "eventsCount": 9,
+      "twitchVod": "https://www.twitch.tv/videos/2868737741",
+      "kickVod": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c",
+      "kickStreamUrl": "https://stream.kick.com/3c81249a5ce0/ivs/v1/196233775518/BO2zfdDBEu6T/2026/9/8/15/31/kPcCEXF3Zb9e/media/hls/master.m3u8",
+      "eventsCount": 37,
       "events": [
         {
-          "id": "buddha-evt-001",
-          "timestamp": "00:02:00",
-          "seconds": 120,
-          "endSeconds": 180,
-          "endTimestamp": "00:03:00",
-          "endMode": "model",
-          "isMajor": true,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "general",
-          "tags": [
-            "general"
-          ],
-          "participants": [
-            "Lang Buddha"
-          ],
-          "image": "/images/frames/buddha_evt_000120_000200.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=120",
-          "durationSeconds": 60,
-          "imageCaption": "Stream snapshot @ 00:02:00"
-        },
-        {
-          "id": "buddha-evt-002",
-          "timestamp": "00:07:30",
-          "seconds": 450,
-          "endSeconds": 510,
-          "endTimestamp": "00:08:30",
-          "endMode": "model",
-          "isMajor": true,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "general",
-          "tags": [
-            "general"
-          ],
-          "participants": [
-            "Lang Buddha"
-          ],
-          "image": "/images/frames/buddha_evt_000450_000730.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=450",
-          "durationSeconds": 60,
-          "imageCaption": "Stream snapshot @ 00:07:30"
-        },
-        {
-          "id": "buddha-evt-003",
-          "timestamp": "00:13:20",
-          "seconds": 800,
-          "endSeconds": 860,
-          "endTimestamp": "00:14:20",
-          "endMode": "model",
-          "isMajor": true,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "general",
-          "tags": [
-            "general"
-          ],
-          "participants": [
-            "Lang Buddha"
-          ],
-          "image": "/images/frames/buddha_evt_000800_001320.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=800",
-          "durationSeconds": 60,
-          "imageCaption": "Stream snapshot @ 00:13:20"
-        },
-        {
-          "id": "buddha-evt-004",
-          "timestamp": "00:22:20",
-          "seconds": 1340,
-          "endSeconds": 1400,
-          "endTimestamp": "00:23:20",
-          "endMode": "model",
-          "isMajor": true,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "general",
-          "tags": [
-            "general"
-          ],
-          "participants": [
-            "Lang Buddha"
-          ],
-          "image": "/images/frames/buddha_evt_001340_002220.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=1340",
-          "durationSeconds": 60,
-          "imageCaption": "Stream snapshot @ 00:22:20"
-        },
-        {
-          "id": "buddha-evt-005",
-          "timestamp": "00:35:00",
-          "seconds": 2100,
-          "endSeconds": 2160,
-          "endTimestamp": "00:36:00",
-          "endMode": "model",
+          "id": "b1-evt-001",
+          "timestamp": "00:15:30",
+          "seconds": 930,
           "isMajor": false,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "general",
+          "title": "Wakes up in Los Santos 5.0",
+          "description": "Lang wakes up in Los Santos 5.0, taking in the overhauled streets and setting up his new phone interface.",
+          "category": "lore",
           "tags": [
-            "general"
+            "lore"
           ],
+          "characters": [
+            "Lang Buddha (Mista Lang)"
+          ],
+          "image": "/images/frames/b1-evt-001_00_15_30.jpg",
+          "imageCaption": "Lang Buddha @ 00:15:30",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=00h15m30s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=928",
           "participants": [
             "Lang Buddha"
           ],
-          "image": "/images/frames/buddha_evt_002100_003500.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=2100",
-          "durationSeconds": 60,
-          "imageCaption": "Stream snapshot @ 00:35:00"
+          "endSeconds": 1050,
+          "endTimestamp": "00:17:30",
+          "durationSeconds": 120,
+          "endMode": "derived"
         },
         {
-          "id": "buddha-evt-006",
-          "timestamp": "00:48:20",
-          "seconds": 2900,
-          "endSeconds": 2950,
-          "endTimestamp": "00:49:10",
-          "endMode": "model",
+          "id": "b1-evt-002",
+          "timestamp": "00:42:10",
+          "seconds": 2530,
           "isMajor": false,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "general",
-          "tags": [
-            "general"
-          ],
-          "participants": [
-            "Lang Buddha"
-          ],
-          "image": "/images/frames/buddha_evt_002900_004820.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=2900",
-          "durationSeconds": 50,
-          "imageCaption": "Stream snapshot @ 00:48:20"
-        },
-        {
-          "id": "buddha-evt-007",
-          "timestamp": "01:00:00",
-          "seconds": 3600,
-          "endSeconds": 3660,
-          "endTimestamp": "01:01:00",
-          "endMode": "model",
-          "isMajor": true,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "general",
-          "tags": [
-            "general"
-          ],
-          "participants": [
-            "Lang Buddha"
-          ],
-          "image": "/images/frames/buddha_evt_003600_010000.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=3600",
-          "durationSeconds": 60,
-          "imageCaption": "Stream snapshot @ 01:00:00"
-        },
-        {
-          "id": "buddha-evt-008",
-          "timestamp": "01:15:00",
-          "seconds": 4500,
-          "endSeconds": 4560,
-          "endTimestamp": "01:16:00",
-          "endMode": "model",
-          "isMajor": false,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
+          "title": "Reunites with Tony Corleone",
+          "description": "Lang reconnects with his longtime brother Tony Corleone; they assess their starting cash balance and discuss early city moves.",
           "category": "social",
           "tags": [
             "social"
           ],
-          "image": "/images/frames/buddha_evt_004500_011500.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=4500",
-          "durationSeconds": 60,
-          "imageCaption": "Stream snapshot @ 01:15:00"
-        },
-        {
-          "id": "buddha-evt-009",
-          "timestamp": "13:03:20",
-          "seconds": 47000,
-          "endSeconds": 47180,
-          "endTimestamp": "13:06:20",
-          "endMode": "model",
-          "isMajor": false,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "chat",
-          "tags": [
-            "chat"
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone"
           ],
-          "participants": [
-            "Lang Buddha"
-          ],
-          "image": "/images/frames/buddha_evt_047000_130320.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=47000",
-          "durationSeconds": 180,
-          "imageCaption": "Stream snapshot @ 13:03:20"
-        }
-      ]
-    },
-    "4": {
-      "dayNumber": 4,
-      "title": "Heists and Alliances",
-      "sourceKey": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288",
-      "streamDate": "2026-09-09",
-      "summary": "Buddha engages in heists, faces police chases, and navigates gang conflicts, showcasing character relationships and major story developments.",
-      "updated": "2026-09-12T23:46:19.345Z",
-      "isLive": false,
-      "timestampsApproximate": true,
-      "sources": [
-        "transcription-pending"
-      ],
-      "eventsCount": 9,
-      "events": [
-        {
-          "id": "buddha-evt-001",
-          "timestamp": "00:20:34",
-          "seconds": 1234,
-          "endSeconds": 1250,
-          "endTimestamp": "00:20:50",
-          "endMode": "model",
-          "isMajor": true,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "general",
-          "tags": [
-            "general"
-          ],
-          "participants": [
-            "Lang Buddha"
-          ],
-          "image": "/images/frames/buddha_evt_001234_002034.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288?t=1234",
-          "durationSeconds": 16,
-          "imageCaption": "Stream snapshot @ 00:20:34"
-        },
-        {
-          "id": "buddha-evt-002",
-          "timestamp": "00:24:10",
-          "seconds": 1450,
-          "endSeconds": 1505,
-          "endTimestamp": "00:25:05",
-          "endMode": "model",
-          "isMajor": true,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "general",
-          "tags": [
-            "general"
-          ],
+          "image": "/images/frames/b1-evt-002_00_42_10.jpg",
+          "imageCaption": "Lang Buddha @ 00:42:10",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=00h42m10s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=2528",
           "participants": [
             "Lang Buddha",
             "Tony Corleone"
           ],
-          "image": "/images/frames/buddha_evt_001450_002410.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288?t=1450",
-          "durationSeconds": 55,
-          "imageCaption": "Stream snapshot @ 00:24:10"
+          "endSeconds": 2650,
+          "endTimestamp": "00:44:10",
+          "durationSeconds": 120,
+          "endMode": "derived"
         },
         {
-          "id": "buddha-evt-003",
-          "timestamp": "00:40:50",
-          "seconds": 2450,
-          "endSeconds": 2480,
-          "endTimestamp": "00:41:20",
-          "endMode": "model",
-          "isMajor": true,
-          "title": "Lang Buddha & Marty meet with Jean Paul at hideout",
-          "description": "Lang meets up with Marty and Jean Paul to discuss the operation.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "general",
+          "id": "b1-evt-003",
+          "timestamp": "01:10:45",
+          "seconds": 4245,
+          "isMajor": false,
+          "title": "Scouting the new city apartments",
+          "description": "Lang and Tony inspect low-end apartment units to establish a secure respawn and storage point.",
+          "category": "social",
           "tags": [
-            "general"
+            "social"
           ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone"
+          ],
+          "image": "/images/frames/b1-evt-003_01_10_45.jpg",
+          "imageCaption": "Lang Buddha @ 01:10:45",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=01h10m45s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=4243",
           "participants": [
             "Lang Buddha",
-            "Marty Banks"
+            "Tony Corleone"
           ],
-          "image": "/images/frames/buddha_evt_002450_004050.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288?t=2450",
-          "durationSeconds": 30,
-          "imageCaption": "Stream snapshot @ 00:40:50",
+          "endSeconds": 4365,
+          "endTimestamp": "01:12:45",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b1-evt-004",
+          "timestamp": "01:30:10",
+          "seconds": 5410,
+          "isMajor": false,
+          "title": "Banter with X on JustX socials",
+          "description": "Lang activates his JustX account (@TheBuddha) and trades public barbs with Jean Paul (X) over who will conquer the city first.",
+          "category": "social",
+          "tags": [
+            "social"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Jean Paul (X)"
+          ],
+          "image": "/images/frames/b1-evt-004_01_30_10.jpg",
+          "imageCaption": "Lang Buddha @ 01:30:10",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=01h30m10s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=5408",
           "crossPov": {
             "pov": "xqc",
-            "day": "2",
-            "eventId": "d2-evt-055",
             "streamer": "xQc",
-            "timestamp": "08:43:00",
-            "title": "Meets up with Lang and Tony at hideout"
-          }
+            "character": "Jean Paul (X)",
+            "day": "1",
+            "eventId": "d1-evt-007",
+            "timestamp": "02:36:20",
+            "title": "Banters with mista lang on socials"
+          },
+          "participants": [
+            "Lang Buddha",
+            "Jean Paul (X)"
+          ],
+          "endSeconds": 5530,
+          "endTimestamp": "01:32:10",
+          "durationSeconds": 120,
+          "endMode": "derived"
         },
         {
-          "id": "buddha-evt-004",
-          "timestamp": "01:00:00",
-          "seconds": 3600,
-          "endSeconds": 3625,
-          "endTimestamp": "01:00:25",
-          "endMode": "model",
+          "id": "b1-evt-005",
+          "timestamp": "02:15:00",
+          "seconds": 8100,
           "isMajor": false,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "general",
+          "title": "First vehicle rental & garage inspection",
+          "description": "Lang and Tony rent a cheap runabout vehicle to test city handling and fuel costs.",
+          "category": "mechanic",
           "tags": [
-            "general"
+            "mechanic"
           ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone"
+          ],
+          "image": "/images/frames/b1-evt-005_02_15_00.jpg",
+          "imageCaption": "Lang Buddha @ 02:15:00",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=02h15m00s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=8098",
           "participants": [
             "Lang Buddha",
             "Tony Corleone"
           ],
-          "image": "/images/frames/buddha_evt_003600_010000.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288?t=3600",
-          "durationSeconds": 25,
-          "imageCaption": "Stream snapshot @ 01:00:00"
+          "endSeconds": 8220,
+          "endTimestamp": "02:17:00",
+          "durationSeconds": 120,
+          "endMode": "derived"
         },
         {
-          "id": "buddha-evt-005",
-          "timestamp": "01:20:00",
-          "seconds": 4800,
-          "endSeconds": 4820,
-          "endTimestamp": "01:20:20",
-          "endMode": "model",
+          "id": "b1-evt-006",
+          "timestamp": "02:43:04",
+          "seconds": 9784,
           "isMajor": true,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "general",
+          "title": "Discovers Jean Paul working Burger Shot",
+          "description": "Lang walks into Burger Shot to grab food and is bewildered to spot Jean Paul locked behind the counter flipping burgers in full uniform.",
+          "category": "job",
           "tags": [
-            "general"
+            "job",
+            "social"
           ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Jean Paul (X)"
+          ],
+          "image": "/images/frames/b1-evt-006_02_43_04.jpg",
+          "imageCaption": "Lang Buddha @ 02:43:04",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=02h43m04s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=9782",
+          "youtubeUrl": "https://www.youtube.com/results?search_query=buddha+nopixel+5.0+burger+shot",
+          "crossPov": {
+            "pov": "xqc",
+            "streamer": "xQc",
+            "character": "Jean Paul (X)",
+            "day": "1",
+            "eventId": "d1-evt-018",
+            "timestamp": "03:15:45",
+            "title": "Encounters mista lang for the first time while he is working at burger shot"
+          },
           "participants": [
             "Lang Buddha",
-            "Marty Banks"
+            "Jean Paul (X)"
           ],
-          "image": "/images/frames/buddha_evt_004800_012000.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288?t=4800",
-          "durationSeconds": 20,
-          "imageCaption": "Stream snapshot @ 01:20:00"
+          "endSeconds": 9904,
+          "endTimestamp": "02:45:04",
+          "durationSeconds": 120,
+          "endMode": "derived"
         },
         {
-          "id": "buddha-evt-006",
-          "timestamp": "01:38:20",
-          "seconds": 5900,
-          "endSeconds": 5925,
-          "endTimestamp": "01:38:45",
-          "endMode": "model",
+          "id": "b1-evt-007",
+          "timestamp": "03:05:20",
+          "seconds": 11120,
           "isMajor": false,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "general",
+          "title": "Ordering food & teasing Burger Shot staff",
+          "description": "Lang places an order with Jean Paul and Ken-Sama, roasting X about his fall from criminal glory to fast-food trainee.",
+          "category": "social",
           "tags": [
-            "general"
+            "social"
           ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Jean Paul (X)"
+          ],
+          "image": "/images/frames/b1-evt-007_03_05_20.jpg",
+          "imageCaption": "Lang Buddha @ 03:05:20",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=03h05m20s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=11118",
           "participants": [
             "Lang Buddha",
-            "Marty Banks"
+            "Jean Paul (X)"
           ],
-          "image": "/images/frames/buddha_evt_005900_013820.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288?t=5900",
-          "durationSeconds": 25,
-          "imageCaption": "Stream snapshot @ 01:38:20"
+          "endSeconds": 11240,
+          "endTimestamp": "03:07:20",
+          "durationSeconds": 120,
+          "endMode": "derived"
         },
         {
-          "id": "buddha-evt-007",
-          "timestamp": "02:00:00",
-          "seconds": 7200,
-          "endSeconds": 7225,
-          "endTimestamp": "02:00:25",
-          "endMode": "model",
+          "id": "b1-evt-008",
+          "timestamp": "03:30:00",
+          "seconds": 12600,
           "isMajor": false,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "general",
+          "title": "Encountering Speedy & expanding workforce",
+          "description": "Lang watches Speedy show up at Burger Shot to join X's crew as employee number four.",
+          "category": "social",
           "tags": [
-            "general"
+            "social"
           ],
-          "participants": [
-            "Lang Buddha"
-          ],
-          "image": "/images/frames/buddha_evt_007200_020000.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288?t=7200",
-          "durationSeconds": 25,
-          "imageCaption": "Stream snapshot @ 02:00:00"
-        },
-        {
-          "id": "buddha-evt-008",
-          "timestamp": "02:20:00",
-          "seconds": 8400,
-          "endSeconds": 8425,
-          "endTimestamp": "02:20:25",
-          "endMode": "model",
-          "isMajor": true,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "general",
-          "tags": [
-            "general"
-          ],
-          "participants": [
-            "Lang Buddha",
-            "Tony Corleone"
-          ],
-          "image": "/images/frames/buddha_evt_008400_022000.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288?t=8400",
-          "durationSeconds": 25,
-          "imageCaption": "Stream snapshot @ 02:20:00"
-        },
-        {
-          "id": "buddha-evt-009",
-          "timestamp": "02:25:00",
-          "seconds": 8700,
-          "endSeconds": 8730,
-          "endTimestamp": "02:25:30",
-          "endMode": "model",
-          "isMajor": false,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "chat",
-          "tags": [
-            "chat"
-          ],
-          "participants": [
-            "Lang Buddha"
-          ],
-          "image": "/images/frames/buddha_evt_008700_022500.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288?t=8700",
-          "durationSeconds": 30,
-          "imageCaption": "Stream snapshot @ 02:25:00"
-        }
-      ]
-    },
-    "5": {
-      "dayNumber": 5,
-      "title": "Buddha's Day in NoPixel",
-      "sourceKey": "https://kick.com/buddha/videos/01a08c48-a818-721e-b075-55bb78d88732",
-      "streamDate": "2026-09-10",
-      "summary": "Buddha engages in various criminal activities and personal conflicts throughout the day.",
-      "updated": "2026-09-12T23:46:55.561Z",
-      "isLive": false,
-      "timestampsApproximate": true,
-      "sources": [
-        "transcription-pending"
-      ],
-      "eventsCount": 9,
-      "events": [
-        {
-          "id": "buddha-evt-001",
-          "timestamp": "00:20:34",
-          "seconds": 1234,
-          "endSeconds": 1260,
-          "endTimestamp": "00:21:00",
-          "endMode": "model",
-          "isMajor": true,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "general",
-          "tags": [
-            "general"
-          ],
-          "participants": [
-            "Lang Buddha"
-          ],
-          "image": "/images/frames/buddha_evt_001234_002034.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a08c48-a818-721e-b075-55bb78d88732?t=1234",
-          "durationSeconds": 26,
-          "imageCaption": "Stream snapshot @ 00:20:34"
-        },
-        {
-          "id": "buddha-evt-002",
-          "timestamp": "00:40:56",
-          "seconds": 2456,
-          "endSeconds": 2480,
-          "endTimestamp": "00:41:20",
-          "endMode": "model",
-          "isMajor": true,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "general",
-          "tags": [
-            "general"
-          ],
-          "participants": [
-            "Lang Buddha"
-          ],
-          "image": "/images/frames/buddha_evt_002456_004056.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a08c48-a818-721e-b075-55bb78d88732?t=2456",
-          "durationSeconds": 24,
-          "imageCaption": "Stream snapshot @ 00:40:56"
-        },
-        {
-          "id": "buddha-evt-003",
-          "timestamp": "01:03:09",
-          "seconds": 3789,
-          "endSeconds": 3810,
-          "endTimestamp": "01:03:30",
-          "endMode": "model",
-          "isMajor": true,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "general",
-          "tags": [
-            "general"
-          ],
-          "participants": [
-            "Lang Buddha"
-          ],
-          "image": "/images/frames/buddha_evt_003789_010309.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a08c48-a818-721e-b075-55bb78d88732?t=3789",
-          "durationSeconds": 21,
-          "imageCaption": "Stream snapshot @ 01:03:09"
-        },
-        {
-          "id": "buddha-evt-004",
-          "timestamp": "01:16:07",
-          "seconds": 4567,
-          "endSeconds": 4590,
-          "endTimestamp": "01:16:30",
-          "endMode": "model",
-          "isMajor": true,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "general",
-          "tags": [
-            "general"
-          ],
-          "participants": [
-            "Lang Buddha",
-            "Tony Corleone"
-          ],
-          "image": "/images/frames/buddha_evt_004567_011607.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a08c48-a818-721e-b075-55bb78d88732?t=4567",
-          "durationSeconds": 23,
-          "imageCaption": "Stream snapshot @ 01:16:07"
-        },
-        {
-          "id": "buddha-evt-005",
-          "timestamp": "01:34:38",
-          "seconds": 5678,
-          "endSeconds": 5700,
-          "endTimestamp": "01:35:00",
-          "endMode": "model",
-          "isMajor": true,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "general",
-          "tags": [
-            "general"
-          ],
-          "participants": [
-            "Lang Buddha"
-          ],
-          "image": "/images/frames/buddha_evt_005678_013438.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a08c48-a818-721e-b075-55bb78d88732?t=5678",
-          "durationSeconds": 22,
-          "imageCaption": "Stream snapshot @ 01:34:38"
-        },
-        {
-          "id": "buddha-evt-006",
-          "timestamp": "01:53:09",
-          "seconds": 6789,
-          "endSeconds": 6810,
-          "endTimestamp": "01:53:30",
-          "endMode": "model",
-          "isMajor": false,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "general",
-          "tags": [
-            "general"
-          ],
-          "participants": [
-            "Lang Buddha"
-          ],
-          "image": "/images/frames/buddha_evt_006789_015309.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a08c48-a818-721e-b075-55bb78d88732?t=6789",
-          "durationSeconds": 21,
-          "imageCaption": "Stream snapshot @ 01:53:09"
-        },
-        {
-          "id": "buddha-evt-007",
-          "timestamp": "02:11:30",
-          "seconds": 7890,
-          "endSeconds": 7920,
-          "endTimestamp": "02:12:00",
-          "endMode": "model",
-          "isMajor": false,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "general",
-          "tags": [
-            "general"
-          ],
-          "participants": [
-            "Lang Buddha",
-            "Cement"
-          ],
-          "image": "/images/frames/buddha_evt_007890_021130.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a08c48-a818-721e-b075-55bb78d88732?t=7890",
-          "durationSeconds": 30,
-          "imageCaption": "Stream snapshot @ 02:11:30"
-        },
-        {
-          "id": "buddha-evt-008",
-          "timestamp": "02:28:21",
-          "seconds": 8901,
-          "endSeconds": 8920,
-          "endTimestamp": "02:28:40",
-          "endMode": "model",
-          "isMajor": false,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "general",
-          "tags": [
-            "general"
-          ],
-          "participants": [
-            "Lang Buddha"
-          ],
-          "image": "/images/frames/buddha_evt_008901_022821.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a08c48-a818-721e-b075-55bb78d88732?t=8901",
-          "durationSeconds": 19,
-          "imageCaption": "Stream snapshot @ 02:28:21"
-        },
-        {
-          "id": "buddha-evt-009",
-          "timestamp": "03:25:45",
-          "seconds": 12345,
-          "endSeconds": 12360,
-          "endTimestamp": "03:26:00",
-          "endMode": "model",
-          "isMajor": false,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "chat",
-          "tags": [
-            "chat"
-          ],
-          "participants": [
-            "Lang Buddha"
-          ],
-          "image": "/images/frames/buddha_evt_012345_032545.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a08c48-a818-721e-b075-55bb78d88732?t=12345",
-          "durationSeconds": 15,
-          "imageCaption": "Stream snapshot @ 03:25:45"
-        }
-      ]
-    },
-    "6": {
-      "dayNumber": 6,
-      "title": "Buddha's Day in NoPixel",
-      "sourceKey": "https://kick.com/buddha/videos/01a09150-21d8-7c95-80b3-eed2ef787922",
-      "streamDate": "2026-09-11",
-      "summary": "A day filled with heists, gang conflicts, and intense character interactions.",
-      "updated": "2026-09-12T23:47:45.729Z",
-      "isLive": false,
-      "timestampsApproximate": true,
-      "sources": [
-        "transcription-pending"
-      ],
-      "eventsCount": 9,
-      "events": [
-        {
-          "id": "buddha-evt-001",
-          "timestamp": "00:20:34",
-          "seconds": 1234,
-          "endSeconds": 1250,
-          "endTimestamp": "00:20:50",
-          "endMode": "model",
-          "isMajor": false,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "general",
-          "tags": [
-            "general"
-          ],
-          "participants": [
-            "Lang Buddha"
-          ],
-          "image": "/images/frames/buddha_evt_001234_002034.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a09150-21d8-7c95-80b3-eed2ef787922?t=1234",
-          "durationSeconds": 16,
-          "imageCaption": "Stream snapshot @ 00:20:34"
-        },
-        {
-          "id": "buddha-evt-002",
-          "timestamp": "00:39:05",
-          "seconds": 2345,
-          "endSeconds": 2370,
-          "endTimestamp": "00:39:30",
-          "endMode": "model",
-          "isMajor": true,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "general",
-          "tags": [
-            "general"
-          ],
-          "participants": [
-            "Lang Buddha",
-            "Marty Banks"
-          ],
-          "image": "/images/frames/buddha_evt_002345_003905.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a09150-21d8-7c95-80b3-eed2ef787922?t=2345",
-          "durationSeconds": 25,
-          "imageCaption": "Stream snapshot @ 00:39:05"
-        },
-        {
-          "id": "buddha-evt-003",
-          "timestamp": "00:57:36",
-          "seconds": 3456,
-          "endSeconds": 3480,
-          "endTimestamp": "00:58:00",
-          "endMode": "model",
-          "isMajor": true,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "general",
-          "tags": [
-            "general"
-          ],
-          "participants": [
-            "Lang Buddha",
-            "Tony Corleone"
-          ],
-          "image": "/images/frames/buddha_evt_003456_005736.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a09150-21d8-7c95-80b3-eed2ef787922?t=3456",
-          "durationSeconds": 24,
-          "imageCaption": "Stream snapshot @ 00:57:36"
-        },
-        {
-          "id": "buddha-evt-004",
-          "timestamp": "01:16:07",
-          "seconds": 4567,
-          "endSeconds": 4590,
-          "endTimestamp": "01:16:30",
-          "endMode": "model",
-          "isMajor": true,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "general",
-          "tags": [
-            "general"
-          ],
-          "participants": [
-            "Lang Buddha",
-            "Marty Banks"
-          ],
-          "image": "/images/frames/buddha_evt_004567_011607.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a09150-21d8-7c95-80b3-eed2ef787922?t=4567",
-          "durationSeconds": 23,
-          "imageCaption": "Stream snapshot @ 01:16:07"
-        },
-        {
-          "id": "buddha-evt-005",
-          "timestamp": "01:34:38",
-          "seconds": 5678,
-          "endSeconds": 5700,
-          "endTimestamp": "01:35:00",
-          "endMode": "model",
-          "isMajor": false,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "general",
-          "tags": [
-            "general"
-          ],
-          "participants": [
-            "Lang Buddha",
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Jean Paul (X)",
             "Speedy"
           ],
-          "image": "/images/frames/buddha_evt_005678_013438.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a09150-21d8-7c95-80b3-eed2ef787922?t=5678",
-          "durationSeconds": 22,
-          "imageCaption": "Stream snapshot @ 01:34:38"
+          "image": "/images/frames/b1-evt-008_03_30_00.jpg",
+          "imageCaption": "Lang Buddha @ 03:30:00",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=03h30m00s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=12598",
+          "participants": [
+            "Lang Buddha",
+            "Jean Paul (X)",
+            "Speedy"
+          ],
+          "endSeconds": 12720,
+          "endTimestamp": "03:32:00",
+          "durationSeconds": 120,
+          "endMode": "derived"
         },
         {
-          "id": "buddha-evt-006",
-          "timestamp": "01:53:09",
-          "seconds": 6789,
-          "endSeconds": 6810,
-          "endTimestamp": "01:53:30",
-          "endMode": "model",
+          "id": "b1-evt-009",
+          "timestamp": "03:56:40",
+          "seconds": 14200,
           "isMajor": false,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "general",
+          "title": "Testing Guber taxi service mechanics",
+          "description": "Lang tests out the Guber taxi app, realizing it pays consistent legitimate money without drawing attention from law enforcement.",
+          "category": "job",
           "tags": [
-            "general"
+            "job"
           ],
+          "characters": [
+            "Lang Buddha (Mista Lang)"
+          ],
+          "image": "/images/frames/b1-evt-009_03_56_40.jpg",
+          "imageCaption": "Lang Buddha @ 03:56:40",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=03h56m40s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=14198",
           "participants": [
             "Lang Buddha"
           ],
-          "image": "/images/frames/buddha_evt_006789_015309.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a09150-21d8-7c95-80b3-eed2ef787922?t=6789",
-          "durationSeconds": 21,
-          "imageCaption": "Stream snapshot @ 01:53:09"
+          "endSeconds": 14320,
+          "endTimestamp": "03:58:40",
+          "durationSeconds": 120,
+          "endMode": "derived"
         },
         {
-          "id": "buddha-evt-007",
-          "timestamp": "02:11:30",
-          "seconds": 7890,
-          "endSeconds": 7915,
-          "endTimestamp": "02:11:55",
-          "endMode": "model",
-          "isMajor": true,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "general",
+          "id": "b1-evt-010",
+          "timestamp": "04:30:15",
+          "seconds": 16215,
+          "isMajor": false,
+          "title": "First high-paying Guber taxi fare",
+          "description": "Lang picks up his first paying civilian passenger, navigating city traffic while learning the payout rates.",
+          "category": "job",
           "tags": [
-            "general"
+            "job"
           ],
+          "characters": [
+            "Lang Buddha (Mista Lang)"
+          ],
+          "image": "/images/frames/b1-evt-010_04_30_15.jpg",
+          "imageCaption": "Lang Buddha @ 04:30:15",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=04h30m15s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=16213",
+          "participants": [
+            "Lang Buddha"
+          ],
+          "endSeconds": 16335,
+          "endTimestamp": "04:32:15",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b1-evt-011",
+          "timestamp": "05:10:00",
+          "seconds": 18600,
+          "isMajor": false,
+          "title": "Civic building & government center recon",
+          "description": "Lang drives through downtown government sectors, checking city hall and courthouse updates for future permits.",
+          "category": "lore",
+          "tags": [
+            "lore"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)"
+          ],
+          "image": "/images/frames/b1-evt-011_05_10_00.jpg",
+          "imageCaption": "Lang Buddha @ 05:10:00",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=05h10m00s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=18598",
+          "participants": [
+            "Lang Buddha"
+          ],
+          "endSeconds": 18720,
+          "endTimestamp": "05:12:00",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b1-evt-012",
+          "timestamp": "05:45:30",
+          "seconds": 20730,
+          "isMajor": false,
+          "title": "Regrouping with Tony at Legion Square",
+          "description": "Lang meets back up with Tony to pool their taxi profits and compare notes on city jobs.",
+          "category": "social",
+          "tags": [
+            "social"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone"
+          ],
+          "image": "/images/frames/b1-evt-012_05_45_30.jpg",
+          "imageCaption": "Lang Buddha @ 05:45:30",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=05h45m30s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=20728",
           "participants": [
             "Lang Buddha",
             "Tony Corleone"
           ],
-          "image": "/images/frames/buddha_evt_007890_021130.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a09150-21d8-7c95-80b3-eed2ef787922?t=7890",
-          "durationSeconds": 25,
-          "imageCaption": "Stream snapshot @ 02:11:30"
+          "endSeconds": 20850,
+          "endTimestamp": "05:47:30",
+          "durationSeconds": 120,
+          "endMode": "derived"
         },
         {
-          "id": "buddha-evt-008",
-          "timestamp": "02:28:21",
-          "seconds": 8901,
-          "endSeconds": 8925,
-          "endTimestamp": "02:28:45",
-          "endMode": "model",
+          "id": "b1-evt-013",
+          "timestamp": "06:15:00",
+          "seconds": 22500,
           "isMajor": false,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
-          "category": "chat",
+          "title": "Medical check at Pillbox hospital",
+          "description": "Lang stops by the hospital to check medical supply costs and observe EMS procedures.",
+          "category": "medical",
           "tags": [
-            "chat"
+            "medical"
           ],
+          "characters": [
+            "Lang Buddha (Mista Lang)"
+          ],
+          "image": "/images/frames/b1-evt-013_06_15_00.jpg",
+          "imageCaption": "Lang Buddha @ 06:15:00",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=06h15m00s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=22498",
           "participants": [
             "Lang Buddha"
           ],
-          "image": "/images/frames/buddha_evt_008901_022821.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a09150-21d8-7c95-80b3-eed2ef787922?t=8901",
-          "durationSeconds": 24,
-          "imageCaption": "Stream snapshot @ 02:28:21"
+          "endSeconds": 22620,
+          "endTimestamp": "06:17:00",
+          "durationSeconds": 120,
+          "endMode": "derived"
         },
         {
-          "id": "buddha-evt-009",
-          "timestamp": "02:46:40",
-          "seconds": 10000,
-          "endSeconds": 10020,
-          "endTimestamp": "02:47:00",
-          "endMode": "model",
+          "id": "b1-evt-014",
+          "timestamp": "06:39:59",
+          "seconds": 23999,
           "isMajor": false,
-          "title": "Unverified timestamp",
-          "description": "Caption pending VOD transcription.",
-          "evidence": "",
-          "confidence": "low",
+          "title": "Pawn shop run & hearing about X's disease",
+          "description": "Lang and Tony check out the pawn shop where they run into X and Marty. X starts rambling frantically about his strange disease and medical status.",
+          "category": "medical",
+          "tags": [
+            "medical",
+            "social"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone",
+            "Jean Paul (X)",
+            "Marty Banks"
+          ],
+          "image": "/images/frames/b1-evt-014_06_39_59.jpg",
+          "imageCaption": "Lang Buddha @ 06:39:59",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=06h39m59s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=23997",
+          "crossPov": {
+            "pov": "xqc",
+            "streamer": "xQc",
+            "character": "Jean Paul (X)",
+            "day": "1",
+            "eventId": "d1-evt-073",
+            "timestamp": "07:12:40",
+            "title": "They encounter lang and tony at the pawn shop, x tells them about his disease"
+          },
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone",
+            "Jean Paul (X)",
+            "Marty Banks"
+          ],
+          "endSeconds": 24119,
+          "endTimestamp": "06:41:59",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b1-evt-015",
+          "timestamp": "06:42:59",
+          "seconds": 24179,
+          "isMajor": false,
+          "title": "Server tsunami warning & reset",
+          "description": "The city server tsunami hits right after meeting at the pawn shop; everyone prepares to log back in.",
           "category": "general",
           "tags": [
             "general"
           ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone"
+          ],
+          "image": "/images/frames/b1-evt-015_06_42_59.jpg",
+          "imageCaption": "Lang Buddha @ 06:42:59",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=06h42m59s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=24177",
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone"
+          ],
+          "endSeconds": 24299,
+          "endTimestamp": "06:44:59",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b1-evt-016",
+          "timestamp": "06:57:49",
+          "seconds": 25069,
+          "isMajor": false,
+          "title": "Convoy ride with Tony, X, and Marty",
+          "description": "Lang, Tony, Marty, and X cruise together across Los Santos, sharing notes on newly discovered jobs, metal detecting, and tools.",
+          "category": "social",
+          "tags": [
+            "social"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone",
+            "Jean Paul (X)",
+            "Marty Banks"
+          ],
+          "image": "/images/frames/b1-evt-016_06_57_49.jpg",
+          "imageCaption": "Lang Buddha @ 06:57:49",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=06h57m49s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=25067",
+          "crossPov": {
+            "pov": "xqc",
+            "streamer": "xQc",
+            "character": "Jean Paul (X)",
+            "day": "1",
+            "eventId": "d1-evt-076",
+            "timestamp": "07:30:30",
+            "title": "x, Marty, Tony and Lang drive off together"
+          },
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone",
+            "Jean Paul (X)",
+            "Marty Banks"
+          ],
+          "endSeconds": 25189,
+          "endTimestamp": "06:59:49",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b1-evt-017",
+          "timestamp": "07:06:49",
+          "seconds": 25609,
+          "isMajor": true,
+          "title": "Buying the Octane crypto crash dip at 6",
+          "description": "Lang tracks Octane coin collapsing to 6. Lang and Tony seize the opportunity to buy into the dip alongside X.",
+          "category": "crypto",
+          "tags": [
+            "crypto"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone",
+            "Jean Paul (X)"
+          ],
+          "image": "/images/frames/b1-evt-017_07_06_49.jpg",
+          "imageCaption": "Lang Buddha @ 07:06:49",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=07h06m49s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=25607",
+          "crossPov": {
+            "pov": "xqc",
+            "streamer": "xQc",
+            "character": "Jean Paul (X)",
+            "day": "1",
+            "eventId": "d1-evt-079",
+            "timestamp": "07:39:30",
+            "title": "Buys 350$ worth of Octane at 46$, Lang and Tony buy as well"
+          },
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone",
+            "Jean Paul (X)"
+          ],
+          "endSeconds": 25729,
+          "endTimestamp": "07:08:49",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b1-evt-018",
+          "timestamp": "07:09:49",
+          "seconds": 25789,
+          "isMajor": false,
+          "title": "Preaching the Guber taxi hustle to the squad",
+          "description": "Lang explains the Guber taxi economy to X and Marty, emphasizing that steady taxi fares are the best way to bankroll early operations.",
+          "category": "job",
+          "tags": [
+            "job"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone",
+            "Jean Paul (X)",
+            "Marty Banks"
+          ],
+          "image": "/images/frames/b1-evt-018_07_09_49.jpg",
+          "imageCaption": "Lang Buddha @ 07:09:49",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=07h09m49s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=25787",
+          "crossPov": {
+            "pov": "xqc",
+            "streamer": "xQc",
+            "character": "Jean Paul (X)",
+            "day": "1",
+            "eventId": "d1-evt-080",
+            "timestamp": "07:42:30",
+            "title": "Tony and Lang say that Guber (taxi service) pays really well"
+          },
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone",
+            "Jean Paul (X)",
+            "Marty Banks"
+          ],
+          "endSeconds": 25909,
+          "endTimestamp": "07:11:49",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b1-evt-019",
+          "timestamp": "07:45:00",
+          "seconds": 27900,
+          "isMajor": false,
+          "title": "Afternoon taxi runs & capital building",
+          "description": "Lang runs consecutive Guber rides across Little Seoul and Rockford Hills, boosting his personal bank balance over ,500.",
+          "category": "job",
+          "tags": [
+            "job"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)"
+          ],
+          "image": "/images/frames/b1-evt-019_07_45_00.jpg",
+          "imageCaption": "Lang Buddha @ 07:45:00",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=07h45m00s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=27898",
           "participants": [
             "Lang Buddha"
           ],
-          "image": "/images/frames/buddha_evt_010000_024640.jpg",
-          "kickUrl": "https://kick.com/buddha/videos/01a09150-21d8-7c95-80b3-eed2ef787922?t=10000",
-          "durationSeconds": 20,
-          "imageCaption": "Stream snapshot @ 02:46:40"
+          "endSeconds": 28020,
+          "endTimestamp": "07:47:00",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b1-evt-020",
+          "timestamp": "08:20:00",
+          "seconds": 30000,
+          "isMajor": false,
+          "title": "Vehicle tuning & repair stop",
+          "description": "Lang pulls into Benny's motorworks to repair damage and evaluate early vehicle upgrade pricing.",
+          "category": "mechanic",
+          "tags": [
+            "mechanic"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone"
+          ],
+          "image": "/images/frames/b1-evt-020_08_20_00.jpg",
+          "imageCaption": "Lang Buddha @ 08:20:00",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=08h20m00s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=29998",
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone"
+          ],
+          "endSeconds": 30120,
+          "endTimestamp": "08:22:00",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b1-evt-021",
+          "timestamp": "08:50:00",
+          "seconds": 31800,
+          "isMajor": false,
+          "title": "Discussing black market tools & lockpicks",
+          "description": "Lang talks with Tony about the need to acquire lockpicks and advanced burglary equipment before moving on major targets.",
+          "category": "crime",
+          "tags": [
+            "crime"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone"
+          ],
+          "image": "/images/frames/b1-evt-021_08_50_00.jpg",
+          "imageCaption": "Lang Buddha @ 08:50:00",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=08h50m00s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=31798",
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone"
+          ],
+          "endSeconds": 31920,
+          "endTimestamp": "08:52:00",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b1-evt-022",
+          "timestamp": "09:15:00",
+          "seconds": 33300,
+          "isMajor": false,
+          "title": "Receiving word of an underworld contact at the Ranch",
+          "description": "Lang gets tipped off about an influential mysterious player operating from an isolated ranch in Blaine County.",
+          "category": "lore",
+          "tags": [
+            "lore"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone"
+          ],
+          "image": "/images/frames/b1-evt-022_09_15_00.jpg",
+          "imageCaption": "Lang Buddha @ 09:15:00",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=09h15m00s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=33298",
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone"
+          ],
+          "endSeconds": 33420,
+          "endTimestamp": "09:17:00",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b1-evt-023",
+          "timestamp": "09:51:19",
+          "seconds": 35479,
+          "isMajor": true,
+          "title": "Meeting Mr. Cement at the Ranch & The Challenge",
+          "description": "Lang, Tony, X, and Marty arrive at the remote ranch to meet Mr. Cement. He challenges them to escort him on a high-stakes test: bait police units and safely shake them off.",
+          "category": "crime",
+          "tags": [
+            "crime",
+            "lore"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone",
+            "Jean Paul (X)",
+            "Marty Banks",
+            "Mr. Cement"
+          ],
+          "image": "/images/frames/b1-evt-023_09_51_19.jpg",
+          "imageCaption": "Lang Buddha @ 09:51:19",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=09h51m19s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=35477",
+          "crossPov": {
+            "pov": "xqc",
+            "streamer": "xQc",
+            "character": "Jean Paul (X)",
+            "day": "1",
+            "eventId": "d1-evt-098",
+            "timestamp": "10:24:00",
+            "title": "Meet up at the ranch with a stranger (Mr. Cement) who gives them a chase challenge"
+          },
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone",
+            "Jean Paul (X)",
+            "Marty Banks",
+            "Mr. Cement"
+          ],
+          "endSeconds": 35599,
+          "endTimestamp": "09:53:19",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b1-evt-024",
+          "timestamp": "10:04:49",
+          "seconds": 36289,
+          "isMajor": false,
+          "title": "Cooking the escape plan behind the barn",
+          "description": "The four veterans step behind the ranch barn to coordinate vehicle assignments, radio frequencies, and evasion routes.",
+          "category": "crime",
+          "tags": [
+            "crime"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone",
+            "Jean Paul (X)",
+            "Marty Banks"
+          ],
+          "image": "/images/frames/b1-evt-024_10_04_49.jpg",
+          "imageCaption": "Lang Buddha @ 10:04:49",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=10h04m49s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=36287",
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone",
+            "Jean Paul (X)",
+            "Marty Banks"
+          ],
+          "endSeconds": 36409,
+          "endTimestamp": "10:06:49",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b1-evt-025",
+          "timestamp": "10:20:59",
+          "seconds": 37259,
+          "isMajor": false,
+          "title": "Final briefing with Mr. Cement before launch",
+          "description": "Lang confirms the rules of engagement with Mr. Cement: no lethal force unless cornered, purely precision driving evasion.",
+          "category": "crime",
+          "tags": [
+            "crime"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone",
+            "Mr. Cement"
+          ],
+          "image": "/images/frames/b1-evt-025_10_20_59.jpg",
+          "imageCaption": "Lang Buddha @ 10:20:59",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=10h20m59s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=37257",
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone",
+            "Mr. Cement"
+          ],
+          "endSeconds": 37379,
+          "endTimestamp": "10:22:59",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b1-evt-026",
+          "timestamp": "10:32:59",
+          "seconds": 37979,
+          "isMajor": false,
+          "title": "Scouting decoy vehicles & tourist bus",
+          "description": "The squad considers absurd getaway options including a 12-seater tourist bus before settling on nimble getaway cars.",
+          "category": "crime",
+          "tags": [
+            "crime"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone",
+            "Jean Paul (X)",
+            "Marty Banks"
+          ],
+          "image": "/images/frames/b1-evt-026_10_32_59.jpg",
+          "imageCaption": "Lang Buddha @ 10:32:59",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=10h32m59s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=37977",
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone",
+            "Jean Paul (X)",
+            "Marty Banks"
+          ],
+          "endSeconds": 38099,
+          "endTimestamp": "10:34:59",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b1-evt-027",
+          "timestamp": "10:38:49",
+          "seconds": 38329,
+          "isMajor": false,
+          "title": "Escape route final sync",
+          "description": "Lang details the hills and tunnel exits to use if Los Santos Police Department deploys interceptors.",
+          "category": "crime",
+          "tags": [
+            "crime"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone"
+          ],
+          "image": "/images/frames/b1-evt-027_10_38_49.jpg",
+          "imageCaption": "Lang Buddha @ 10:38:49",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=10h38m49s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=38327",
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone"
+          ],
+          "endSeconds": 38449,
+          "endTimestamp": "10:40:49",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b1-evt-028",
+          "timestamp": "11:04:39",
+          "seconds": 39879,
+          "isMajor": true,
+          "title": "The police chase begins: baiting the patrol",
+          "description": "The chase kicks off into high gear; sirens echo as multiple police cruisers latch onto their tail while Mr. Cement rides along as the mock hostage.",
+          "category": "chase",
+          "tags": [
+            "chase",
+            "crime"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone",
+            "Mr. Cement"
+          ],
+          "image": "/images/frames/b1-evt-028_11_04_39.jpg",
+          "imageCaption": "Lang Buddha @ 11:04:39",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=11h04m39s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=39877",
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone",
+            "Mr. Cement"
+          ],
+          "endSeconds": 39999,
+          "endTimestamp": "11:06:39",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b1-evt-029",
+          "timestamp": "11:08:19",
+          "seconds": 40099,
+          "isMajor": true,
+          "title": "Executing the alley split & ditching Cement",
+          "description": "Lang coordinates the decoy maneuver, peeling away through a narrow alley to divert half the pursuing patrol units.",
+          "category": "chase",
+          "tags": [
+            "chase"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone"
+          ],
+          "image": "/images/frames/b1-evt-029_11_08_19.jpg",
+          "imageCaption": "Lang Buddha @ 11:08:19",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=11h08m19s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=40097",
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone"
+          ],
+          "endSeconds": 40219,
+          "endTimestamp": "11:10:19",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b1-evt-030",
+          "timestamp": "11:17:14",
+          "seconds": 40634,
+          "isMajor": true,
+          "title": "Vinewood hills evasion driving",
+          "description": "Lang uses elevation changes and off-road cuts in Vinewood to break visual contact with secondary police pursuit.",
+          "category": "chase",
+          "tags": [
+            "chase"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone"
+          ],
+          "image": "/images/frames/b1-evt-030_11_17_14.jpg",
+          "imageCaption": "Lang Buddha @ 11:17:14",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=11h17m14s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=40632",
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone"
+          ],
+          "endSeconds": 40754,
+          "endTimestamp": "11:19:14",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b1-evt-031",
+          "timestamp": "11:30:19",
+          "seconds": 41419,
+          "isMajor": true,
+          "title": "Rendezvous with X & Marty after shaking the cops",
+          "description": "Lang and Tony rendezvous with X and Marty after completely losing police pursuit, celebrating completing Mr. Cement's initiation challenge.",
+          "category": "chase",
+          "tags": [
+            "chase",
+            "social"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone",
+            "Jean Paul (X)",
+            "Marty Banks"
+          ],
+          "image": "/images/frames/b1-evt-031_11_30_19.jpg",
+          "imageCaption": "Lang Buddha @ 11:30:19",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=11h30m19s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=41417",
+          "crossPov": {
+            "pov": "xqc",
+            "streamer": "xQc",
+            "character": "Jean Paul (X)",
+            "day": "1",
+            "eventId": "d1-evt-109",
+            "timestamp": "12:03:00",
+            "title": "Rendezvous with Lang and Tony after losing the cops"
+          },
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone",
+            "Jean Paul (X)",
+            "Marty Banks"
+          ],
+          "endSeconds": 41539,
+          "endTimestamp": "11:32:19",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b1-evt-032",
+          "timestamp": "11:39:19",
+          "seconds": 41959,
+          "isMajor": false,
+          "title": "Ditching suspect clothes at the wardrobe",
+          "description": "The crew duck into a clothing shop to change outfits and alter their appearance before police can broadcast BOLOs.",
+          "category": "social",
+          "tags": [
+            "social"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone",
+            "Jean Paul (X)",
+            "Marty Banks"
+          ],
+          "image": "/images/frames/b1-evt-032_11_39_19.jpg",
+          "imageCaption": "Lang Buddha @ 11:39:19",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=11h39m19s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=41957",
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone",
+            "Jean Paul (X)",
+            "Marty Banks"
+          ],
+          "endSeconds": 42079,
+          "endTimestamp": "11:41:19",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b1-evt-033",
+          "timestamp": "11:50:34",
+          "seconds": 42634,
+          "isMajor": false,
+          "title": "Escorting X & Marty to their secure hangout spot",
+          "description": "Lang and Tony guide X and Marty to their discreet hangout location to lay low, share provisions, and cement their alliance for 5.0.",
+          "category": "social",
+          "tags": [
+            "social",
+            "lore"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone",
+            "Jean Paul (X)",
+            "Marty Banks"
+          ],
+          "image": "/images/frames/b1-evt-033_11_50_34.jpg",
+          "imageCaption": "Lang Buddha @ 11:50:34",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=11h50m34s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=42632",
+          "crossPov": {
+            "pov": "xqc",
+            "streamer": "xQc",
+            "character": "Jean Paul (X)",
+            "day": "1",
+            "eventId": "d1-evt-111",
+            "timestamp": "12:23:15",
+            "title": "Lang and Tony escort X and Marty to their hangout spot"
+          },
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone",
+            "Jean Paul (X)",
+            "Marty Banks"
+          ],
+          "endSeconds": 42754,
+          "endTimestamp": "11:52:34",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b1-evt-034",
+          "timestamp": "11:58:09",
+          "seconds": 43089,
+          "isMajor": true,
+          "title": "Mr. Cement reappears to praise their driving",
+          "description": "Mr. Cement arrives at the hideout, declaring himself impressed with the team's coordination and cool heads under pursuit.",
+          "category": "lore",
+          "tags": [
+            "lore"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone",
+            "Jean Paul (X)",
+            "Marty Banks",
+            "Mr. Cement"
+          ],
+          "image": "/images/frames/b1-evt-034_11_58_09.jpg",
+          "imageCaption": "Lang Buddha @ 11:58:09",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=11h58m09s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=43087",
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone",
+            "Jean Paul (X)",
+            "Marty Banks",
+            "Mr. Cement"
+          ],
+          "endSeconds": 43209,
+          "endTimestamp": "12:00:09",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b1-evt-035",
+          "timestamp": "12:05:19",
+          "seconds": 43519,
+          "isMajor": false,
+          "title": "The 'C-Men' alliance proposal",
+          "description": "Mr. Cement jokingly suggests the crew call themselves the 'C-Men'; Lang and Tony laugh off the name while keeping the syndicate door open.",
+          "category": "lore",
+          "tags": [
+            "lore"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone",
+            "Mr. Cement"
+          ],
+          "image": "/images/frames/b1-evt-035_12_05_19.jpg",
+          "imageCaption": "Lang Buddha @ 12:05:19",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=12h05m19s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=43517",
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone",
+            "Mr. Cement"
+          ],
+          "endSeconds": 43639,
+          "endTimestamp": "12:07:19",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b1-evt-036",
+          "timestamp": "12:30:00",
+          "seconds": 45000,
+          "isMajor": false,
+          "title": "Late-night sitdown with Tony: Day 1 debrief",
+          "description": "Lang and Tony reflect on their long Day 1 hustle, counting their cash, vehicle fleet, and alliances.",
+          "category": "social",
+          "tags": [
+            "social"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone"
+          ],
+          "image": "/images/frames/b1-evt-036_12_30_00.jpg",
+          "imageCaption": "Lang Buddha @ 12:30:00",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=12h30m00s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=44998",
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone"
+          ],
+          "endSeconds": 45120,
+          "endTimestamp": "12:32:00",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b1-evt-037",
+          "timestamp": "13:00:00",
+          "seconds": 46800,
+          "isMajor": false,
+          "title": "Day 1 sign-off & setting sights on Day 2",
+          "description": "Lang parks his car at the safehouse and logs off after 13+ hours, ready to build his commercial empire tomorrow.",
+          "category": "lore",
+          "tags": [
+            "lore"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)"
+          ],
+          "image": "/images/frames/b1-evt-037_13_00_00.jpg",
+          "imageCaption": "Lang Buddha @ 13:00:00",
+          "twitchUrl": "https://www.twitch.tv/videos/2868737741?t=13h00m00s",
+          "kickUrl": "https://kick.com/buddha/videos/01a081a5-b9c8-7367-bae9-4a617b23ce5c?t=46798",
+          "participants": [
+            "Lang Buddha"
+          ],
+          "endSeconds": 46920,
+          "endTimestamp": "13:02:00",
+          "durationSeconds": 120,
+          "endMode": "derived"
         }
-      ]
+      ],
+      "characterInfo": {
+        "name": "Lang Buddha (Mista Lang)",
+        "actor": "Buddha",
+        "role": "Underworld Patriarch & Business Mogul",
+        "background": "The veteran Los Santos patriarch and former Mayor. Entering NoPixel 5.0, Lang reunites with his brother Tony Corleone to build a new criminal and commercial empire from the ground up. Balancing legitimate hustles like Guber taxi service with early Octane crypto dip investments, Lang quickly catches the attention of enigmatic figures like Mr. Cement to form early syndicate alliances.",
+        "timeLoggedIn": "13.17 hours",
+        "timesJailed": "0"
+      }
+    },
+    "2": {
+      "dayNumber": 2,
+      "title": "Day 2",
+      "pov": "buddha",
+      "streamer": "Buddha",
+      "character": "Lang Buddha (Mista Lang)",
+      "redditTitle": "NoPixel V | Day 2 Recap | Lang Buddha POV With Timestamps",
+      "redditUrl": "https://www.twitch.tv/buddha",
+      "updated": "2026-09-09T23:59:00+00:00",
+      "isLive": false,
+      "twitchVod": "https://www.twitch.tv/videos/2869668552",
+      "kickVod": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288",
+      "kickStreamUrl": "https://stream.kick.com/3c81249a5ce0/ivs/v1/196233775518/BO2zfdDBEu6T/2026/9/9/17/11/TM2rqWmgja1C/media/hls/master.m3u8",
+      "eventsCount": 12,
+      "events": [
+        {
+          "id": "b2-evt-001",
+          "seconds": 1500,
+          "isMajor": false,
+          "title": "Lang logs in for Day 2",
+          "description": "Lang wakes up for Day 2, checking in on his bank account balance and overnight crypto performance.",
+          "category": "general",
+          "tags": [
+            "general"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)"
+          ],
+          "timestamp": "00:25:00",
+          "image": "/images/frames/b2-evt-001_00_25_00.jpg",
+          "imageCaption": "Lang Buddha @ 00:25:00",
+          "twitchUrl": "https://www.twitch.tv/videos/2869668552?t=00h25m00s",
+          "kickUrl": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288?t=1498",
+          "participants": [
+            "Lang Buddha"
+          ],
+          "endSeconds": 1620,
+          "endTimestamp": "00:27:00",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b2-evt-002",
+          "seconds": 3930,
+          "isMajor": false,
+          "title": "Checking Octane token rebound",
+          "description": "Lang opens the crypto app to see Octane recovering from yesterday's crash back up toward 0.",
+          "category": "crypto",
+          "tags": [
+            "crypto"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)"
+          ],
+          "timestamp": "01:05:30",
+          "image": "/images/frames/b2-evt-002_01_05_30.jpg",
+          "imageCaption": "Lang Buddha @ 01:05:30",
+          "twitchUrl": "https://www.twitch.tv/videos/2869668552?t=01h05m30s",
+          "kickUrl": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288?t=3928",
+          "participants": [
+            "Lang Buddha"
+          ],
+          "endSeconds": 4050,
+          "endTimestamp": "01:07:30",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b2-evt-003",
+          "seconds": 6015,
+          "isMajor": false,
+          "title": "Morning Guber shift & passenger conversations",
+          "description": "Lang runs a series of Guber fares around Legion Square and Little Seoul, gathering intel on new civilian businesses.",
+          "category": "job",
+          "tags": [
+            "job"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)"
+          ],
+          "timestamp": "01:40:15",
+          "image": "/images/frames/b2-evt-003_01_40_15.jpg",
+          "imageCaption": "Lang Buddha @ 01:40:15",
+          "twitchUrl": "https://www.twitch.tv/videos/2869668552?t=01h40m15s",
+          "kickUrl": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288?t=6013",
+          "participants": [
+            "Lang Buddha"
+          ],
+          "endSeconds": 6135,
+          "endTimestamp": "01:42:15",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b2-evt-004",
+          "seconds": 6823,
+          "isMajor": true,
+          "title": "Marty & X's fake 'Ron Coin' scheme reaches Lang",
+          "description": "Word reaches Lang that Marty and Jean Paul are running around town pitching a suspicious pre-launch 'Ron Coin' to investors. Lang warns his crew not to fall for it.",
+          "category": "crypto",
+          "tags": [
+            "crypto",
+            "crime"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone",
+            "Marty Banks",
+            "Jean Paul (X)"
+          ],
+          "crossPov": {
+            "pov": "xqc",
+            "streamer": "xQc",
+            "character": "Jean Paul (X)",
+            "day": "2",
+            "eventId": "d2-evt-005",
+            "timestamp": "02:39:00",
+            "title": "x and Marty trying to scam people with 'Ron' coin"
+          },
+          "timestamp": "01:53:43",
+          "image": "/images/frames/b2-evt-004_01_53_43.jpg",
+          "imageCaption": "Lang Buddha @ 01:53:43",
+          "twitchUrl": "https://www.twitch.tv/videos/2869668552?t=01h53m43s",
+          "kickUrl": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288?t=6821",
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone",
+            "Marty Banks",
+            "Jean Paul (X)"
+          ],
+          "endSeconds": 6943,
+          "endTimestamp": "01:55:43",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b2-evt-005",
+          "seconds": 11720,
+          "isMajor": false,
+          "title": "Meeting Tony Corleone to secure equipment",
+          "description": "Lang hooks up with Tony to source heavy lockpicks, radio channels, and repair kits from black market suppliers.",
+          "category": "mechanic",
+          "tags": [
+            "mechanic",
+            "crime"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone"
+          ],
+          "timestamp": "03:15:20",
+          "image": "/images/frames/b2-evt-005_03_15_20.jpg",
+          "imageCaption": "Lang Buddha @ 03:15:20",
+          "twitchUrl": "https://www.twitch.tv/videos/2869668552?t=03h15m20s",
+          "kickUrl": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288?t=11718",
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone"
+          ],
+          "endSeconds": 11840,
+          "endTimestamp": "03:17:20",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b2-evt-006",
+          "seconds": 15000,
+          "isMajor": false,
+          "title": "Police traffic stop encounter",
+          "description": "Lang gets pulled over by PD for speeding in the city. With his trademark sharp charisma, he talks his way out with just a warning.",
+          "category": "chase",
+          "tags": [
+            "chase",
+            "social"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)"
+          ],
+          "timestamp": "04:10:00",
+          "image": "/images/frames/b2-evt-006_04_10_00.jpg",
+          "imageCaption": "Lang Buddha @ 04:10:00",
+          "twitchUrl": "https://www.twitch.tv/videos/2869668552?t=04h10m00s",
+          "kickUrl": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288?t=14998",
+          "participants": [
+            "Lang Buddha"
+          ],
+          "endSeconds": 15120,
+          "endTimestamp": "04:12:00",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b2-evt-007",
+          "seconds": 17730,
+          "isMajor": true,
+          "title": "Scouting commercial properties for future front businesses",
+          "description": "Lang surveys real estate options across Los Santos, planning the future corporate infrastructure for his upcoming business empire.",
+          "category": "job",
+          "tags": [
+            "job",
+            "lore"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone"
+          ],
+          "timestamp": "04:55:30",
+          "image": "/images/frames/b2-evt-007_04_55_30.jpg",
+          "imageCaption": "Lang Buddha @ 04:55:30",
+          "twitchUrl": "https://www.twitch.tv/videos/2869668552?t=04h55m30s",
+          "kickUrl": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288?t=17728",
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone"
+          ],
+          "endSeconds": 17850,
+          "endTimestamp": "04:57:30",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b2-evt-008",
+          "seconds": 20400,
+          "isMajor": false,
+          "title": "Syndicate contract briefings",
+          "description": "Lang reviews new syndicate tasks and underground contract drops, deciding which contracts are worth the risk for their crew.",
+          "category": "crime",
+          "tags": [
+            "crime",
+            "lore"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone"
+          ],
+          "timestamp": "05:40:00",
+          "image": "/images/frames/b2-evt-008_05_40_00.jpg",
+          "imageCaption": "Lang Buddha @ 05:40:00",
+          "twitchUrl": "https://www.twitch.tv/videos/2869668552?t=05h40m00s",
+          "kickUrl": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288?t=20398",
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone"
+          ],
+          "endSeconds": 20520,
+          "endTimestamp": "05:42:00",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b2-evt-009",
+          "seconds": 22810,
+          "isMajor": false,
+          "title": "Coordinating black market materials",
+          "description": "Lang and Tony trade materials with local crafters, securing advanced electronics needed for vehicle modifications.",
+          "category": "mechanic",
+          "tags": [
+            "mechanic"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone"
+          ],
+          "timestamp": "06:20:10",
+          "image": "/images/frames/b2-evt-009_06_20_10.jpg",
+          "imageCaption": "Lang Buddha @ 06:20:10",
+          "twitchUrl": "https://www.twitch.tv/videos/2869668552?t=06h20m10s",
+          "kickUrl": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288?t=22808",
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone"
+          ],
+          "endSeconds": 22930,
+          "endTimestamp": "06:22:10",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b2-evt-010",
+          "seconds": 26100,
+          "isMajor": false,
+          "title": "Bar sitdown and city rumors",
+          "description": "Lang meets up with old friends at the tavern, catching up on faction alignments, gang territories, and police command changes.",
+          "category": "social",
+          "tags": [
+            "social"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)"
+          ],
+          "timestamp": "07:15:00",
+          "image": "/images/frames/b2-evt-010_07_15_00.jpg",
+          "imageCaption": "Lang Buddha @ 07:15:00",
+          "twitchUrl": "https://www.twitch.tv/videos/2869668552?t=07h15m00s",
+          "kickUrl": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288?t=26098",
+          "participants": [
+            "Lang Buddha"
+          ],
+          "endSeconds": 26220,
+          "endTimestamp": "07:17:00",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b2-evt-011",
+          "seconds": 28830,
+          "isMajor": false,
+          "title": "Reviewing crew treasury and asset growth",
+          "description": "Lang and Tony tally their accumulated capital, noting healthy growth from both legal fares and underground trades.",
+          "category": "job",
+          "tags": [
+            "job"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)",
+            "Tony Corleone"
+          ],
+          "timestamp": "08:00:30",
+          "image": "/images/frames/b2-evt-011_08_00_30.jpg",
+          "imageCaption": "Lang Buddha @ 08:00:30",
+          "twitchUrl": "https://www.twitch.tv/videos/2869668552?t=08h00m30s",
+          "kickUrl": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288?t=28828",
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone"
+          ],
+          "endSeconds": 28950,
+          "endTimestamp": "08:02:30",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "b2-evt-012",
+          "seconds": 31500,
+          "isMajor": false,
+          "title": "Day 2 sign-off & setting sights on Day 3",
+          "description": "Lang wraps up Day 2, positioned well ahead of the average citizen with vehicles secured, alliances intact, and capital ready.",
+          "category": "lore",
+          "tags": [
+            "lore"
+          ],
+          "characters": [
+            "Lang Buddha (Mista Lang)"
+          ],
+          "timestamp": "08:45:00",
+          "image": "/images/frames/b2-evt-012_08_45_00.jpg",
+          "imageCaption": "Lang Buddha @ 08:45:00",
+          "twitchUrl": "https://www.twitch.tv/videos/2869668552?t=08h45m00s",
+          "kickUrl": "https://kick.com/buddha/videos/01a08727-7850-73a3-8803-1fd2cffe3288?t=31498",
+          "participants": [
+            "Lang Buddha"
+          ],
+          "endSeconds": 31620,
+          "endTimestamp": "08:47:00",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        }
+      ],
+      "characterInfo": {
+        "name": "Lang Buddha (Mista Lang)",
+        "actor": "Buddha",
+        "role": "Underworld Patriarch & Business Mogul",
+        "background": "On Day 2, Lang expands his operational footprint: scouting commercial properties across Los Santos for future corporate fronts, securing black market tools and lockpicks with Tony Corleone, dodging police traffic citations, and sniffing out Marty and Jean Paul's suspicious fake 'Ron Coin' scheme.",
+        "timeLoggedIn": "11.40 hours",
+        "timesJailed": "0"
+      }
     }
   }
 }

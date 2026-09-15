@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import recapData from './data/recapData.json';
 import initialXqcDays from './data/daysData.json';
+import initialBuddhaDays from './data/buddhaDaysData.json';
 import initialPovConfig from './data/povConfig.json';
 import Navbar from './components/Navbar.jsx';
 import HomeView from './components/HomeView.jsx';
@@ -10,7 +11,7 @@ import UnlockModal from './components/UnlockModal.jsx';
 import CharacterModal from './components/CharacterModal.jsx';
 import { RedditIcon } from './components/Icons.jsx';
 import { getOwnerKey, setOwnerKey, ownerFetch } from './lib/owner.js';
-import { ArrowUp, ArrowDown, ChevronDown, AlertTriangle, Trash2 } from 'lucide-react';
+import { ArrowUp, ArrowDown, ChevronDown, AlertTriangle, Trash2, X } from 'lucide-react';
 import { Analytics } from '@vercel/analytics/react';
 
 export default function App() {
@@ -29,7 +30,8 @@ export default function App() {
   });
 
   const [povDaysMap, setPovDaysMap] = useState({
-    xqc: initialXqcDays.days || {}
+    xqc: initialXqcDays.days || {},
+    buddha: initialBuddhaDays.days || {}
   });
 
   const days = povDaysMap[currentPov] || {};
@@ -310,6 +312,8 @@ export default function App() {
             ...prev,
             [currentPov]: mergeDaysPreservingImages(d.days, prev[currentPov] || {})
           }));
+          const dayKeys = Object.keys(d.days);
+          setSelectedDay(prev => (!dayKeys.includes(prev) && dayKeys.length > 0 ? dayKeys[0] : prev));
         }
       })
       .catch(() => {});
@@ -345,12 +349,12 @@ export default function App() {
       localStorage.setItem('sr_active_pov', newPovId);
     } catch {}
 
-    const targetDays = povDaysMap[newPovId] || {};
+    const targetDays = povDaysMap[newPovId] || (newPovId === 'buddha' ? initialBuddhaDays.days : {});
     const availableDays = Object.keys(targetDays);
 
     if (targetDay && targetDays[targetDay]) {
       setSelectedDay(targetDay);
-    } else if (!availableDays.includes(selectedDay) && availableDays.length > 0) {
+    } else if (availableDays.length > 0 && !availableDays.includes(selectedDay)) {
       setSelectedDay(availableDays[0]);
     }
 
@@ -492,7 +496,18 @@ export default function App() {
           <div className={`mb-3 p-3 rounded-xl border space-y-2 ${transcriptionJob.status === 'failed' || transcriptionJob.status === 'budget-exhausted' ? 'bg-red-500/[0.07] border-red-500/30' : 'bg-amber-500/[0.07] border-amber-500/20'}`}>
             <div className="flex items-center justify-between gap-3 text-xs">
               <span className={`${transcriptionJob.status === 'failed' || transcriptionJob.status === 'budget-exhausted' ? 'text-red-200' : transcriptionJob.status === 'rate-limited' ? 'text-orange-200' : 'text-amber-200'} font-medium`}>{transcriptionJob.status === 'queued' ? `Queued${transcriptionJob.queuePosition ? ` — position ${transcriptionJob.queuePosition}` : ''}` : transcriptionJob.status === 'rate-limited' && transcriptionJob.retryAt ? `Provider cooldown — retry in ${formatCooldown(transcriptionJob.retryAt)}` : (transcriptionJob.stage || 'Transcription in progress')}</span>
-              <span className={`${transcriptionJob.status === 'failed' || transcriptionJob.status === 'budget-exhausted' ? 'text-red-300' : 'text-amber-400'} font-mono tabular-nums`}>{transcriptionJob.progress || 0}%</span>
+              <div className="flex items-center gap-2">
+                <span className={`${transcriptionJob.status === 'failed' || transcriptionJob.status === 'budget-exhausted' ? 'text-red-300' : 'text-amber-400'} font-mono tabular-nums`}>{transcriptionJob.progress || 0}%</span>
+                {(transcriptionJob.status === 'failed' || transcriptionJob.status === 'budget-exhausted') && (
+                  <button
+                    onClick={() => setTranscriptionJob(null)}
+                    className="p-1 rounded hover:bg-white/10 text-zinc-400 hover:text-white transition-colors cursor-pointer ml-1"
+                    title="Dismiss failed notification"
+                  >
+                    <X className="w-3.5 h-3.5" />
+                  </button>
+                )}
+              </div>
             </div>
             <div className="h-1.5 rounded-full bg-zinc-800 overflow-hidden">
               <div
