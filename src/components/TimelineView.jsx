@@ -132,6 +132,35 @@ const KICK_STREAM_FALLBACKS = {
   '2': 'https://stream.kick.com/3c81249a5ce0/ivs/v1/196233775518/DsuAwCgUc9Bh/2026/9/9/16/26/2oh2tsSCFYxW/media/hls/master.m3u8'
 };
 
+const POV_STREAM_MAP = {
+  xqc: {
+    name: 'xQc',
+    character: 'Jean Paul (X)',
+    streams: {
+      '1': 'https://stream.kick.com/3c81249a5ce0/ivs/v1/196233775518/DsuAwCgUc9Bh/2026/9/8/14/59/8wZGxx2ttqbw/media/hls/master.m3u8',
+      '2': 'https://stream.kick.com/3c81249a5ce0/ivs/v1/196233775518/DsuAwCgUc9Bh/2026/9/9/16/26/2oh2tsSCFYxW/media/hls/master.m3u8'
+    },
+    kickChannel: 'https://kick.com/xqc'
+  },
+  buddha: {
+    name: 'Buddha',
+    character: 'Lang Buddha',
+    streams: {
+      '1': 'https://stream.kick.com/3c81249a5ce0/ivs/v1/196233775518/BO2zfdDBEu6T/2026/9/9/17/11/TM2rqWmgja1C/media/hls/master.m3u8',
+      '2': 'https://stream.kick.com/3c81249a5ce0/ivs/v1/196233775518/BO2zfdDBEu6T/2026/9/9/17/11/TM2rqWmgja1C/media/hls/master.m3u8'
+    },
+    kickChannel: 'https://kick.com/buddha'
+  },
+  omie: {
+    name: 'Omie',
+    character: 'Marty Banks',
+    streams: {
+      '1': 'https://stream.kick.com/3c81249a5ce0/ivs/v1/196233775518/MPRaN7wf9lTL/2026/9/8/14/54/nVrImoLkKHnU/media/hls/master.m3u8'
+    },
+    kickChannel: 'https://kick.com/omie'
+  }
+};
+
 // Validation labels shown on event cards (provenance of the description).
 const VALIDATION_LABELS = {
   supported:    { label: '✓ evidence-supported', cls: 'bg-emerald-500/15 text-emerald-300' },
@@ -210,7 +239,95 @@ export default function TimelineView({
     return () => { cancelled = true; };
   }, [focusedEvent?.id, focusedEvent?.image, isOwner, activeDayNumber]);
 
-  const activeKickStream = kickStreamUrl || KICK_STREAM_FALLBACKS[focusedEvent?.id?.startsWith('d2') ? '2' : '1'] || KICK_STREAM_FALLBACKS['1'];
+  const activeKickStream = kickStreamUrl
+    || POV_STREAM_MAP[activePov?.id]?.streams?.[String(activeDayNumber || '1')]
+    || KICK_STREAM_FALLBACKS[focusedEvent?.id?.startsWith('d2') ? '2' : '1']
+    || KICK_STREAM_FALLBACKS['1'];
+
+  const focusedCrossPovs = useMemo(() => {
+    if (!focusedEvent) return [];
+    const list = [];
+    const currentPovId = activePov?.id || 'xqc';
+
+    // 1. Explicit crossPov on event
+    if (focusedEvent.crossPov) {
+      const p = focusedEvent.crossPov;
+      const streamUrl = POV_STREAM_MAP[p.pov]?.streams?.[String(p.day || '1')] || null;
+      let sec = p.seconds;
+      if (sec === undefined && p.timestamp) {
+        const parts = p.timestamp.split(':').map(Number);
+        if (parts.length === 3) sec = parts[0] * 3600 + parts[1] * 60 + parts[2];
+        else if (parts.length === 2) sec = parts[0] * 60 + parts[1];
+      }
+      if (streamUrl) {
+        list.push({
+          pov: p.pov,
+          streamer: p.streamer || POV_STREAM_MAP[p.pov]?.name || p.pov,
+          character: POV_STREAM_MAP[p.pov]?.character,
+          timestamp: p.timestamp || fmtClock(sec),
+          seconds: sec || 0,
+          streamUrl,
+          kickUrl: `https://kick.com/${p.pov}`
+        });
+      }
+    }
+
+    // 2. Derive cross-POV from participants if not already added
+    const parts = focusedEvent.participants || [];
+    const hasBuddha = parts.some(name => /buddha|lang/i.test(name));
+    const hasX = parts.some(name => /jean\s*paul|\bjp\b|\bx\b|\bxqc\b/i.test(name));
+    const hasMarty = parts.some(name => /marty|martin/i.test(name));
+
+    if (hasBuddha && currentPovId !== 'buddha' && !list.some(item => item.pov === 'buddha')) {
+      const bStream = POV_STREAM_MAP.buddha.streams['1'];
+      if (bStream) {
+        const targetSec = Math.max(0, Number(focusedEvent.seconds) - 2785);
+        list.push({
+          pov: 'buddha',
+          streamer: 'Buddha',
+          character: 'Lang Buddha',
+          timestamp: fmtClock(targetSec),
+          seconds: targetSec,
+          streamUrl: bStream,
+          kickUrl: 'https://kick.com/buddha'
+        });
+      }
+    }
+
+    if (hasX && currentPovId !== 'xqc' && !list.some(item => item.pov === 'xqc')) {
+      const xStream = POV_STREAM_MAP.xqc.streams['1'];
+      if (xStream) {
+        const targetSec = Number(focusedEvent.seconds) + 2785;
+        list.push({
+          pov: 'xqc',
+          streamer: 'xQc',
+          character: 'Jean Paul (X)',
+          timestamp: fmtClock(targetSec),
+          seconds: targetSec,
+          streamUrl: xStream,
+          kickUrl: 'https://kick.com/xqc'
+        });
+      }
+    }
+
+    if (hasMarty && currentPovId !== 'omie' && !list.some(item => item.pov === 'omie')) {
+      const oStream = POV_STREAM_MAP.omie.streams['1'];
+      if (oStream) {
+        const targetSec = currentPovId === 'xqc' ? Number(focusedEvent.seconds) + 300 : Number(focusedEvent.seconds);
+        list.push({
+          pov: 'omie',
+          streamer: 'Marty (Omie)',
+          character: 'Marty Banks',
+          timestamp: fmtClock(targetSec),
+          seconds: targetSec,
+          streamUrl: oStream,
+          kickUrl: 'https://kick.com/omie'
+        });
+      }
+    }
+
+    return list;
+  }, [focusedEvent, activePov?.id]);
 
   const showToast = (text, duration = 2000) => {
     setToastText(text);
@@ -674,7 +791,19 @@ export default function TimelineView({
       )}
 
       {/* Empty State */}
-      {filteredEvents.length === 0 && (
+      {events.length === 0 && (
+        <div className="text-center py-20 px-4 bg-zinc-900/40 rounded-2xl border border-white/[0.08] space-y-3">
+          <div className="w-12 h-12 rounded-full bg-amber-500/10 text-amber-400 flex items-center justify-center mx-auto border border-amber-500/20">
+            <Clock className="w-6 h-6" />
+          </div>
+          <h3 className="text-lg font-semibold text-zinc-100">Ready for Fresh Recaps</h3>
+          <p className="text-xs text-zinc-400 max-w-md mx-auto leading-relaxed">
+            This stream has a clean slate. Click <strong className="text-amber-300 font-medium">+ Add Stream</strong> in the header to ingest a VOD and generate your own fresh timestamps and AI timeline!
+          </p>
+        </div>
+      )}
+
+      {events.length > 0 && filteredEvents.length === 0 && (
         <div className="text-center py-16 px-4 bg-zinc-900/40 rounded-xl border border-white/[0.08] space-y-3">
           <AlertTriangle className="w-8 h-8 text-amber-400 mx-auto" />
           <h3 className="text-base font-semibold text-zinc-200">No timeline moments match this combination</h3>
@@ -684,6 +813,8 @@ export default function TimelineView({
           <button
             onClick={() => {
               setSelectedCategory('all');
+              setSelectedArc('all');
+              setSelectedSquad('all');
               setIsMajorOnly(false);
               setSearchQuery('');
               setShowOnlyBookmarks(false);
@@ -1337,6 +1468,8 @@ export default function TimelineView({
                 seconds={focusedEvent.seconds}
                 timestamp={focusedEvent.timestamp}
                 kickUrl={focusedEvent.kickUrl}
+                activeStreamer={activePov?.name || activePov?.character || 'Current POV'}
+                crossPovs={focusedCrossPovs}
                 onClose={() => setIsPlayingKick(false)}
               />
             ) : (

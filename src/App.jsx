@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import recapData from './data/recapData.json';
 import initialXqcDays from './data/daysData.json';
 import initialBuddhaDays from './data/buddhaDaysData.json';
 import initialPovConfig from './data/povConfig.json';
@@ -381,7 +380,7 @@ export default function App() {
   const activePovConfig = povConfig.povs.find(p => p.id === currentPov) || povConfig.povs[0];
   const isHome = activeStreamId === null;
   const currentDayInfo = days[selectedDay] || days[Object.keys(days)[0]] || days['1'];
-  const activeEvents = currentDayInfo?.events || (currentPov === 'xqc' ? recapData.events : []);
+  const activeEvents = currentDayInfo?.events || [];
 
   const formatCooldown = (retryAt) => {
     const remaining = Math.max(0, new Date(retryAt).getTime() - Date.now());

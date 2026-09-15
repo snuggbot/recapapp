@@ -1953,10 +1953,10 @@ async function validateEventsWithVision(context, candidates) {
           previousValidation
         };
         if (result.screenEconomy?.visible) {
-          if (!event.economy) {
-            event.economy = { action: 'view', verification: 'screen-verified' };
-          } else {
+          if (event.economy) {
             event.economy.verification = 'screen-verified';
+          } else {
+            event.economy = { action: 'view', verification: 'screen-verified' };
           }
           event.economy.screenDetails = result.screenEconomy.details;
         }
@@ -2865,9 +2865,6 @@ app.delete('/api/streams/:id/days/:dayNum', requireOwner, (req, res) => {
   const config = loadPovConfig();
   const stream = (config.povs || []).find(item => item.id === pov);
   if (!stream) return res.status(404).json({ error: 'Stream not found.' });
-  if (stream.sourceLabel !== 'AI-generated recap') {
-    return res.status(400).json({ error: 'Demo streams are protected. Only generated stream days can be removed.' });
-  }
 
   const data = getDaysData(pov);
   if (!data?.days?.[dayNum]) return res.status(404).json({ error: 'Stream day not found.' });
