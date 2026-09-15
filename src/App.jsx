@@ -464,9 +464,6 @@ export default function App() {
           <span className="text-lg font-bold text-zinc-100 tracking-tight truncate">
             {activePovConfig?.name}
           </span>
-          {!days[selectedDay]?.isLive && formatDayLabel(days[selectedDay] || {}, selectedDay).match(/^\w{3}\s\d/) ? (
-            <span className="text-xs text-zinc-500 font-mono shrink-0">{formatDayLabel(days[selectedDay] || {}, selectedDay)}</span>
-          ) : null}
           {days[selectedDay]?.isLive && (
             <span className="px-1.5 py-0.5 rounded bg-red-500/15 text-red-400 text-[10px] font-bold">LIVE</span>
           )}
@@ -555,7 +552,7 @@ export default function App() {
         <div className="flex items-center justify-between pb-2 mb-2 border-b border-white/[0.08] gap-2">
           <div className="flex items-center gap-2 min-w-0">
             <span className="text-xs font-bold text-zinc-100 tracking-tight truncate">
-              {formatDayLabel(currentDayInfo, selectedDay)}
+              Day {currentDayInfo?.dayNumber || selectedDay}
             </span>
             <span className="text-[11px] font-mono text-zinc-500 tabular-nums shrink-0">
               ({currentDayInfo?.eventsCount || currentDayInfo?.events?.length || 0} moments)
@@ -572,7 +569,7 @@ export default function App() {
               <button
                 onClick={() => handleDeleteDay(selectedDay, currentDayInfo)}
                 className="p-1 rounded text-zinc-500 hover:text-rose-300 hover:bg-rose-500/10 cursor-pointer transition-colors ml-1"
-                title={`Delete ${formatDayLabel(currentDayInfo, selectedDay)} broadcast`}
+                title={`Delete Day ${currentDayInfo?.dayNumber || selectedDay} broadcast`}
               >
                 <Trash2 className="w-3 h-3" />
               </button>
@@ -586,6 +583,7 @@ export default function App() {
               selectedDay={selectedDay}
               onSelectDay={(dayKey) => setSelectedDay(dayKey)}
               streamColor={activePovConfig?.color || 'amber'}
+              selectedDateLabel={formatDayLabel(currentDayInfo, selectedDay)}
             />
           </div>
         </div>

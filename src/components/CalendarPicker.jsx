@@ -12,7 +12,8 @@ export default function CalendarPicker({
   days = {},
   selectedDay,
   onSelectDay,
-  streamColor = 'amber'
+  streamColor = 'amber',
+  selectedDateLabel
 }) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -115,12 +116,9 @@ export default function CalendarPicker({
         title="Open calendar to browse streams by date"
       >
         <CalendarIcon className="w-3.5 h-3.5 text-amber-400" />
-        <span className="hidden sm:inline">Calendar</span>
-        {totalStreamDays > 0 && (
-          <span className="text-[10px] font-mono text-zinc-400 opacity-80">
-            ({totalStreamDays})
-          </span>
-        )}
+        <span className="font-mono text-[11px] font-semibold text-zinc-200">
+          {selectedDateLabel || 'Calendar'}
+        </span>
       </button>
 
       {/* Popover Calendar Modal */}
