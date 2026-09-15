@@ -845,17 +845,17 @@ async function buildContext(req) {
         }
       } else if (v.includes('kick.com') || v.includes('.m3u8')) {
         context.platform = 'kick';
-        const slugMatch = context.url.match(/kick\.com\/([a-zA-Z0-9_]+)/i);
-        const slug = slugMatch && slugMatch[1] && slugMatch[1] !== 'video' ? slugMatch[1] : (name || 'kick');
-        if (slug && slug !== 'kick') {
-          try {
-            const info = await kickFetch(slug);
-            context.channelName = info.displayName || slug;
-          } catch {}
-        }
         if (v.includes('.m3u8')) {
           context.transcriptionSourceUrl = context.url;
         } else {
+          const slugMatch = context.url.match(/kick\.com\/([a-zA-Z0-9_]+)/i);
+          const slug = slugMatch && slugMatch[1] && slugMatch[1] !== 'video' ? slugMatch[1] : (name || 'kick');
+          if (slug && slug !== 'kick') {
+            try {
+              const info = await kickFetch(slug);
+              context.channelName = info.displayName || slug;
+            } catch {}
+          }
           context.transcriptionSourceUrl = await resolveKickPlaybackUrl(context.url);
         }
         if (context.transcriptionSourceUrl) {
@@ -2584,6 +2584,18 @@ app.get('/api/transcription-jobs', (req, res) => {
   res.json({ jobs: jobs.map(job => ({ ...exposeTranscriptionJob(job), usage })) });
 });
 
+app.post('/api/transcription-jobs/enqueue-batch', (req, res) => {
+  const jobs = req.body?.jobs || [];
+  const queuedIds = [];
+  for (const j of jobs) {
+    if (j?.streamId && j?.requestBody) {
+      const id = queueLongTranscription(j.requestBody, j.streamId, { vodStartAt: j.vodDate });
+      queuedIds.push(id);
+    }
+  }
+  res.json({ ok: true, queued: queuedIds.length, ids: queuedIds });
+});
+
 app.get('/api/transcription-jobs/:id', (req, res) => {
   const job = TRANSCRIPTION_JOBS.get(req.params.id);
   if (!job) return res.status(404).json({ error: 'Transcription job not found' });
@@ -2612,6 +2624,115 @@ app.get('/batch-audio/:jobToken/:file', (req, res) => {
   res.setHeader('Cache-Control', 'public, max-age=86400');
   res.sendFile(full);
 });
+
+// ---------- Automated Daily Hawaii Midnight Catch-Up Scheduler ----------
+const BRICK_BOYS_CHANNELS = [
+  { streamId: 'xqc', channel: 'xqc', name: 'xQc', character: 'Jean Paul (X)' },
+  { streamId: 'buddha', channel: 'buddha', name: 'Buddha', character: 'Lang Buddha' },
+  { streamId: 'marty', channel: 'omie', name: 'Marty', character: 'Marty Banks' },
+  { streamId: 'tony', channel: 'anthonyz', name: 'Tony', character: 'Tony Corleone' }
+];
+
+let nextHawaiiMidnightTimer = null;
+let nextScheduledUtcIso = null;
+
+async function checkMissedBrickBoysStreams() {
+  console.error('[Scheduler] Starting 24-hour Brick Boys stream catch-up check (12:00 AM HST)...');
+  const enqueued = [];
+  const minDurationMs = 30 * 60 * 1000; // Skip test streams < 30 minutes
+
+  for (const b of BRICK_BOYS_CHANNELS) {
+    try {
+      const url = `https://kick.com/api/v2/channels/${b.channel}/videos`;
+      const res = await fetch(url, { headers: { 'User-Agent': UA } });
+      if (!res.ok) continue;
+      const videos = await res.json();
+      if (!Array.isArray(videos)) continue;
+
+      const existingData = getDaysData(b.streamId) || {};
+      const existingDays = Object.values(existingData.days || {});
+      const existingJobs = [...TRANSCRIPTION_JOBS.values()].filter(j => j.streamId === b.streamId);
+
+      for (const v of videos.slice(0, 5)) {
+        if (v.is_live) continue;
+        if ((v.duration || 0) < minDurationMs) continue;
+
+        const vodDate = String(v.created_at || '').slice(0, 10);
+        const sourceM3u8 = v.source || null;
+        const videoUuid = v.video?.uuid || v.slug;
+        const kickWebUrl = videoUuid ? `https://kick.com/${b.channel}/videos/${videoUuid}` : null;
+        const targetUrl = sourceM3u8 || kickWebUrl;
+        if (!targetUrl) continue;
+
+        const alreadyRecapped = existingDays.some(day =>
+          (sourceM3u8 && day.kickStreamUrl === sourceM3u8) ||
+          (kickWebUrl && day.sourceKey === kickWebUrl) ||
+          day.streamDate === vodDate
+        );
+        if (alreadyRecapped) continue;
+
+        const alreadyQueued = existingJobs.some(j =>
+          j.requestBody?.url === targetUrl ||
+          (kickWebUrl && j.requestBody?.url === kickWebUrl) ||
+          (sourceM3u8 && j.requestBody?.url === sourceM3u8) ||
+          j.vodDate === vodDate
+        );
+        if (alreadyQueued) continue;
+
+        const jobId = queueLongTranscription({
+          name: b.streamId,
+          url: targetUrl,
+          profile: 'brickbois',
+          filters: {
+            criteria: 'Brick Boys syndicate operations with Lang Buddha, Jean Paul, Marty Banks, and Tony Corleone; 4-man full squad, 3-man trios, 2-man grinding duos; ATM cracking, police pursuits, and crypto trading',
+            mode: 'discovery'
+          }
+        }, b.streamId, { vodStartAt: vodDate });
+
+        console.error(`[Scheduler] Enqueued missed stream for ${b.name} (${vodDate}): ${v.session_title} [${jobId}]`);
+        enqueued.push({
+          streamId: b.streamId,
+          jobId,
+          date: vodDate,
+          title: v.session_title
+        });
+      }
+    } catch (err) {
+      console.error(`[Scheduler] Check error for ${b.name}:`, err.message);
+    }
+  }
+
+  console.error(`[Scheduler] Catch-up check completed. ${enqueued.length} missed stream(s) queued.`);
+  return enqueued;
+}
+
+function initHawaiiMidnightScheduler() {
+  function scheduleNextRun() {
+    const now = new Date();
+    // Hawaii is UTC-10 all year (no DST). 12:00 AM HST = 10:00:00 UTC.
+    const nextRun = new Date(now);
+    nextRun.setUTCHours(10, 0, 0, 0);
+    if (now.getTime() >= nextRun.getTime()) {
+      nextRun.setUTCDate(nextRun.getUTCDate() + 1);
+    }
+    const delayMs = nextRun.getTime() - now.getTime();
+    nextScheduledUtcIso = nextRun.toISOString();
+    console.error(`[Scheduler] Daily 24h catch-up scheduled for 12:00 AM HST (10:00 UTC) in ${(delayMs / 3600000).toFixed(2)}h (${nextScheduledUtcIso})`);
+
+    if (nextHawaiiMidnightTimer) clearTimeout(nextHawaiiMidnightTimer);
+    nextHawaiiMidnightTimer = setTimeout(async () => {
+      try {
+        await checkMissedBrickBoysStreams();
+      } catch (err) {
+        console.error('[Scheduler] Catch-up check error:', err.message);
+      } finally {
+        scheduleNextRun();
+      }
+    }, delayMs);
+  }
+
+  scheduleNextRun();
+}
 
 // ---------- Routes ----------
 
@@ -2646,7 +2767,21 @@ app.get('/api/health', (_req, res) => {
     visionValidationEnabled: VISION_VALIDATION_ENABLED,
     visionValidationModel: VISION_VALIDATION_MODEL,
     visionValidationMaxEvents: VISION_VALIDATION_MAX_EVENTS,
+    scheduler: {
+      schedule: 'Every 24h at 12:00 AM HST (Hawaii Time / 10:00 UTC)',
+      nextRunAt: nextScheduledUtcIso
+    },
     streams: loadPovConfig().povs?.map(p => p.id) || []
+  });
+});
+
+app.post('/api/scheduler/check-missed', requireOwner, async (_req, res) => {
+  const enqueued = await checkMissedBrickBoysStreams();
+  res.json({
+    ok: true,
+    enqueuedCount: enqueued.length,
+    enqueued,
+    nextScheduledRun: nextScheduledUtcIso
   });
 });
 
@@ -3107,6 +3242,9 @@ app.post('/api/generate', requireOwner, async (req, res) => {
   const batchWanted = body.batch === true
     && String(process.env.TRANSCRIPTION_PROVIDER || '').toLowerCase() === 'groq'
     && !!process.env.GROQ_API_KEY;
+  const maxSyncSeconds = Number(process.env.MAX_SYNC_TRANSCRIPTION_SECONDS || 1800);
+  const needsBackgroundJob = !isBackgroundJob && !context.transcript?.length && context.lengthSeconds > maxSyncSeconds && transcriptionProviderConfigured();
+
   if (body._transcriptFile) {
     const cached = readBatchTranscript(body._transcriptFile);
     if (cached) {
@@ -3115,7 +3253,7 @@ app.post('/api/generate', requireOwner, async (req, res) => {
     } else {
       console.error(`[Batch] transcript file missing or invalid: ${String(body._transcriptFile).slice(0, 80)}`);
     }
-  } else if (!(batchWanted && !isBackgroundJob) && !context.transcript?.length && (context.platform === 'twitch' || context.platform === 'kick')) {
+  } else if (!needsBackgroundJob && !(batchWanted && !isBackgroundJob) && !context.transcript?.length && (context.platform === 'twitch' || context.platform === 'kick')) {
     const jobProgress = isBackgroundJob && body._jobId
       ? (progress, stage) => {
           const job = TRANSCRIPTION_JOBS.get(body._jobId);
@@ -3524,6 +3662,7 @@ const httpServer = app.listen(PORT, '0.0.0.0', () => {
   recoverTranscriptionJobs();
   resumePendingBatchJobs();
   scheduleNextTranscription();
+  initHawaiiMidnightScheduler();
   console.log(`[StreamRecap] AI recap server on http://0.0.0.0:${PORT} (model: ${RECAP_MODEL})`);
 });
 
