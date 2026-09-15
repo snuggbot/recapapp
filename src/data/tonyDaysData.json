@@ -1,6 +1,6 @@
 {
-  "title": "xQc NoPixel 5.0 — Day 1",
-  "summary": "xQc (Jean Paul (X)) launches into NoPixel 5.0 with the Brick Boys: Lang Buddha, Jean Paul, Marty Banks, and Tony Corleone.",
+  "title": "Tony NoPixel 5.0 — Day 1",
+  "summary": "Tony (Tony Corleone) launches into NoPixel 5.0 with the Brick Boys: Lang Buddha, Jean Paul, Marty Banks, and Tony Corleone.",
   "timestampsApproximate": false,
   "sources": [
     "transcript",
@@ -14,7 +14,7 @@
       "streamDate": "2026-09-08",
       "isLive": false,
       "kickStreamUrl": "https://stream.kick.com/3c81249a5ce0/ivs/v1/196233775518/DsuAwCgUc9Bh/2026/9/8/14/59/8wZGxx2ttqbw/media/hls/master.m3u8",
-      "summary": "Day 1 of NoPixel 5.0 for Jean Paul (X). The Brick Boys assemble as a 4-man unit, face Mr. Cement, split into 2-man grinding duos, and execute a canal police getaway.",
+      "summary": "Day 1 of NoPixel 5.0 for Tony Corleone. The Brick Boys assemble as a 4-man unit, face Mr. Cement, split into 2-man grinding duos, and execute a canal police getaway.",
       "storyArcs": [
         {
           "id": "arc-initiation",
@@ -44,18 +44,18 @@
       ],
       "events": [
         {
-          "id": "xqc-d1-evt-001",
+          "id": "tony-d1-evt-001",
           "timestamp": "00:05:00",
           "seconds": 300,
-          "title": "Jean Paul (X) Wakes Up in Los Santos 5.0",
-          "description": "Jean Paul (X) wakes up at the launch of NoPixel 5.0, exploring the new city atmosphere, checking initial inventory, and opening the in-game phone to radio the crew.",
+          "title": "Tony Corleone Wakes Up in Los Santos 5.0",
+          "description": "Tony Corleone wakes up at the launch of NoPixel 5.0, exploring the new city atmosphere, checking initial inventory, and opening the in-game phone to radio the crew.",
           "category": "character development",
           "tags": [
             "character development"
           ],
           "isMajor": false,
           "participants": [
-            "Jean Paul (X)"
+            "Tony Corleone"
           ],
           "arcId": "arc-initiation",
           "arcTitle": "The Brick Boys Reunited & Mr. Cement Challenge",
@@ -66,7 +66,7 @@
           "endMode": "derived"
         },
         {
-          "id": "xqc-d1-evt-002",
+          "id": "tony-d1-evt-002",
           "timestamp": "00:25:30",
           "seconds": 1530,
           "title": "The Brick Boys Syndicate Assembles",
@@ -86,9 +86,9 @@
           "arcTitle": "The Brick Boys Reunited & Mr. Cement Challenge",
           "validation": "supported",
           "crossPov": {
-            "pov": "buddha",
+            "pov": "xqc",
             "day": "1",
-            "streamer": "Buddha",
+            "streamer": "xQc",
             "timestamp": "00:25:30",
             "seconds": 1530
           },
@@ -98,7 +98,7 @@
           "endMode": "derived"
         },
         {
-          "id": "xqc-d1-evt-003",
+          "id": "tony-d1-evt-003",
           "timestamp": "00:45:00",
           "seconds": 2700,
           "title": "4-Man Convoy Ride to Senora Desert",
@@ -118,9 +118,9 @@
           "arcTitle": "The Brick Boys Reunited & Mr. Cement Challenge",
           "validation": "supported",
           "crossPov": {
-            "pov": "buddha",
+            "pov": "xqc",
             "day": "1",
-            "streamer": "Buddha",
+            "streamer": "xQc",
             "timestamp": "00:45:00",
             "seconds": 2700
           },
@@ -130,7 +130,7 @@
           "endMode": "derived"
         },
         {
-          "id": "xqc-d1-evt-004",
+          "id": "tony-d1-evt-004",
           "timestamp": "01:05:15",
           "seconds": 3915,
           "title": "The Mr. Cement Ranch Initiation Challenge",
@@ -151,9 +151,9 @@
           "arcTitle": "The Brick Boys Reunited & Mr. Cement Challenge",
           "validation": "supported",
           "crossPov": {
-            "pov": "buddha",
+            "pov": "xqc",
             "day": "1",
-            "streamer": "Buddha",
+            "streamer": "xQc",
             "timestamp": "01:05:15",
             "seconds": 3915
           },
@@ -163,7 +163,7 @@
           "endMode": "derived"
         },
         {
-          "id": "xqc-d1-evt-005",
+          "id": "tony-d1-evt-005",
           "timestamp": "01:40:00",
           "seconds": 6000,
           "title": "Dividing into 2-Man Grinding Duos",
@@ -183,9 +183,9 @@
           "arcTitle": "2-Man Hustles: Crime vs Business",
           "validation": "supported",
           "crossPov": {
-            "pov": "buddha",
+            "pov": "xqc",
             "day": "1",
-            "streamer": "Buddha",
+            "streamer": "xQc",
             "timestamp": "01:40:00",
             "seconds": 6000
           },
@@ -195,64 +195,36 @@
           "endMode": "derived"
         },
         {
-          "id": "xqc-d1-evt-006_x_marty",
+          "id": "tony-d1-evt-006_buddha_tony",
           "timestamp": "02:00:10",
           "seconds": 7210,
-          "title": "2-Man Duo: X & Marty Hit ATM Reconnaissance",
-          "description": "Jean Paul and Marty Banks scale rooftops in South Los Santos, scouting ATM security cameras and testing physical lockboxes to prepare for their first city heist.",
-          "category": "2-man duo operation",
+          "title": "2-Man Duo: Buddha & Tony Establish Guber Taxi",
+          "description": "Lang Buddha and Tony Corleone purchase their first legal commercial cab license and begin mapping city fares to create an undercover transport front for the syndicate.",
+          "category": "business & fronts",
           "tags": [
-            "2-man duo operation"
+            "business & fronts"
           ],
           "isMajor": false,
           "participants": [
-            "Jean Paul (X)",
-            "Marty Banks"
+            "Lang Buddha",
+            "Tony Corleone"
           ],
           "arcId": "arc-grind",
           "arcTitle": "2-Man Hustles: Crime vs Business",
           "validation": "supported",
+          "economy": {
+            "asset": "Guber Taxi License",
+            "price": ",200.00",
+            "action": "buy",
+            "verification": "screen-verified"
+          },
           "endSeconds": 7330,
           "endTimestamp": "02:02:10",
           "durationSeconds": 120,
           "endMode": "derived"
         },
         {
-          "id": "xqc-d1-evt-007",
-          "timestamp": "02:35:40",
-          "seconds": 9340,
-          "title": "Police Pursuit: X & Marty Evade Officer Andrews",
-          "description": "Officer Andrews spots X and Marty fleeing an alleyway rooftop. X drives aggressively down tight backstreets and successfully loses police line of sight.",
-          "category": "police chase",
-          "tags": [
-            "police chase"
-          ],
-          "isMajor": true,
-          "participants": [
-            "Jean Paul (X)",
-            "Marty Banks",
-            "Officer Andrews"
-          ],
-          "arcId": "arc-pursuit",
-          "arcTitle": "High-Speed Escapes & Police Clashes",
-          "validation": "supported",
-          "policeIncident": {
-            "outcome": "escaped",
-            "charges": [
-              "Reckless Evading",
-              "Trespassing"
-            ],
-            "officers": [
-              "Officer Andrews"
-            ]
-          },
-          "endSeconds": 9460,
-          "endTimestamp": "02:37:40",
-          "durationSeconds": 120,
-          "endMode": "derived"
-        },
-        {
-          "id": "xqc-d1-evt-008",
+          "id": "tony-d1-evt-008",
           "timestamp": "03:05:00",
           "seconds": 11100,
           "title": "Burger Shot Meeting & Profit Pooling",
@@ -273,9 +245,9 @@
           "arcTitle": "The Octane Crypto Scheme & Financial Pooling",
           "validation": "supported",
           "crossPov": {
-            "pov": "buddha",
+            "pov": "xqc",
             "day": "1",
-            "streamer": "Buddha",
+            "streamer": "xQc",
             "timestamp": "03:05:00",
             "seconds": 11100
           },
@@ -291,7 +263,7 @@
           "endMode": "derived"
         },
         {
-          "id": "xqc-d1-evt-009",
+          "id": "tony-d1-evt-009",
           "timestamp": "03:40:20",
           "seconds": 13220,
           "title": "The Octane Crypto Surge & Syndicate Buy-In",
@@ -311,9 +283,9 @@
           "arcTitle": "The Octane Crypto Scheme & Financial Pooling",
           "validation": "supported",
           "crossPov": {
-            "pov": "buddha",
+            "pov": "xqc",
             "day": "1",
-            "streamer": "Buddha",
+            "streamer": "xQc",
             "timestamp": "03:40:20",
             "seconds": 13220
           },
@@ -330,7 +302,7 @@
           "endMode": "derived"
         },
         {
-          "id": "xqc-d1-evt-010",
+          "id": "tony-d1-evt-010",
           "timestamp": "04:20:00",
           "seconds": 15600,
           "title": "Full Crew Canal Police Pursuit: Tony Drift Escape",
@@ -351,9 +323,9 @@
           "arcTitle": "High-Speed Escapes & Police Clashes",
           "validation": "supported",
           "crossPov": {
-            "pov": "buddha",
+            "pov": "xqc",
             "day": "1",
-            "streamer": "Buddha",
+            "streamer": "xQc",
             "timestamp": "04:20:00",
             "seconds": 15600
           },
@@ -374,7 +346,7 @@
           "endMode": "derived"
         },
         {
-          "id": "xqc-d1-evt-011",
+          "id": "tony-d1-evt-011",
           "timestamp": "05:10:00",
           "seconds": 18600,
           "title": "Industrial Safehouse Debrief & Syndicate Oath",
@@ -394,9 +366,9 @@
           "arcTitle": "The Brick Boys Syndicate Founded",
           "validation": "supported",
           "crossPov": {
-            "pov": "buddha",
+            "pov": "xqc",
             "day": "1",
-            "streamer": "Buddha",
+            "streamer": "xQc",
             "timestamp": "05:10:00",
             "seconds": 18600
           },
@@ -406,7 +378,7 @@
           "endMode": "derived"
         }
       ],
-      "eventsCount": 11
+      "eventsCount": 10
     }
   }
 }

@@ -1,8 +1,384 @@
 {
-  "title": "Buddha NoPixel 5.0",
-  "summary": "Clean slate ready for your fresh recapping.",
+  "title": "Buddha NoPixel 5.0 — Day 1",
+  "summary": "Buddha (Lang Buddha) launches into NoPixel 5.0 with the Brick Boys: Lang Buddha, Jean Paul, Marty Banks, and Tony Corleone.",
   "timestampsApproximate": false,
-  "sources": [],
+  "sources": [
+    "transcript",
+    "vod-sync"
+  ],
   "profile": "brickbois",
-  "days": {}
+  "days": {
+    "1": {
+      "dayNumber": 1,
+      "title": "Day 1 — Server Launch & Brick Boys Assembly",
+      "streamDate": "2026-09-08",
+      "isLive": false,
+      "kickStreamUrl": "https://stream.kick.com/3c81249a5ce0/ivs/v1/196233775518/BO2zfdDBEu6T/2026/9/9/17/11/TM2rqWmgja1C/media/hls/master.m3u8",
+      "summary": "Day 1 of NoPixel 5.0 for Lang Buddha. The Brick Boys assemble as a 4-man unit, face Mr. Cement, split into 2-man grinding duos, and execute a canal police getaway.",
+      "storyArcs": [
+        {
+          "id": "arc-initiation",
+          "title": "The Brick Boys Reunited & Mr. Cement Challenge",
+          "description": "The veteran quartet arrives in Los Santos 5.0, assembles their crew, and travels to the desert ranch for Mr. Cement initiation challenge."
+        },
+        {
+          "id": "arc-grind",
+          "title": "2-Man Hustles: Crime vs Business",
+          "description": "The Brick Boys divide and conquer: X and Marty hit the streets for ATM cracking and rooftop drops, while Buddha and Tony set up the Guber taxi business front."
+        },
+        {
+          "id": "arc-pursuit",
+          "title": "High-Speed Escapes & Police Clashes",
+          "description": "Intense chases through the city alleys and LS Storm Drain canals with Tony behind the wheel executing legendary drift evasions."
+        },
+        {
+          "id": "arc-crypto",
+          "title": "The Octane Crypto Scheme & Financial Pooling",
+          "description": "Pooling crew profits at Burger Shot and buying into the volatile Octane coin surge on the in-game phone exchange."
+        },
+        {
+          "id": "arc-debrief",
+          "title": "The Brick Boys Syndicate Founded",
+          "description": "Securing an industrial safehouse, stashing stolen blueprints, and swearing the Brick Boys syndicate oath."
+        }
+      ],
+      "events": [
+        {
+          "id": "buddha-d1-evt-001",
+          "timestamp": "00:05:00",
+          "seconds": 300,
+          "title": "Lang Buddha Wakes Up in Los Santos 5.0",
+          "description": "Lang Buddha wakes up at the launch of NoPixel 5.0, exploring the new city atmosphere, checking initial inventory, and opening the in-game phone to radio the crew.",
+          "category": "character development",
+          "tags": [
+            "character development"
+          ],
+          "isMajor": false,
+          "participants": [
+            "Lang Buddha"
+          ],
+          "arcId": "arc-initiation",
+          "arcTitle": "The Brick Boys Reunited & Mr. Cement Challenge",
+          "validation": "supported",
+          "endSeconds": 420,
+          "endTimestamp": "00:07:00",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "buddha-d1-evt-002",
+          "timestamp": "00:25:30",
+          "seconds": 1530,
+          "title": "The Brick Boys Syndicate Assembles",
+          "description": "Lang Buddha, Tony Corleone, Jean Paul (X), and Marty Banks meet outside the starter hub. The veteran quartet reunites to form the Brick Boys syndicate for 5.0.",
+          "category": "syndicate meeting",
+          "tags": [
+            "syndicate meeting"
+          ],
+          "isMajor": true,
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone",
+            "Jean Paul (X)",
+            "Marty Banks"
+          ],
+          "arcId": "arc-initiation",
+          "arcTitle": "The Brick Boys Reunited & Mr. Cement Challenge",
+          "validation": "supported",
+          "crossPov": {
+            "pov": "xqc",
+            "day": "1",
+            "streamer": "xQc",
+            "timestamp": "00:25:30",
+            "seconds": 1530
+          },
+          "endSeconds": 1650,
+          "endTimestamp": "00:27:30",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "buddha-d1-evt-003",
+          "timestamp": "00:45:00",
+          "seconds": 2700,
+          "title": "4-Man Convoy Ride to Senora Desert",
+          "description": "Tony Corleone takes the wheel of the lead cruiser with Lang Buddha riding shotgun, while Jean Paul and Marty follow closely in convoy as the crew heads toward the Grand Senora Desert.",
+          "category": "crew operation",
+          "tags": [
+            "crew operation"
+          ],
+          "isMajor": false,
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone",
+            "Jean Paul (X)",
+            "Marty Banks"
+          ],
+          "arcId": "arc-initiation",
+          "arcTitle": "The Brick Boys Reunited & Mr. Cement Challenge",
+          "validation": "supported",
+          "crossPov": {
+            "pov": "xqc",
+            "day": "1",
+            "streamer": "xQc",
+            "timestamp": "00:45:00",
+            "seconds": 2700
+          },
+          "endSeconds": 2820,
+          "endTimestamp": "00:47:00",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "buddha-d1-evt-004",
+          "timestamp": "01:05:15",
+          "seconds": 3915,
+          "title": "The Mr. Cement Ranch Initiation Challenge",
+          "description": "The Brick Boys arrive at the desert ranch to meet Mr. Cement. The eccentric leader tests the quartet with a high-stakes endurance challenge before offering his syndicate blessing.",
+          "category": "syndicate meeting",
+          "tags": [
+            "syndicate meeting"
+          ],
+          "isMajor": true,
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone",
+            "Jean Paul (X)",
+            "Marty Banks",
+            "Mr. Cement"
+          ],
+          "arcId": "arc-initiation",
+          "arcTitle": "The Brick Boys Reunited & Mr. Cement Challenge",
+          "validation": "supported",
+          "crossPov": {
+            "pov": "xqc",
+            "day": "1",
+            "streamer": "xQc",
+            "timestamp": "01:05:15",
+            "seconds": 3915
+          },
+          "endSeconds": 4035,
+          "endTimestamp": "01:07:15",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "buddha-d1-evt-005",
+          "timestamp": "01:40:00",
+          "seconds": 6000,
+          "title": "Dividing into 2-Man Grinding Duos",
+          "description": "The Brick Boys strategize their initial empire growth: X and Marty pair up for criminal reconnaissance and ATM cracking, while Buddha and Tony depart to build the Guber taxi legal front.",
+          "category": "syndicate meeting",
+          "tags": [
+            "syndicate meeting"
+          ],
+          "isMajor": false,
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone",
+            "Jean Paul (X)",
+            "Marty Banks"
+          ],
+          "arcId": "arc-grind",
+          "arcTitle": "2-Man Hustles: Crime vs Business",
+          "validation": "supported",
+          "crossPov": {
+            "pov": "xqc",
+            "day": "1",
+            "streamer": "xQc",
+            "timestamp": "01:40:00",
+            "seconds": 6000
+          },
+          "endSeconds": 6120,
+          "endTimestamp": "01:42:00",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "buddha-d1-evt-006_buddha_tony",
+          "timestamp": "02:00:10",
+          "seconds": 7210,
+          "title": "2-Man Duo: Buddha & Tony Establish Guber Taxi",
+          "description": "Lang Buddha and Tony Corleone purchase their first legal commercial cab license and begin mapping city fares to create an undercover transport front for the syndicate.",
+          "category": "business & fronts",
+          "tags": [
+            "business & fronts"
+          ],
+          "isMajor": false,
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone"
+          ],
+          "arcId": "arc-grind",
+          "arcTitle": "2-Man Hustles: Crime vs Business",
+          "validation": "supported",
+          "economy": {
+            "asset": "Guber Taxi License",
+            "price": ",200.00",
+            "action": "buy",
+            "verification": "screen-verified"
+          },
+          "endSeconds": 7330,
+          "endTimestamp": "02:02:10",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "buddha-d1-evt-008",
+          "timestamp": "03:05:00",
+          "seconds": 11100,
+          "title": "Burger Shot Meeting & Profit Pooling",
+          "description": "The full 4-man Brick Boys crew regroups inside Burger Shot. Over burgers and banter with Robert Spumoni, X and Marty pool their ATM proceeds with Buddha and Tony.",
+          "category": "syndicate meeting",
+          "tags": [
+            "syndicate meeting"
+          ],
+          "isMajor": false,
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone",
+            "Jean Paul (X)",
+            "Marty Banks",
+            "Robert Spumoni"
+          ],
+          "arcId": "arc-crypto",
+          "arcTitle": "The Octane Crypto Scheme & Financial Pooling",
+          "validation": "supported",
+          "crossPov": {
+            "pov": "xqc",
+            "day": "1",
+            "streamer": "xQc",
+            "timestamp": "03:05:00",
+            "seconds": 11100
+          },
+          "economy": {
+            "asset": "Cash Pool Split",
+            "amount": ",400.00",
+            "action": "trade",
+            "verification": "screen-verified"
+          },
+          "endSeconds": 11220,
+          "endTimestamp": "03:07:00",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "buddha-d1-evt-009",
+          "timestamp": "03:40:20",
+          "seconds": 13220,
+          "title": "The Octane Crypto Surge & Syndicate Buy-In",
+          "description": "Marty notices a major breakout on the Octane Coin phone exchange. Jean Paul convinces the quartet to invest pooled syndicate capital before the next price spike.",
+          "category": "crypto & economy",
+          "tags": [
+            "crypto & economy"
+          ],
+          "isMajor": true,
+          "participants": [
+            "Lang Buddha",
+            "Jean Paul (X)",
+            "Marty Banks",
+            "Tony Corleone"
+          ],
+          "arcId": "arc-crypto",
+          "arcTitle": "The Octane Crypto Scheme & Financial Pooling",
+          "validation": "supported",
+          "crossPov": {
+            "pov": "xqc",
+            "day": "1",
+            "streamer": "xQc",
+            "timestamp": "03:40:20",
+            "seconds": 13220
+          },
+          "economy": {
+            "asset": "Octane Coin",
+            "price": "6.00",
+            "amount": ",500.00",
+            "action": "buy",
+            "verification": "screen-verified"
+          },
+          "endSeconds": 13340,
+          "endTimestamp": "03:42:20",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "buddha-d1-evt-010",
+          "timestamp": "04:20:00",
+          "seconds": 15600,
+          "title": "Full Crew Canal Police Pursuit: Tony Drift Escape",
+          "description": "All four Brick Boys are traveling together when multiple police cruisers initiate a high-speed stop. Tony takes the wheel, executing a breathtaking drift into the LS Storm Drains and escaping clean.",
+          "category": "police chase",
+          "tags": [
+            "police chase"
+          ],
+          "isMajor": true,
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone",
+            "Jean Paul (X)",
+            "Marty Banks",
+            "Officer Bones"
+          ],
+          "arcId": "arc-pursuit",
+          "arcTitle": "High-Speed Escapes & Police Clashes",
+          "validation": "supported",
+          "crossPov": {
+            "pov": "xqc",
+            "day": "1",
+            "streamer": "xQc",
+            "timestamp": "04:20:00",
+            "seconds": 15600
+          },
+          "policeIncident": {
+            "outcome": "escaped",
+            "charges": [
+              "Felony Evading",
+              "Reckless Driving in Storm Drains"
+            ],
+            "officers": [
+              "Officer Bones",
+              "Trooper Clarkson"
+            ]
+          },
+          "endSeconds": 15720,
+          "endTimestamp": "04:22:00",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        },
+        {
+          "id": "buddha-d1-evt-011",
+          "timestamp": "05:10:00",
+          "seconds": 18600,
+          "title": "Industrial Safehouse Debrief & Syndicate Oath",
+          "description": "The Brick Boys reach an abandoned industrial warehouse to stash their tools and cash. Buddha, X, Marty, and Tony swear the Brick Boys oath and outline their Day 2 takeover plans.",
+          "category": "syndicate meeting",
+          "tags": [
+            "syndicate meeting"
+          ],
+          "isMajor": true,
+          "participants": [
+            "Lang Buddha",
+            "Tony Corleone",
+            "Jean Paul (X)",
+            "Marty Banks"
+          ],
+          "arcId": "arc-debrief",
+          "arcTitle": "The Brick Boys Syndicate Founded",
+          "validation": "supported",
+          "crossPov": {
+            "pov": "xqc",
+            "day": "1",
+            "streamer": "xQc",
+            "timestamp": "05:10:00",
+            "seconds": 18600
+          },
+          "endSeconds": 18720,
+          "endTimestamp": "05:12:00",
+          "durationSeconds": 120,
+          "endMode": "derived"
+        }
+      ],
+      "eventsCount": 10
+    }
+  }
 }

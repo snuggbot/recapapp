@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import initialXqcDays from './data/daysData.json';
 import initialBuddhaDays from './data/buddhaDaysData.json';
+import initialMartyDays from './data/martyDaysData.json';
+import initialTonyDays from './data/tonyDaysData.json';
 import initialPovConfig from './data/povConfig.json';
 import Navbar from './components/Navbar.jsx';
 import HomeView from './components/HomeView.jsx';
@@ -30,7 +32,9 @@ export default function App() {
 
   const [povDaysMap, setPovDaysMap] = useState({
     xqc: initialXqcDays.days || {},
-    buddha: initialBuddhaDays.days || {}
+    buddha: initialBuddhaDays.days || {},
+    marty: initialMartyDays.days || {},
+    tony: initialTonyDays.days || {}
   });
 
   const days = povDaysMap[currentPov] || {};
@@ -348,8 +352,19 @@ export default function App() {
       localStorage.setItem('sr_active_pov', newPovId);
     } catch {}
 
-    const targetDays = povDaysMap[newPovId] || (newPovId === 'buddha' ? initialBuddhaDays.days : {});
+    const targetDays = povDaysMap[newPovId] || {};
     const availableDays = Object.keys(targetDays);
+
+    if (!povDaysMap[newPovId]) {
+      fetch(`/api/days?pov=${encodeURIComponent(newPovId)}`)
+        .then(r => r.json())
+        .then(data => {
+          if (data?.days) {
+            setPovDaysMap(prev => ({ ...prev, [newPovId]: data.days }));
+          }
+        })
+        .catch(() => {});
+    }
 
     if (targetDay && targetDays[targetDay]) {
       setSelectedDay(targetDay);

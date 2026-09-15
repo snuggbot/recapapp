@@ -1,4 +1,98 @@
 {
-  "povs": [],
-  "defaultPov": null
+  "povs": [
+    {
+      "id": "xqc",
+      "name": "xQc",
+      "character": "Jean Paul (X)",
+      "actor": "xQc",
+      "role": "The Gambler & Bank Buster",
+      "color": "amber",
+      "badgeColor": "bg-amber-500/10 text-amber-400 border-amber-500/30",
+      "activeBg": "bg-amber-500 text-black",
+      "glowColor": "shadow-amber-500/20",
+      "platform": "Kick, Twitch & YouTube",
+      "twitchChannel": "https://www.twitch.tv/xqc",
+      "kickChannel": "https://kick.com/xqc",
+      "youtubeChannel": "https://www.youtube.com/@xQcOW",
+      "tagline": "Brick Boys syndicate operations, chaotic chases, and crypto schemes.",
+      "sourceLabel": "AI-generated recap",
+      "profile": "brickbois",
+      "wikis": [
+        {
+          "label": "Jean Paul (NoPixel)",
+          "url": "https://nopixel.fandom.com/wiki/Jean_Paul"
+        }
+      ]
+    },
+    {
+      "id": "buddha",
+      "name": "Buddha",
+      "character": "Lang Buddha",
+      "actor": "Buddha",
+      "role": "Emperor of Los Santos / Crime Boss",
+      "color": "rose",
+      "badgeColor": "bg-rose-500/10 text-rose-400 border-rose-500/30",
+      "activeBg": "bg-rose-500 text-white",
+      "glowColor": "shadow-rose-500/20",
+      "platform": "Kick & Twitch",
+      "kickChannel": "https://kick.com/buddha",
+      "twitchChannel": "https://www.twitch.tv/buddha",
+      "tagline": "Brick Boys mastermind, business fronts, and syndicate meetings.",
+      "sourceLabel": "AI-generated recap",
+      "profile": "brickbois",
+      "wikis": [
+        {
+          "label": "Lang Buddha",
+          "url": "https://nopixel.fandom.com/wiki/Lang_Buddha"
+        }
+      ]
+    },
+    {
+      "id": "marty",
+      "name": "Marty",
+      "character": "Marty Banks",
+      "actor": "Omie",
+      "role": "The Hacker & Brick Boys Boss",
+      "color": "sky",
+      "badgeColor": "bg-sky-500/10 text-sky-400 border-sky-500/30",
+      "activeBg": "bg-sky-500 text-black",
+      "glowColor": "shadow-sky-500/20",
+      "platform": "Kick & Twitch",
+      "kickChannel": "https://kick.com/omie",
+      "twitchChannel": "https://www.twitch.tv/omie",
+      "tagline": "Brick Boys tech operations, ATM hacking, and rooftop recon.",
+      "sourceLabel": "AI-generated recap",
+      "profile": "brickbois",
+      "wikis": [
+        {
+          "label": "Marty Banks",
+          "url": "https://nopixel.fandom.com/wiki/Marty_Banks"
+        }
+      ]
+    },
+    {
+      "id": "tony",
+      "name": "Tony",
+      "character": "Tony Corleone",
+      "actor": "AnthonyZ",
+      "role": "The Drift King & Getaway Driver",
+      "color": "red",
+      "badgeColor": "bg-red-500/10 text-red-400 border-red-500/30",
+      "activeBg": "bg-red-500 text-white",
+      "glowColor": "shadow-red-500/20",
+      "platform": "Kick & Twitch",
+      "kickChannel": "https://kick.com/anthonyz",
+      "twitchChannel": "https://www.twitch.tv/anthonyz",
+      "tagline": "Brick Boys wheelman, elite getaways, and vehicle logistics.",
+      "sourceLabel": "AI-generated recap",
+      "profile": "brickbois",
+      "wikis": [
+        {
+          "label": "Tony Corleone",
+          "url": "https://nopixel.fandom.com/wiki/Tony_Corleone"
+        }
+      ]
+    }
+  ],
+  "defaultPov": "xqc"
 }
