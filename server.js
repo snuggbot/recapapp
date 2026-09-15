@@ -843,23 +843,27 @@ async function buildContext(req) {
         } else {
           context.channelName = 'Unknown';
         }
-      } else if (v.includes('kick.com')) {
+      } else if (v.includes('kick.com') || v.includes('.m3u8')) {
         context.platform = 'kick';
         const slugMatch = context.url.match(/kick\.com\/([a-zA-Z0-9_]+)/i);
-        const slug = slugMatch && slugMatch[1] && slugMatch[1] !== 'video' ? slugMatch[1] : null;
-        if (slug) {
-          const info = await kickFetch(slug);
-          context.channelName = info.displayName || slug;
-          context.transcriptionSourceUrl = await resolveKickPlaybackUrl(context.url);
-          if (context.transcriptionSourceUrl) {
-            const kickDate = context.transcriptionSourceUrl.match(/\/(\d{4})\/(\d{1,2})\/(\d{1,2})\//);
-            if (kickDate) {
-              context.vodStartAt = `${kickDate[1]}-${String(kickDate[2]).padStart(2, '0')}-${String(kickDate[3]).padStart(2, '0')}`;
-            }
-            context.lengthSeconds = await probeMediaDuration(context.transcriptionSourceUrl);
-          }
+        const slug = slugMatch && slugMatch[1] && slugMatch[1] !== 'video' ? slugMatch[1] : (name || 'kick');
+        if (slug && slug !== 'kick') {
+          try {
+            const info = await kickFetch(slug);
+            context.channelName = info.displayName || slug;
+          } catch {}
+        }
+        if (v.includes('.m3u8')) {
+          context.transcriptionSourceUrl = context.url;
         } else {
-          context.channelName = 'Unknown';
+          context.transcriptionSourceUrl = await resolveKickPlaybackUrl(context.url);
+        }
+        if (context.transcriptionSourceUrl) {
+          const kickDate = context.transcriptionSourceUrl.match(/\/(\d{4})\/(\d{1,2})\/(\d{1,2})\//);
+          if (kickDate) {
+            context.vodStartAt = `${kickDate[1]}-${String(kickDate[2]).padStart(2, '0')}-${String(kickDate[3]).padStart(2, '0')}`;
+          }
+          context.lengthSeconds = await probeMediaDuration(context.transcriptionSourceUrl);
         }
       } else if (v.includes('youtube.com') || v.includes('youtu.be')) {
         context.platform = 'youtube';
