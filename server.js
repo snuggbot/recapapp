@@ -148,6 +148,8 @@ Rules:
   - Optional "endSegmentId": the exact [seg-xxxx] id of the LAST transcript segment that belongs to this moment. When provided, the server resolves the precise end time from that segment's timestamp instead of trusting a guessed number. Prefer endSegmentId over endSeconds whenever you can map the moment to transcript lines.
   - "category": one of ${JSON.stringify(EVENT_CATEGORIES)}
   - Optional "participants": an array of canonical person/character names explicitly supported by the source. Omit it when no participant is supported rather than guessing.
+  - Optional "economy": for moments with crypto, cash, or vehicle purchases/trades: {"asset":"string","action":"buy|sell|payout|fine|trade","amount":"string or null","price":"string or null"}
+  - Optional "policeIncident": for police chases, stops, or crime encounters: {"outcome":"escaped|arrested|hospitalized|citation","officers":["..."],"charges":["..."],"fine":"string or null"}
   - "isMajor": true only for the standout moments (at most ~25% of events)
 - Timestamps: use ONLY the CONFIRMED_TIMESTAMPS values when they are given — they are real clock offsets derived from chapters, clips, or notes. When no CONFIRMED_TIMESTAMPS are given, the offsets are approximate: write believable, IRREGULAR timestamps with varied natural gaps (never uniform or round marks such as 00:05:00, 00:10:00 — use e.g. 00:04:17, 01:12:38). Never exceed the known duration. If rough notes state offsets, preserve them.
 - When a TIMED_TRANSCRIPT is provided, use it as the primary factual source. Every event must be supported by the transcript near its timestamp. Do not invent products, guests, gameplay, giveaways, chat reactions, quotes, or outcomes that are not supported. Do not use generic filler such as "the chat explodes" unless the source actually supports it.
@@ -1446,6 +1448,90 @@ function normalizeParticipants(value) {
     .slice(0, 12))];
 }
 
+function normalizeEconomy(raw) {
+  if (!raw || typeof raw !== 'object') return null;
+  const asset = String(raw.asset || '').trim();
+  if (!asset) return null;
+  const validActions = ['buy', 'sell', 'trade', 'payout', 'fine', 'fee', 'rent'];
+  const action = validActions.includes(String(raw.action).toLowerCase()) ? String(raw.action).toLowerCase() : 'trade';
+  return {
+    asset: asset.slice(0, 50),
+    action,
+    ...(raw.amount ? { amount: String(raw.amount).slice(0, 30) } : {}),
+    ...(raw.price ? { price: String(raw.price).slice(0, 30) } : {}),
+    verification: raw.verification === 'screen-verified' ? 'screen-verified' : 'spoken-claim'
+  };
+}
+
+function normalizePoliceIncident(raw) {
+  if (!raw || typeof raw !== 'object') return null;
+  const validOutcomes = ['escaped', 'arrested', 'hospitalized', 'citation'];
+  const outcome = validOutcomes.includes(String(raw.outcome).toLowerCase()) ? String(raw.outcome).toLowerCase() : 'escaped';
+  return {
+    outcome,
+    ...(Array.isArray(raw.officers) && raw.officers.length ? { officers: raw.officers.map(o => String(o).slice(0, 40)).slice(0, 4) } : {}),
+    ...(Array.isArray(raw.charges) && raw.charges.length ? { charges: raw.charges.map(c => String(c).slice(0, 50)).slice(0, 5) } : {}),
+    ...(raw.fine ? { fine: String(raw.fine).slice(0, 30) } : {}),
+    ...(raw.jailMonths ? { jailMonths: Math.max(0, parseInt(raw.jailMonths, 10) || 0) } : {})
+  };
+}
+
+async function generateStoryArcs(dayTitle, events) {
+  if (!Array.isArray(events) || events.length < 6) return [];
+  const eventSummaries = events.map(e => ({
+    id: e.id,
+    timestamp: e.timestamp,
+    title: e.title,
+    category: e.category,
+    participants: e.participants || []
+  }));
+
+  const systemPrompt = 'You are an episodic narrative arc analyzer for livestreams. Output strictly valid JSON.';
+  const userPrompt = [
+    `Given these chronological stream moments from ${dayTitle}, identify 2 to 4 overarching story arcs or heist sequences that took place during the broadcast.`,
+    'Each arc connects 2 or more related moments into a coherent narrative thread (e.g. initiation, heist preparation, police evasion, criminal partnership).',
+    'Return ONLY JSON in this exact shape:',
+    '{"arcs":[{"id":"slug-id","title":"Arc Title","summary":"1 concise sentence describing the arc","eventIds":["evt-001","evt-002"]}]}'
+  ].join('\n') + '\n\n' + JSON.stringify(eventSummaries.slice(0, 100));
+
+  try {
+    const raw = parseJsonLoose(await callLLM(systemPrompt, userPrompt, 45000));
+    const arcs = Array.isArray(raw?.arcs) ? raw.arcs : [];
+    return arcs.map(a => ({
+      id: String(a.id || a.title || '').toLowerCase().replace(/[^a-z0-9_-]/g, '-').slice(0, 40),
+      title: String(a.title || 'Story Arc').slice(0, 80),
+      summary: String(a.summary || '').slice(0, 240),
+      eventIds: Array.isArray(a.eventIds) ? a.eventIds.map(String) : []
+    })).filter(a => a.id && a.eventIds.length >= 2);
+  } catch (err) {
+    console.error('[StoryArcs] Arc synthesis skipped:', err.message);
+    return [];
+  }
+}
+
+async function enrichRecapWithStoryArcs(recap) {
+  for (const [dayKey, day] of Object.entries(recap.days || {})) {
+    if (!day.storyArcs?.length && Array.isArray(day.events) && day.events.length >= 6) {
+      const arcs = await generateStoryArcs(day.title || `Day ${dayKey}`, day.events);
+      if (arcs.length) {
+        day.storyArcs = arcs;
+        const arcMap = new Map();
+        for (const arc of arcs) {
+          for (const eid of arc.eventIds) {
+            arcMap.set(eid, { id: arc.id, title: arc.title });
+          }
+        }
+        for (const ev of day.events) {
+          if (arcMap.has(ev.id)) {
+            ev.arcId = arcMap.get(ev.id).id;
+            ev.arcTitle = arcMap.get(ev.id).title;
+          }
+        }
+      }
+    }
+  }
+}
+
 function normalizeRecap(raw, context, streamId) {
   if (!raw) throw new Error('AI returned an unparseable response. Try again or add more notes.');
   const sourceKey = context?.latestVodId
@@ -1490,7 +1576,11 @@ function normalizeRecap(raw, context, streamId) {
       category: sanitizeCategory(ev.category),
       participants: normalizeParticipants(ev.participants || ev.characters),
       redditUrl: ev.redditUrl || null,
-      redditTitle: ev.redditTitle || null
+      redditTitle: ev.redditTitle || null,
+      economy: normalizeEconomy(ev.economy),
+      policeIncident: normalizePoliceIncident(ev.policeIncident),
+      arcId: ev.arcId || null,
+      arcTitle: ev.arcTitle || null
     }));
 
     // Match external community/Reddit threads to events when available
@@ -1570,6 +1660,9 @@ function normalizeRecap(raw, context, streamId) {
           tags: [p.category],
           ...(p.participants.length ? { participants: p.participants } : {}),
           ...(p.redditUrl ? { redditUrl: p.redditUrl, redditTitle: p.redditTitle } : {}),
+          ...(p.economy ? { economy: p.economy } : {}),
+          ...(p.policeIncident ? { policeIncident: p.policeIncident } : {}),
+          ...(p.arcId ? { arcId: p.arcId, arcTitle: p.arcTitle } : {}),
           image: null,
           ...(vodUrls.twitchVod ? { twitchUrl: `${vodUrls.twitchVod}?t=${seconds}s` } : {}),
           ...(vodUrls.kickVod ? { kickUrl: withKickTimestamp(vodUrls.kickVod, seconds) } : {}),
@@ -1605,7 +1698,8 @@ function normalizeRecap(raw, context, streamId) {
       timestampsApproximate,
       sources,
       eventsCount,
-      events: normalized
+      events: normalized,
+      ...(day.storyArcs?.length ? { storyArcs: day.storyArcs } : {})
     };
     if (dayRedditUrl) {
       dayRecord.redditUrl = dayRedditUrl;
@@ -1799,7 +1893,11 @@ function normalizeVisionDecision(raw) {
   return {
     decision,
     reason: String(raw.reason || '').slice(0, 300),
-    visualEvidence: String(raw.visualEvidence || '').slice(0, 300)
+    visualEvidence: String(raw.visualEvidence || '').slice(0, 300),
+    screenEconomy: raw.screenEconomy && raw.screenEconomy.visible ? {
+      visible: true,
+      details: String(raw.screenEconomy.details || '').slice(0, 150)
+    } : null
   };
 }
 
@@ -1807,7 +1905,7 @@ async function validateEventWithVision(event, context) {
   const imageUrl = eventImageToDataUrl(event);
   if (!imageUrl) return { status: 'skipped', reason: 'no-image' };
 
-  const systemPrompt = `You are a conservative visual validator for a stream recap.\n\nCompare the screenshot with the event title, description, and transcript evidence. Confirm only what is clearly visible. A screenshot may support the visual setting or action, but it cannot prove an off-screen spoken claim. Treat ambiguous, unreadable, partial, or irrelevant frames as review. Downgrade claims visibly contradicted by the frame.\n\nDo not rewrite or delete the event. Return ONLY JSON in this shape:\n{"decision":"confirm|downgrade|review","reason":"short explanation","visualEvidence":"short description of visible evidence"}`;
+  const systemPrompt = `You are a conservative visual validator for a stream recap.\n\nCompare the screenshot with the event title, description, and transcript evidence. Confirm only what is clearly visible. A screenshot may support the visual setting or action, but it cannot prove an off-screen spoken claim. Treat ambiguous, unreadable, partial, or irrelevant frames as review. Downgrade claims visibly contradicted by the frame.\n\nAlso inspect the in-game screen/HUD for financial or phone UI:\n- If an in-game phone, crypto app (e.g. Octane, Ron), banking app, store register, or cash balance is clearly visible, extract it into screenEconomy: {"visible": true, "details": "short description of visible numbers/asset"}\n\nDo not rewrite or delete the event. Return ONLY JSON in this shape:\n{"decision":"confirm|downgrade|review","reason":"short explanation","visualEvidence":"short description of visible evidence","screenEconomy":{"visible":true|false,"details":"..."}}`;
   const userContent = [
     {
       type: 'text',
@@ -1854,7 +1952,14 @@ async function validateEventsWithVision(context, candidates) {
           validatedAt: new Date().toISOString(),
           previousValidation
         };
-        if (result.status !== 'complete') continue;
+        if (result.screenEconomy?.visible) {
+          if (!event.economy) {
+            event.economy = { action: 'view', verification: 'screen-verified' };
+          } else {
+            event.economy.verification = 'screen-verified';
+          }
+          event.economy.screenDetails = result.screenEconomy.details;
+        }
         if (result.decision === 'confirm') {
           event.validation = 'vision-confirmed';
           event.confidence = 'medium';
@@ -3281,6 +3386,9 @@ app.post('/api/generate', requireOwner, async (req, res) => {
       const complete = visionCandidates.filter(event => event.visionValidation?.status === 'complete').length;
       console.error(`[Vision] ${streamId}: validated ${complete}/${visionCandidates.length} targeted events with ${VISION_VALIDATION_MODEL}`);
     }
+
+    // Cluster moments into narrative story arcs
+    await enrichRecapWithStoryArcs(recap);
 
     // Persist days data — merge into an existing stream's days (append the new
     // broadcast as the next day) instead of overwriting, so re-running Add Stream

@@ -26,6 +26,12 @@ function compactDescription(value, maxChars = 150) {
 
 const CLIP_DURATION_CAP_SECONDS = 120;
 
+function policeOutcomeStyle(outcome) {
+  if (outcome === 'escaped') return 'bg-blue-500/15 text-blue-300 border-blue-500/30';
+  if (outcome === 'arrested') return 'bg-rose-500/15 text-rose-300 border-rose-500/30';
+  return 'bg-amber-500/15 text-amber-300 border-amber-500/30';
+}
+
 // Events from older recap files lack end times. Derive a display-only end so the
 // range badge works everywhere without rewriting legacy JSON.
 function eventEndSeconds(event, allEvents) {
@@ -105,6 +111,7 @@ export default function TimelineView({
 }) {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [isMajorOnly, setIsMajorOnly] = useState(false);
+  const [selectedArc, setSelectedArc] = useState('all');
   const [sortOrder, setSortOrder] = useState('asc'); // 'asc' or 'desc'
   const [layoutMode, setLayoutMode] = useState('feed'); // 'feed' (1-col), 'grid' (2-col/3-col), or 'list' (compact timestamps)
   const [copiedId, setCopiedId] = useState(null);
@@ -193,7 +200,11 @@ export default function TimelineView({
       if (selectedCategory !== 'all' && !(event.tags || [event.category]).includes(selectedCategory)) {
         return false;
       }
-      // 4. Search query filter
+      // 4. Storyline Arc filter
+      if (selectedArc !== 'all' && event.arcId !== selectedArc) {
+        return false;
+      }
+      // 5. Search query filter
       if (searchQuery.trim()) {
         const q = searchQuery.toLowerCase();
         const matchDesc = event.description?.toLowerCase().includes(q);
@@ -204,7 +215,7 @@ export default function TimelineView({
     }).sort((a, b) => {
       return sortOrder === 'asc' ? a.seconds - b.seconds : b.seconds - a.seconds;
     });
-  }, [events, selectedCategory, isMajorOnly, showOnlyBookmarks, bookmarks, searchQuery, sortOrder]);
+  }, [events, selectedCategory, selectedArc, isMajorOnly, showOnlyBookmarks, bookmarks, searchQuery, sortOrder]);
 
   // Keyboard navigation for focused one-column card view (defined AFTER filteredEvents)
   const handlePrevFocused = () => {
@@ -259,11 +270,25 @@ export default function TimelineView({
   const majorCount = useMemo(() => {
     return events.filter(e => {
       const matchCat = selectedCategory === 'all' || (e.tags || [e.category]).includes(selectedCategory);
-      return e.isMajor && matchCat;
+      const matchArc = selectedArc === 'all' || e.arcId === selectedArc;
+      return e.isMajor && matchCat && matchArc;
     }).length;
-  }, [events, selectedCategory]);
+  }, [events, selectedCategory, selectedArc]);
 
-  const hasActiveFilters = selectedCategory !== 'all' || isMajorOnly || searchQuery || showOnlyBookmarks;
+  const availableArcs = useMemo(() => {
+    const map = new Map();
+    for (const e of events) {
+      if (e.arcId && e.arcTitle) {
+        if (!map.has(e.arcId)) {
+          map.set(e.arcId, { id: e.arcId, title: e.arcTitle, count: 0 });
+        }
+        map.get(e.arcId).count++;
+      }
+    }
+    return Array.from(map.values());
+  }, [events]);
+
+  const hasActiveFilters = selectedCategory !== 'all' || selectedArc !== 'all' || isMajorOnly || searchQuery || showOnlyBookmarks;
 
   const kickBtnClass = isPlayingKick
     ? 'bg-[#53fc18] text-black border-[#53fc18] shadow-md'
@@ -365,6 +390,30 @@ export default function TimelineView({
             </select>
             <ChevronDown className="w-3.5 h-3.5 text-zinc-500 absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none" />
           </div>
+
+          {/* Storyline Arc Filter Dropdown */}
+          {availableArcs.length > 0 && (
+            <div className="relative">
+              <select
+                value={selectedArc}
+                onChange={(e) => setSelectedArc(e.target.value)}
+                className={`pl-3 pr-8 py-1.5 rounded-md text-xs border focus:outline-none transition-colors appearance-none cursor-pointer ${
+                  selectedArc === 'all'
+                    ? 'bg-zinc-900/90 text-zinc-300 border-white/[0.08] hover:border-zinc-700'
+                    : 'bg-purple-950/70 text-purple-200 border-purple-500/40 font-medium'
+                }`}
+                title="Filter by storyline arc"
+              >
+                <option value="all">All Storylines ({events.length})</option>
+                {availableArcs.map((arc) => (
+                  <option key={arc.id} value={arc.id}>
+                    {arc.title} ({arc.count})
+                  </option>
+                ))}
+              </select>
+              <ChevronDown className="w-3.5 h-3.5 text-zinc-500 absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+            </div>
+          )}
         </div>
 
         {/* Right Controls: Export, Sort Order & Layout Switcher */}
@@ -601,6 +650,50 @@ export default function TimelineView({
                             @{p}
                           </button>
                         ))}
+                      </div>
+                    )}
+
+                    {/* Economy Badge */}
+                    {event.economy && (
+                      <div className="mt-1 flex flex-wrap items-center gap-1.5 text-[10px]">
+                        <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-300 border border-emerald-500/25 font-medium">
+                          <span>💰 {event.economy.asset}</span>
+                          {event.economy.price && <span>· {event.economy.price}</span>}
+                          {event.economy.amount && <span>({event.economy.amount})</span>}
+                          <span className="opacity-75 uppercase text-[8px]">{event.economy.action}</span>
+                        </span>
+                        <span className={`px-1.5 py-0.2 rounded text-[9px] font-medium border ${
+                          event.economy.verification === 'screen-verified'
+                            ? 'bg-cyan-500/15 text-cyan-300 border-cyan-500/30'
+                            : 'bg-zinc-800 text-zinc-400 border-white/10'
+                        }`}>
+                          {event.economy.verification === 'screen-verified' ? '✓ Screen Verified' : 'Spoken Claim'}
+                        </span>
+                      </div>
+                    )}
+
+                    {/* Police Incident Badge */}
+                    {event.policeIncident && (
+                      <div className="mt-1 flex flex-wrap items-center gap-1.5 text-[10px]">
+                        <span className={`inline-flex items-center gap-1 px-1.5 py-0.5 rounded font-medium border ${policeOutcomeStyle(event.policeIncident.outcome)}`}>
+                          <span>🚨 Police: {event.policeIncident.outcome === 'escaped' ? 'Pursuit Escaped' : event.policeIncident.outcome}</span>
+                          {event.policeIncident.charges?.length > 0 && (
+                            <span className="opacity-75">({event.policeIncident.charges.join(', ')})</span>
+                          )}
+                        </span>
+                      </div>
+                    )}
+
+                    {/* Story Arc Badge */}
+                    {event.arcTitle && (
+                      <div className="mt-1">
+                        <button
+                          onClick={(e) => { e.stopPropagation(); setSelectedArc(event.arcId); }}
+                          className="inline-flex items-center gap-1 text-[9px] font-semibold text-purple-300 bg-purple-500/10 hover:bg-purple-500/20 border border-purple-500/25 px-1.5 py-0.5 rounded transition-colors cursor-pointer"
+                          title="Filter timeline to this story arc"
+                        >
+                          <span>⚡ {event.arcTitle}</span>
+                        </button>
                       </div>
                     )}
                   </div>
@@ -860,6 +953,29 @@ export default function TimelineView({
                         ))}
                       </div>
                     )}
+
+                    {/* Economy & Police Badges in Card */}
+                    {(event.economy || event.policeIncident || event.arcTitle) && (
+                      <div className="mt-1.5 flex flex-wrap gap-1">
+                        {event.economy && (
+                          <span className="px-1.5 py-0.2 rounded text-[9px] font-semibold bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
+                            💰 {event.economy.asset} {event.economy.price || ''}
+                          </span>
+                        )}
+                        {event.policeIncident && (
+                          <span className={`px-1.5 py-0.2 rounded text-[9px] font-semibold border ${
+                            event.policeIncident.outcome === 'escaped' ? 'bg-blue-500/15 text-blue-300 border-blue-500/30' : 'bg-rose-500/15 text-rose-300 border-rose-500/30'
+                          }`}>
+                            🚨 {event.policeIncident.outcome === 'escaped' ? 'Escaped' : event.policeIncident.outcome}
+                          </span>
+                        )}
+                        {event.arcTitle && (
+                          <span className="px-1.5 py-0.2 rounded text-[9px] font-semibold bg-purple-500/15 text-purple-300 border border-purple-500/30">
+                            ⚡ {event.arcTitle}
+                          </span>
+                        )}
+                      </div>
+                    )}
                   </div>
 
                   {/* Overlay Footer: Always pinned and shrink-0 */}
@@ -1094,6 +1210,59 @@ export default function TimelineView({
                       <span>@{p}</span>
                     </button>
                   ))}
+                </div>
+              )}
+
+              {/* Story Arc in Modal */}
+              {focusedEvent.arcTitle && (
+                <div className="flex items-center gap-2 text-xs text-purple-300 bg-purple-500/10 border border-purple-500/25 px-3 py-1.5 rounded-lg">
+                  <span>⚡ Part of Storyline:</span>
+                  <span className="font-semibold text-white">{focusedEvent.arcTitle}</span>
+                </div>
+              )}
+
+              {/* Economy Details in Modal */}
+              {focusedEvent.economy && (
+                <div className="p-3 rounded-xl bg-emerald-500/[0.07] border border-emerald-500/20 text-xs text-zinc-300 flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <span className="text-base">💰</span>
+                    <div>
+                      <span className="font-semibold text-emerald-300">{focusedEvent.economy.asset}</span>
+                      {focusedEvent.economy.price && <span className="ml-1.5 font-mono text-zinc-300">Price: {focusedEvent.economy.price}</span>}
+                      {focusedEvent.economy.amount && <span className="ml-1.5 font-mono text-zinc-400">Total: {focusedEvent.economy.amount}</span>}
+                    </div>
+                  </div>
+                  <span className={`px-2 py-0.5 rounded text-[10px] font-medium border ${
+                    focusedEvent.economy.verification === 'screen-verified'
+                      ? 'bg-cyan-500/15 text-cyan-300 border-cyan-500/30'
+                      : 'bg-zinc-800 text-zinc-400 border-white/10'
+                  }`}>
+                    {focusedEvent.economy.verification === 'screen-verified' ? '✓ Screen Verified (On-Screen UI)' : 'Spoken Claim (Audio)'}
+                  </span>
+                </div>
+              )}
+
+              {/* Police Incident Details in Modal */}
+              {focusedEvent.policeIncident && (
+                <div className="p-3 rounded-xl bg-blue-500/[0.07] border border-blue-500/20 text-xs text-zinc-300 flex flex-wrap items-center justify-between gap-2">
+                  <div className="flex items-center gap-2">
+                    <span className="text-base">🚨</span>
+                    <div>
+                      <span className="font-semibold text-blue-300">
+                        Police Incident: {focusedEvent.policeIncident.outcome === 'escaped' ? 'Pursuit Escaped' : focusedEvent.policeIncident.outcome}
+                      </span>
+                      {focusedEvent.policeIncident.charges?.length > 0 && (
+                        <div className="text-[11px] text-zinc-400 mt-0.5">
+                          Charges: {focusedEvent.policeIncident.charges.join(', ')}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                  {focusedEvent.policeIncident.officers?.length > 0 && (
+                    <span className="text-[10px] font-mono text-zinc-400">
+                      Officers: {focusedEvent.policeIncident.officers.join(', ')}
+                    </span>
+                  )}
                 </div>
               )}
 

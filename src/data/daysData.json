@@ -2489,7 +2489,15 @@
           "kickUrl": "https://kick.com/xqc/videos/01a08187-d570-7940-9f3f-d5cd8c8cdabc?t=8398",
           "participants": [
             "Jean Paul (X)"
-          ]
+          ],
+          "economy": {
+            "asset": "Octane Coin",
+            "price": "0.00",
+            "action": "trade",
+            "verification": "spoken-claim"
+          },
+          "arcId": "octane-crash",
+          "arcTitle": "The Octane Crypto Crash & Dip"
         },
         {
           "id": "d1-evt-003",
@@ -2850,7 +2858,9 @@
           "participants": [
             "Jean Paul (X)",
             "Lang Buddha"
-          ]
+          ],
+          "arcId": "burger-shot-shift",
+          "arcTitle": "The Burger Shot Trap & Fast Food Shift"
         },
         {
           "id": "d1-evt-019",
@@ -2897,7 +2907,9 @@
           "participants": [
             "Jean Paul (X)",
             "Speedy"
-          ]
+          ],
+          "arcId": "burger-shot-shift",
+          "arcTitle": "The Burger Shot Trap & Fast Food Shift"
         },
         {
           "id": "d1-evt-021",
@@ -2922,7 +2934,9 @@
           "participants": [
             "Jean Paul (X)",
             "Marty Banks"
-          ]
+          ],
+          "arcId": "burger-shot-shift",
+          "arcTitle": "The Burger Shot Trap & Fast Food Shift"
         },
         {
           "id": "d1-evt-022",
@@ -4259,7 +4273,16 @@
             "Jean Paul (X)",
             "Lang Buddha",
             "Tony Corleone"
-          ]
+          ],
+          "economy": {
+            "asset": "Octane Coin",
+            "price": "6.00",
+            "action": "buy",
+            "amount": "50.00",
+            "verification": "screen-verified"
+          },
+          "arcId": "octane-crash",
+          "arcTitle": "The Octane Crypto Crash & Dip"
         },
         {
           "id": "d1-evt-080",
@@ -4698,7 +4721,9 @@
             "Lang Buddha",
             "Tony Corleone",
             "Cement"
-          ]
+          ],
+          "arcId": "cement-initiation",
+          "arcTitle": "The Mr. Cement Initiation Challenge"
         },
         {
           "id": "d1-evt-099",
@@ -4957,7 +4982,20 @@
             "Marty Banks",
             "Lang Buddha",
             "Tony Corleone"
-          ]
+          ],
+          "policeIncident": {
+            "outcome": "escaped",
+            "officers": [
+              "Officer Pred",
+              "LSPD Units"
+            ],
+            "charges": [
+              "Reckless Evading",
+              "Exceeding Speed Limit"
+            ]
+          },
+          "arcId": "cement-initiation",
+          "arcTitle": "The Mr. Cement Initiation Challenge"
         },
         {
           "id": "d1-evt-110",
@@ -5007,7 +5045,9 @@
             "Marty Banks",
             "Lang Buddha",
             "Tony Corleone"
-          ]
+          ],
+          "arcId": "cement-initiation",
+          "arcTitle": "The Mr. Cement Initiation Challenge"
         },
         {
           "id": "d1-evt-112",
@@ -5156,7 +5196,39 @@
         "timesJailed": "0",
         "name": "Jean Paul"
       },
-      "streamDate": "2026-09-08"
+      "streamDate": "2026-09-08",
+      "storyArcs": [
+        {
+          "id": "cement-initiation",
+          "title": "The Mr. Cement Initiation Challenge",
+          "summary": "X, Marty, Lang, and Tony meet a mysterious contact in Blaine County and prove their driving skills in a high-speed police chase.",
+          "eventIds": [
+            "d1-evt-098",
+            "d1-evt-109",
+            "d1-evt-111"
+          ]
+        },
+        {
+          "id": "burger-shot-shift",
+          "title": "The Burger Shot Trap & Fast Food Shift",
+          "summary": "Jean Paul gets stuck working behind the counter at Burger Shot, getting roasted by Lang Buddha and hiring Speedy as crew.",
+          "eventIds": [
+            "d1-evt-018",
+            "d1-evt-020",
+            "d1-evt-021"
+          ]
+        },
+        {
+          "id": "octane-crash",
+          "title": "The Octane Crypto Crash & Dip",
+          "summary": "The boys track the collapse of Octane coin and scramble together 50 each to buy into the historic 6 dip.",
+          "eventIds": [
+            "d1-evt-002",
+            "d1-evt-079",
+            "d1-evt-080"
+          ]
+        }
+      ]
     },
     "3": {
       "dayNumber": 3,
