@@ -9,7 +9,7 @@ import TimelineView from './components/TimelineView.jsx';
 import AddStreamModal from './components/AddStreamModal.jsx';
 import UnlockModal from './components/UnlockModal.jsx';
 import CharacterModal from './components/CharacterModal.jsx';
-import { RedditIcon } from './components/Icons.jsx';
+import CalendarPicker from './components/CalendarPicker.jsx';
 import { getOwnerKey, setOwnerKey, ownerFetch } from './lib/owner.js';
 import { ArrowUp, ArrowDown, ChevronDown, AlertTriangle, Trash2, X } from 'lucide-react';
 import { Analytics } from '@vercel/analytics/react';
@@ -478,18 +478,6 @@ export default function App() {
           {days[selectedDay]?.isLive && (
             <span className="px-1.5 py-0.5 rounded bg-red-500/15 text-red-400 text-[10px] font-bold">LIVE</span>
           )}
-          {currentDayInfo?.redditUrl && (
-            <a
-              href={currentDayInfo.redditUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ml-auto inline-flex items-center gap-1.5 px-2 py-1 rounded-md text-[11px] font-medium bg-[#ff4500]/10 hover:bg-[#ff4500]/20 text-[#ff4500] border border-[#ff4500]/30 transition-colors"
-              title={currentDayInfo.redditTitle || 'View discussion thread on Reddit'}
-            >
-              <RedditIcon className="w-3.5 h-3.5 fill-current" />
-              <span className="hidden sm:inline">Reddit Thread</span>
-            </a>
-          )}
         </div>
 
         {transcriptionJob && transcriptionJob.status !== 'completed' && (
@@ -573,7 +561,8 @@ export default function App() {
 
         {/* Day Switcher & Extras Toolbar */}
         <div className="flex items-center justify-between pb-2 mb-2 border-b border-white/[0.08] gap-2">
-          {Object.keys(days).length <= 6 ? (
+          <div className="flex items-center gap-2 overflow-x-auto">
+            {Object.keys(days).length <= 6 ? (
               <div className="flex items-center bg-zinc-900/90 p-1 rounded-lg border border-white/[0.08] gap-1 overflow-x-auto">
               {Object.entries(days).map(([dayNum, dayInfo]) => {
                 const isSelected = selectedDay === dayNum;
@@ -639,6 +628,17 @@ export default function App() {
               )}
             </div>
           )}
+          </div>
+
+          {/* Calendar Picker Popover with Clickable Days */}
+          <div className="flex items-center gap-1.5 shrink-0">
+            <CalendarPicker
+              days={days}
+              selectedDay={selectedDay}
+              onSelectDay={(dayKey) => setSelectedDay(dayKey)}
+              streamColor={activePovConfig?.color || 'amber'}
+            />
+          </div>
         </div>
 
         {/* Approximate Timeline Notice */}
