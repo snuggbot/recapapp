@@ -16,8 +16,74 @@
     "Marty Banks",
     "Tony Corleone"
   ],
+  "squadCombinations": {
+    "fourMan": {
+      "full": {
+        "label": "4-Man Full Squad",
+        "members": ["Lang Buddha", "Jean Paul (X)", "Marty Banks", "Tony Corleone"],
+        "focus": "Major syndicate operations, high-tier heists, convoy moves, Mr. Cement challenges, hideout meetings"
+      }
+    },
+    "threeManTrios": {
+      "buddha_x_marty": {
+        "label": "3-Man Trio: Buddha, X & Marty",
+        "members": ["Lang Buddha", "Jean Paul (X)", "Marty Banks"],
+        "focus": "Syndicate planning, crypto investments, major criminal schemes"
+      },
+      "buddha_x_tony": {
+        "label": "3-Man Trio: Buddha, X & Tony",
+        "members": ["Lang Buddha", "Jean Paul (X)", "Tony Corleone"],
+        "focus": "High-speed getaways, convoy runs, veteran Cleanbois banter"
+      },
+      "buddha_marty_tony": {
+        "label": "3-Man Trio: Buddha, Marty & Tony",
+        "members": ["Lang Buddha", "Marty Banks", "Tony Corleone"],
+        "focus": "Front business logistics, supply acquisition, safehouse setup"
+      },
+      "x_marty_tony": {
+        "label": "3-Man Trio: X, Marty & Tony",
+        "members": ["Jean Paul (X)", "Marty Banks", "Tony Corleone"],
+        "focus": "Aggressive crime runs, ATM cracking with drift getaway"
+      }
+    },
+    "twoManDuos": {
+      "x_marty": {
+        "label": "2-Man Duo: X & Marty",
+        "members": ["Jean Paul (X)", "Marty Banks"],
+        "focus": "The chaotic crime duo: ATM cracking, crypto schemes, roof running, police chases"
+      },
+      "buddha_tony": {
+        "label": "2-Man Duo: Buddha & Tony",
+        "members": ["Lang Buddha", "Tony Corleone"],
+        "focus": "The veteran duo: Guber taxi operations, vehicle sourcing, legal fronts, syndicate contacts"
+      },
+      "buddha_x": {
+        "label": "2-Man Duo: Buddha & X",
+        "members": ["Lang Buddha", "Jean Paul (X)"],
+        "focus": "Syndicate leadership discussions, Burger Shot banter, large-scale scheming"
+      },
+      "marty_tony": {
+        "label": "2-Man Duo: Marty & Tony",
+        "members": ["Marty Banks", "Tony Corleone"],
+        "focus": "Heist reconnaissance, getaway vehicle prep, equipment supply runs"
+      },
+      "buddha_marty": {
+        "label": "2-Man Duo: Buddha & Marty",
+        "members": ["Lang Buddha", "Marty Banks"],
+        "focus": "Financial planning, money laundering, crew hierarchy discussions"
+      },
+      "x_tony": {
+        "label": "2-Man Duo: X & Tony",
+        "members": ["Jean Paul (X)", "Tony Corleone"],
+        "focus": "Drift getaways, reckless driving, high-speed evading"
+      }
+    }
+  },
   "eventTypes": [
-    "crew operation",
+    "4-man squad operation",
+    "3-man trio operation",
+    "2-man duo operation",
+    "solo grind",
     "heist",
     "police chase",
     "syndicate meeting",
@@ -28,12 +94,15 @@
     "character development"
   ],
   "importanceSignals": [
-    "The 4-man crew operations, plans, and banter between Lang Buddha, Jean Paul (X), Marty Banks, and Tony Corleone",
+    "4-man full squad operations (Buddha, X, Marty, Tony together)",
+    "3-man trio combinations (any 3 of the 4 working together on a task)",
+    "2-man duo grinding (X & Marty on crime/ATMs, Buddha & Tony on taxi/business, etc.)",
+    "Regrouping moments when 2-man or 3-man teams reunite into the full 4-man squad",
     "Joint criminal operations, ATM robberies, vehicle convoys, and hideout meetups",
-    "Syndicate challenges from Mr. Cement involving the quartet",
+    "Syndicate challenges from Mr. Cement involving the crew",
     "Group crypto trading, financial pooling, and shared asset purchases",
-    "High-speed police chases involving any members of the 4-man crew",
-    "Crew disagreements, plans for the city, or alliances with other players"
+    "High-speed police chases involving any members of the crew",
+    "Crew banter, arguments, and strategic decisions"
   ],
   "subreddits": [
     "GTARP",
@@ -50,9 +119,14 @@
     "NoPixel 5"
   ],
   "promptRules": [
-    "The 'Brick Boys' (Brick Bois) refers specifically to the core 4-man veteran syndicate composed of Lang Buddha, Jean Paul (X), Marty Banks, and Tony Corleone.",
+    "The 'Brick Boys' (Brick Bois) refers specifically to the veteran syndicate of Lang Buddha, Jean Paul (X), Marty Banks, and Tony Corleone.",
+    "Recognize and classify all squad configurations across the stream:",
+    "  - 4-Man Full Squad: When all four are together (major heists, Mr. Cement challenges, convoy rides, hideout assemblies).",
+    "  - 3-Man Trios: All 4 combinations (Buddha+X+Marty, Buddha+X+Tony, Buddha+Marty+Tony, X+Marty+Tony).",
+    "  - 2-Man Duos: All 6 combinations (X+Marty for crime/ATMs, Buddha+Tony for taxi/business, Buddha+X, Marty+Tony, Buddha+Marty, X+Tony).",
+    "Treat the moments where 2-man duos rendezvous back into the full 4-man squad as major story milestones.",
     "Prioritize the dynamics, operations, banter, and joint criminal ventures of these four core members as the primary narrative spine of the recap.",
-    "Whenever two or more of the quartet interact (e.g. convoy rides, hideout meetings, Mr. Cement challenge, Burger Shot banter, crypto buying), treat the moment as a high-priority scene and ensure all present members are listed in 'participants'.",
+    "Whenever members of the crew interact (e.g. convoy rides, hideout meetings, Mr. Cement challenge, Burger Shot banter, crypto buying), treat the moment as a high-priority scene and ensure all present members are listed in 'participants'.",
     "Distinguish clearly between each of the four characters and resolve their nicknames to their canonical names.",
     "Highlight high-stakes getaway chases, crew breakthroughs, and syndicate milestones as isMajor: true."
   ]

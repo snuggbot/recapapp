@@ -3,7 +3,7 @@ import {
   Clock, Star, Play, 
   Bookmark, Check, Share2, 
   AlertTriangle, ArrowUpDown, Maximize2, LayoutGrid, Square, X, ChevronDown,
-  ChevronLeft, ChevronRight, ExternalLink, Eye, ArrowRightLeft, Download
+  ChevronLeft, ChevronRight, ExternalLink, Eye, ArrowRightLeft, Download, Users
 } from 'lucide-react';
 import { TwitchIcon, KickIcon, YouTubeIcon, RedditIcon } from './Icons';
 import KickPlayer from './KickPlayer.jsx';
@@ -30,6 +30,62 @@ function policeOutcomeStyle(outcome) {
   if (outcome === 'escaped') return 'bg-blue-500/15 text-blue-300 border-blue-500/30';
   if (outcome === 'arrested') return 'bg-rose-500/15 text-rose-300 border-rose-500/30';
   return 'bg-amber-500/15 text-amber-300 border-amber-500/30';
+}
+
+const BRICK_BOYS_CANON = [
+  { id: 'buddha', short: 'Buddha', check: (p) => /buddha|lang/i.test(p) },
+  { id: 'x', short: 'X', check: (p) => /jean\s*paul|\bjp\b|\bx\b|\bxqc\b/i.test(p) },
+  { id: 'marty', short: 'Marty', check: (p) => /marty|martin/i.test(p) },
+  { id: 'tony', short: 'Tony', check: (p) => /tony|corleone/i.test(p) },
+];
+
+export function getBrickBoysSquad(participants) {
+  if (!Array.isArray(participants) || participants.length === 0) return null;
+  const found = BRICK_BOYS_CANON.filter(member =>
+    participants.some(p => member.check(p))
+  );
+
+  if (found.length === 4) {
+    return {
+      type: '4-man',
+      key: '4-man',
+      label: '4-Man Full Squad',
+      shortLabel: '4-Man',
+      comboLabel: 'Buddha, X, Marty, Tony',
+      members: found.map(m => m.short),
+      badgeClass: 'bg-amber-500/20 text-amber-300 border-amber-500/40',
+    };
+  }
+
+  if (found.length === 3) {
+    const names = found.map(m => m.short).join(', ');
+    const comboKey = '3-man-' + found.map(m => m.id).sort().join('-');
+    return {
+      type: '3-man',
+      key: comboKey,
+      label: `3-Man Trio (${names})`,
+      shortLabel: '3-Man',
+      comboLabel: names,
+      members: found.map(m => m.short),
+      badgeClass: 'bg-indigo-500/20 text-indigo-300 border-indigo-500/40',
+    };
+  }
+
+  if (found.length === 2) {
+    const names = found.map(m => m.short).join(' & ');
+    const comboKey = '2-man-' + found.map(m => m.id).sort().join('-');
+    return {
+      type: '2-man',
+      key: comboKey,
+      label: `2-Man Duo (${names})`,
+      shortLabel: '2-Man',
+      comboLabel: names,
+      members: found.map(m => m.short),
+      badgeClass: 'bg-cyan-500/20 text-cyan-300 border-cyan-500/40',
+    };
+  }
+
+  return null;
 }
 
 // Events from older recap files lack end times. Derive a display-only end so the
@@ -112,6 +168,7 @@ export default function TimelineView({
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [isMajorOnly, setIsMajorOnly] = useState(false);
   const [selectedArc, setSelectedArc] = useState('all');
+  const [selectedSquad, setSelectedSquad] = useState('all');
   const [sortOrder, setSortOrder] = useState('asc'); // 'asc' or 'desc'
   const [layoutMode, setLayoutMode] = useState('feed'); // 'feed' (1-col), 'grid' (2-col/3-col), or 'list' (compact timestamps)
   const [copiedId, setCopiedId] = useState(null);
@@ -204,7 +261,19 @@ export default function TimelineView({
       if (selectedArc !== 'all' && event.arcId !== selectedArc) {
         return false;
       }
-      // 5. Search query filter
+      // 5. Squad Formation filter
+      if (selectedSquad !== 'all') {
+        const squad = getBrickBoysSquad(event.participants);
+        if (!squad) return false;
+        if (selectedSquad === 'any-squad') {
+          // matched any Brick Boys squad
+        } else if (selectedSquad === '4-man' || selectedSquad === '3-man' || selectedSquad === '2-man') {
+          if (squad.type !== selectedSquad) return false;
+        } else if (squad.key !== selectedSquad) {
+          return false;
+        }
+      }
+      // 6. Search query filter
       if (searchQuery.trim()) {
         const q = searchQuery.toLowerCase();
         const matchDesc = event.description?.toLowerCase().includes(q);
@@ -215,7 +284,7 @@ export default function TimelineView({
     }).sort((a, b) => {
       return sortOrder === 'asc' ? a.seconds - b.seconds : b.seconds - a.seconds;
     });
-  }, [events, selectedCategory, selectedArc, isMajorOnly, showOnlyBookmarks, bookmarks, searchQuery, sortOrder]);
+  }, [events, selectedCategory, selectedArc, selectedSquad, isMajorOnly, showOnlyBookmarks, bookmarks, searchQuery, sortOrder]);
 
   // Keyboard navigation for focused one-column card view (defined AFTER filteredEvents)
   const handlePrevFocused = () => {
@@ -271,9 +340,14 @@ export default function TimelineView({
     return events.filter(e => {
       const matchCat = selectedCategory === 'all' || (e.tags || [e.category]).includes(selectedCategory);
       const matchArc = selectedArc === 'all' || e.arcId === selectedArc;
-      return e.isMajor && matchCat && matchArc;
+      const squad = getBrickBoysSquad(e.participants);
+      let matchSquad = true;
+      if (selectedSquad === 'any-squad') matchSquad = Boolean(squad);
+      else if (selectedSquad === '4-man' || selectedSquad === '3-man' || selectedSquad === '2-man') matchSquad = squad?.type === selectedSquad;
+      else if (selectedSquad !== 'all') matchSquad = squad?.key === selectedSquad;
+      return e.isMajor && matchCat && matchArc && matchSquad;
     }).length;
-  }, [events, selectedCategory, selectedArc]);
+  }, [events, selectedCategory, selectedArc, selectedSquad]);
 
   const availableArcs = useMemo(() => {
     const map = new Map();
@@ -288,7 +362,38 @@ export default function TimelineView({
     return Array.from(map.values());
   }, [events]);
 
-  const hasActiveFilters = selectedCategory !== 'all' || selectedArc !== 'all' || isMajorOnly || searchQuery || showOnlyBookmarks;
+  const availableSquads = useMemo(() => {
+    const typeCounts = { '4-man': 0, '3-man': 0, '2-man': 0, total: 0 };
+    const comboMap = new Map();
+
+    for (const e of events) {
+      const squad = getBrickBoysSquad(e.participants);
+      if (squad) {
+        typeCounts.total++;
+        typeCounts[squad.type]++;
+        if (!comboMap.has(squad.key)) {
+          comboMap.set(squad.key, {
+            key: squad.key,
+            type: squad.type,
+            label: squad.label,
+            comboLabel: squad.comboLabel,
+            count: 0
+          });
+        }
+        comboMap.get(squad.key).count++;
+      }
+    }
+
+    return {
+      typeCounts,
+      combos: Array.from(comboMap.values()).sort((a, b) => {
+        if (a.type !== b.type) return a.type.localeCompare(b.type);
+        return b.count - a.count;
+      })
+    };
+  }, [events]);
+
+  const hasActiveFilters = selectedCategory !== 'all' || selectedArc !== 'all' || selectedSquad !== 'all' || isMajorOnly || searchQuery || showOnlyBookmarks;
 
   const kickBtnClass = isPlayingKick
     ? 'bg-[#53fc18] text-black border-[#53fc18] shadow-md'
@@ -410,6 +515,44 @@ export default function TimelineView({
                     {arc.title} ({arc.count})
                   </option>
                 ))}
+              </select>
+              <ChevronDown className="w-3.5 h-3.5 text-zinc-500 absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+            </div>
+          )}
+
+          {/* Squad Formation Filter Dropdown */}
+          {availableSquads.typeCounts.total > 0 && (
+            <div className="relative">
+              <select
+                value={selectedSquad}
+                onChange={(e) => setSelectedSquad(e.target.value)}
+                className={`pl-3 pr-8 py-1.5 rounded-md text-xs border focus:outline-none transition-colors appearance-none cursor-pointer ${
+                  selectedSquad === 'all'
+                    ? 'bg-zinc-900/90 text-zinc-300 border-white/[0.08] hover:border-zinc-700'
+                    : 'bg-amber-950/70 text-amber-200 border-amber-500/40 font-medium'
+                }`}
+                title="Filter by Brick Boys squad formation"
+              >
+                <option value="all">All Squads ({events.length})</option>
+                <option value="any-squad">Any Brick Boys Squad ({availableSquads.typeCounts.total})</option>
+                {availableSquads.typeCounts['4-man'] > 0 && (
+                  <option value="4-man">4-Man Full Squad ({availableSquads.typeCounts['4-man']})</option>
+                )}
+                {availableSquads.typeCounts['3-man'] > 0 && (
+                  <option value="3-man">3-Man Trios ({availableSquads.typeCounts['3-man']})</option>
+                )}
+                {availableSquads.typeCounts['2-man'] > 0 && (
+                  <option value="2-man">2-Man Duos ({availableSquads.typeCounts['2-man']})</option>
+                )}
+                {availableSquads.combos.length > 1 && (
+                  <optgroup label="Specific Combinations">
+                    {availableSquads.combos.map((c) => (
+                      <option key={c.key} value={c.key}>
+                        {c.label} ({c.count})
+                      </option>
+                    ))}
+                  </optgroup>
+                )}
               </select>
               <ChevronDown className="w-3.5 h-3.5 text-zinc-500 absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none" />
             </div>
@@ -696,6 +839,24 @@ export default function TimelineView({
                         </button>
                       </div>
                     )}
+
+                    {/* Squad Formation Badge */}
+                    {(() => {
+                      const squad = getBrickBoysSquad(event.participants);
+                      if (!squad) return null;
+                      return (
+                        <div className="mt-1">
+                          <button
+                            onClick={(e) => { e.stopPropagation(); setSelectedSquad(squad.key); }}
+                            className={`inline-flex items-center gap-1 text-[9px] font-semibold px-1.5 py-0.5 rounded border transition-colors cursor-pointer ${squad.badgeClass}`}
+                            title={`Filter timeline to this squad combination (${squad.comboLabel})`}
+                          >
+                            <Users className="w-2.5 h-2.5" />
+                            <span>{squad.label}</span>
+                          </button>
+                        </div>
+                      );
+                    })()}
                   </div>
                 </div>
 
@@ -896,6 +1057,25 @@ export default function TimelineView({
                         </button>
                       ))}
                     </div>
+
+                    {/* Squad formation pill on front of card */}
+                    {(() => {
+                      const squad = getBrickBoysSquad(event.participants);
+                      if (!squad) return null;
+                      return (
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setSelectedSquad(selectedSquad === squad.key ? 'all' : squad.key);
+                          }}
+                          className={`hidden sm:inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md text-[9px] font-semibold tracking-wide border shadow-sm backdrop-blur-md transition-all cursor-pointer ${squad.badgeClass}`}
+                          title={`Filter: ${squad.label}`}
+                        >
+                          <Users className="w-2.5 h-2.5" />
+                          <span>{squad.shortLabel}</span>
+                        </button>
+                      );
+                    })()}
                   </div>
 
                   {/* Bookmark & Share Actions */}
@@ -974,6 +1154,16 @@ export default function TimelineView({
                             ⚡ {event.arcTitle}
                           </span>
                         )}
+                        {(() => {
+                          const squad = getBrickBoysSquad(event.participants);
+                          if (!squad) return null;
+                          return (
+                            <span className={`px-1.5 py-0.2 rounded text-[9px] font-semibold border flex items-center gap-1 ${squad.badgeClass}`}>
+                              <Users className="w-2.5 h-2.5" />
+                              <span>{squad.shortLabel}: {squad.comboLabel}</span>
+                            </span>
+                          );
+                        })()}
                       </div>
                     )}
                   </div>
@@ -1220,6 +1410,21 @@ export default function TimelineView({
                   <span className="font-semibold text-white">{focusedEvent.arcTitle}</span>
                 </div>
               )}
+
+              {/* Squad Formation in Modal */}
+              {(() => {
+                const focusedSquad = getBrickBoysSquad(focusedEvent.participants);
+                if (!focusedSquad) return null;
+                return (
+                  <div className={`flex items-center justify-between text-xs px-3 py-1.5 rounded-lg border ${focusedSquad.badgeClass}`}>
+                    <div className="flex items-center gap-2">
+                      <Users className="w-3.5 h-3.5" />
+                      <span>Brick Boys: <strong className="text-white">{focusedSquad.label}</strong></span>
+                    </div>
+                    <span className="font-mono text-[10px] opacity-80">{focusedSquad.comboLabel}</span>
+                  </div>
+                );
+              })()}
 
               {/* Economy Details in Modal */}
               {focusedEvent.economy && (
