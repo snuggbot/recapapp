@@ -1,0 +1,63 @@
+{
+  "id": "brickbois",
+  "label": "Brick Bois (NoPixel 5.0)",
+  "version": 1,
+  "aliases": {
+    "Marty Banks": ["marty", "marty banks", "martin", "omie", "lil mabu", "the crow", "boss"],
+    "Larry Knox": ["larry", "larry knox", "riqqi"],
+    "Jean Paul (X)": ["x", "xqc", "jean paul", "jp", "jean-paul"],
+    "Lang Buddha": ["buddha", "lang", "lang buddha", "mr. lang"],
+    "Tony Corleone": ["tony", "tony corleone", "anthonyz"],
+    "Cement": ["cement", "mr. cement"],
+    "Speedy": ["speedy", "sayeed", "sayeedblack"]
+  },
+  "factions": [
+    "Brick Bois",
+    "Cypress",
+    "The Company",
+    "Los Santos Police Department"
+  ],
+  "eventTypes": [
+    "gang operation",
+    "gang meeting",
+    "heist",
+    "police chase",
+    "recruitment",
+    "turf conflict",
+    "business",
+    "crypto & economy",
+    "betrayal",
+    "character development"
+  ],
+  "importanceSignals": [
+    "Brick Bois gang formation, hierarchy, or recruitment",
+    "Marty and Larry coordinating crew operations",
+    "ATM hacking, roof running, furnace robberies, and heist prep",
+    "Tranq gun operations and animal cage sales",
+    "Meetings with other faction leaders (Lang Buddha, Tony, X)",
+    "Police chases, warrants, and evasion tactics",
+    "Crew conflicts, loyalty checks, or betrayals",
+    "Major community reactions and clips"
+  ],
+  "subreddits": [
+    "GTARP",
+    "LivestreamFail",
+    "xqcow"
+  ],
+  "redditQueries": [
+    "NoPixel V Brick Bois",
+    "Marty Banks",
+    "Omie",
+    "Brick Bois",
+    "Larry Knox",
+    "NoPixel 5"
+  ],
+  "promptRules": [
+    "Highlight the Brick Bois as the primary criminal syndicate led by Marty Banks and Larry Knox.",
+    "Pay special attention to crew coordination, ATM operations, furnace robberies, rooftop recon, and syndicate meetings.",
+    "Resolve in-game nicknames ('Lil Mabu', 'The Crow', 'Larry', 'Martin') to canonical character names.",
+    "Do not confuse the streamer Omie with the character Marty Banks.",
+    "For each event, include a participants array with the exact characters present in the scene.",
+    "Flag major breakthroughs, gang decisions, and high-speed police escapes as isMajor: true."
+  ]
+}

@@ -4,7 +4,8 @@
   "version": 1,
   "aliases": {
     "Jean Paul (X)": ["x", "xqc", "jean paul", "jp", "jean-paul"],
-    "Marty Banks": ["marty", "marty banks", "martin", "omie"],
+    "Marty Banks": ["marty", "marty banks", "martin", "omie", "lil mabu", "the crow"],
+    "Larry Knox": ["larry", "larry knox", "riqqi"],
     "Lang Buddha": ["buddha", "lang", "lang buddha"],
     "Tony Corleone": ["tony", "tony corleone", "anthonyz"],
     "Cement": ["cement"],
@@ -24,6 +25,7 @@
   ],
   "importanceSignals": [
     "multiple named characters",
+    "Brick Bois gang operations, meetings, or conflicts",
     "police involvement",
     "major story consequence",
     "betrayal or alliance change",
@@ -33,7 +35,7 @@
     "large community reaction"
   ],
   "subreddits": ["GTARP", "LivestreamFail", "xqcow"],
-  "redditQueries": ["NoPixel V", "Buddha", "Lang Buddha", "Marty Banks", "Tony Corleone"],
+  "redditQueries": ["NoPixel V", "Buddha", "Lang Buddha", "Marty Banks", "Brick Bois", "Tony Corleone", "Omie"],
   "promptRules": [
     "Resolve aliases to the canonical character names when the transcript supports it.",
     "Do not confuse the streamer, roleplay character, and other similarly named characters.",

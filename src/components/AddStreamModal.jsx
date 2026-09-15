@@ -371,7 +371,8 @@ export default function AddStreamModal({ isOpen, onClose, onStreamAdded }) {
                       className="px-2 py-1 rounded-md bg-zinc-900 border border-white/10 text-[10px] text-zinc-300"
                     >
                       <option value="generic">Generic stream</option>
-                      <option value="nopixel">NoPixel roleplay</option>
+                      <option value="nopixel">NoPixel roleplay (General)</option>
+                      <option value="brickbois">Brick Bois (Marty & Crew Focus)</option>
                     </select>
                   </div>
                   <label className="text-xs font-semibold text-zinc-300">Fine-tune this recap <span className="text-zinc-500 font-normal">(optional)</span></label>
