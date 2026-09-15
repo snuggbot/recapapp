@@ -372,7 +372,7 @@ export default function AddStreamModal({ isOpen, onClose, onStreamAdded }) {
                     >
                       <option value="generic">Generic stream</option>
                       <option value="nopixel">NoPixel roleplay (General)</option>
-                      <option value="brickbois">Brick Bois (Marty & Crew Focus)</option>
+                      <option value="brickbois">Brick Boys (Buddha, X, Marty, Tony Focus)</option>
                     </select>
                   </div>
                   <label className="text-xs font-semibold text-zinc-300">Fine-tune this recap <span className="text-zinc-500 font-normal">(optional)</span></label>

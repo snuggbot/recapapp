@@ -1,43 +1,39 @@
 {
   "id": "brickbois",
-  "label": "Brick Bois (NoPixel 5.0)",
+  "label": "Brick Boys (Buddha, X, Marty, Tony)",
   "version": 1,
   "aliases": {
-    "Marty Banks": ["marty", "marty banks", "martin", "omie", "lil mabu", "the crow", "boss"],
-    "Larry Knox": ["larry", "larry knox", "riqqi"],
-    "Jean Paul (X)": ["x", "xqc", "jean paul", "jp", "jean-paul"],
     "Lang Buddha": ["buddha", "lang", "lang buddha", "mr. lang"],
-    "Tony Corleone": ["tony", "tony corleone", "anthonyz"],
+    "Jean Paul (X)": ["x", "xqc", "jean paul", "jp", "jean-paul", "agent 47 iq", "el goblino"],
+    "Marty Banks": ["marty", "marty banks", "martin", "omie", "lil mabu"],
+    "Tony Corleone": ["tony", "tony corleone", "anthonyz", "the drift king"],
     "Cement": ["cement", "mr. cement"],
     "Speedy": ["speedy", "sayeed", "sayeedblack"]
   },
-  "factions": [
-    "Brick Bois",
-    "Cypress",
-    "The Company",
-    "Los Santos Police Department"
+  "coreCrew": [
+    "Lang Buddha",
+    "Jean Paul (X)",
+    "Marty Banks",
+    "Tony Corleone"
   ],
   "eventTypes": [
-    "gang operation",
-    "gang meeting",
+    "crew operation",
     "heist",
     "police chase",
-    "recruitment",
-    "turf conflict",
-    "business",
+    "syndicate meeting",
     "crypto & economy",
-    "betrayal",
+    "crew banter & conflict",
+    "business & fronts",
+    "lore reveal",
     "character development"
   ],
   "importanceSignals": [
-    "Brick Bois gang formation, hierarchy, or recruitment",
-    "Marty and Larry coordinating crew operations",
-    "ATM hacking, roof running, furnace robberies, and heist prep",
-    "Tranq gun operations and animal cage sales",
-    "Meetings with other faction leaders (Lang Buddha, Tony, X)",
-    "Police chases, warrants, and evasion tactics",
-    "Crew conflicts, loyalty checks, or betrayals",
-    "Major community reactions and clips"
+    "The 4-man crew operations, plans, and banter between Lang Buddha, Jean Paul (X), Marty Banks, and Tony Corleone",
+    "Joint criminal operations, ATM robberies, vehicle convoys, and hideout meetups",
+    "Syndicate challenges from Mr. Cement involving the quartet",
+    "Group crypto trading, financial pooling, and shared asset purchases",
+    "High-speed police chases involving any members of the 4-man crew",
+    "Crew disagreements, plans for the city, or alliances with other players"
   ],
   "subreddits": [
     "GTARP",
@@ -45,19 +41,19 @@
     "xqcow"
   ],
   "redditQueries": [
-    "NoPixel V Brick Bois",
+    "NoPixel V Brick Boys",
+    "Lang Buddha",
+    "Jean Paul",
     "Marty Banks",
-    "Omie",
-    "Brick Bois",
-    "Larry Knox",
+    "Tony Corleone",
+    "Brick Boys",
     "NoPixel 5"
   ],
   "promptRules": [
-    "Highlight the Brick Bois as the primary criminal syndicate led by Marty Banks and Larry Knox.",
-    "Pay special attention to crew coordination, ATM operations, furnace robberies, rooftop recon, and syndicate meetings.",
-    "Resolve in-game nicknames ('Lil Mabu', 'The Crow', 'Larry', 'Martin') to canonical character names.",
-    "Do not confuse the streamer Omie with the character Marty Banks.",
-    "For each event, include a participants array with the exact characters present in the scene.",
-    "Flag major breakthroughs, gang decisions, and high-speed police escapes as isMajor: true."
+    "The 'Brick Boys' (Brick Bois) refers specifically to the core 4-man veteran syndicate composed of Lang Buddha, Jean Paul (X), Marty Banks, and Tony Corleone.",
+    "Prioritize the dynamics, operations, banter, and joint criminal ventures of these four core members as the primary narrative spine of the recap.",
+    "Whenever two or more of the quartet interact (e.g. convoy rides, hideout meetings, Mr. Cement challenge, Burger Shot banter, crypto buying), treat the moment as a high-priority scene and ensure all present members are listed in 'participants'.",
+    "Distinguish clearly between each of the four characters and resolve their nicknames to their canonical names.",
+    "Highlight high-stakes getaway chases, crew breakthroughs, and syndicate milestones as isMajor: true."
   ]
 }
